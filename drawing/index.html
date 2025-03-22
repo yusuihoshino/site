@@ -11,61 +11,100 @@
 <body>
     <sidebar-comp></sidebar-comp>
     <div class="galary-container">
-        <h1>Drawing</h1>
-        <h2>ドローイング</h2>
+        <article-title-comp
+        title1="Drawing" title2="ドローイング"
+        ></article-title-comp>
         <div id="grid">
             <div class="grid-sizer"></div>
             <div class="gutter-sizer"></div>
-            <a href="スペイン旅行.html" class="grid-item">
-                <img src="./img/スペイン.png">
-                <p>no title</p>    
-                <p>2025/5</p> 
-                <p>contest</p>
-            </a>
-            <a href="" class="grid-item">
-                <img src="./img/ツインテール.png">
-                <p>no title</p>    
-                <p>2025/5</p> 
-                <p>contest</p>
-            </a>
-            <a href="" class="grid-item">
-                <img src="./img/コップ.png">
-                <p>no title</p>    
-                <p>2025/5</p> 
-                <p>contest</p>
-            </a>
-            <a href="" class="grid-item">
-                <img src="./img/コップ.png">
-                <p>no title</p>    
-                <p>2025/5</p> 
-                <p>contest</p>
-            </a>
-            
-
+            <card-comp
+                image="./img/スペイン.png"
+                link="スペイン旅行.html"
+                title="no title"
+                date="2025/5"
+                tag="contest"
+            ></card-comp>
+            <card-comp
+                image="./img/コップ.png"
+                link="#"
+                title="no title"
+                date="2025/5"
+                tag="contest"
+            ></card-comp>
+            <card-comp
+                image="./img/シューズ.png"
+                link="#"
+                title="no title"
+                date="2025/5"
+                tag="contest"
+            ></card-comp>
+            <card-comp
+                image="./img/スペイン.png"
+                link="#"
+                title="no title"
+                date="2025/5"
+                tag="contest"
+            ></card-comp>
+            <card-comp
+                image="./img/ツインテール.png"
+                link="#"
+                title="no title"
+                date="2025/5"
+                tag="contest"
+            ></card-comp>
+            <card-comp
+                image="./img/ピンク.png"
+                link="#"
+                title="no title"
+                date="2025/5"
+                tag="contest"
+            ></card-comp>
+            <card-comp
+                image="モデル.png"
+                link="#"
+                title="あああああああああああああ"
+                date="2025/5"
+                tag="contest"
+            ></card-comp>
+            <card-comp
+                image="./img/りんご.png"
+                link="#"
+                title="あああああああああああああ"
+                date="2025/5"
+                tag="contest"
+            ></card-comp>
+            <card-comp
+                image="./img/紫.jpg"
+                link="#"
+                title="あああああああああああああ"
+                date="2025/5"
+                tag="contest"
+            ></card-comp>
+            <card-comp
+                image="./img/笑顔.png"
+                link="#"
+                title="あああああああああああああ"
+                date="2025/5"
+                tag="contest"
+            ></card-comp>
+            <card-comp
+                image="./img/日本.png"
+                link="#"
+                title="あああああああああああああ"
+                date="2025/5"
+                tag="contest"
+            > </card-comp>
           
         </div>
     </div>  
-    <script src="../sidebar.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <!--　masonry　-->
-    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
-    <!--　imagesloaded　-->
-    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
 
-    <script>
-        // init Masonry
-        var $grid = $('#grid').masonry({
-            percentPosition: true,
-            columnWidth: '.grid-sizer',
-            itemSelector: '.grid-item',
-            gutter: '.gutter-sizer'
-        });
-    
-        // layout Masonry after each image loads
-        $grid.imagesLoaded().progress(function () {
-            $grid.masonry('layout');
-        });
-    </script>
+    <!-- component -->
+    <script src="../components.js"></script>
+    <!-- masonry -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="../masonry.js"></script>
 
 </body>
 </html>

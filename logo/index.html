@@ -6,45 +6,98 @@
     <title>Document</title>
     <link rel="stylesheet" href="../reset.css">
     <link rel="stylesheet" href="../style.css">
+    
 </head>
 <body>
     <sidebar-comp></sidebar-comp>
     <div class="galary-container">
-        <h1>その他</h1>
-        <div class="galary">
-            <a class="card" href="other-人間標本.html">
-                <img src="other/人間標本.png" alt="">
-                <p>no title</p>    
-                <p>2025/5</p> 
-                <p>contest</p>              
-            </a>
-            <a class="card" href="other-mooo.html">
-                <img src="other/mooo1.png" alt="">
-                <p>no title</p>    
-                <p>2025/5</p> 
-                <p>contest</p>              
-            </a>
-            
-            <a class="card" href="">
-                <img src="other/3.png" alt="">
-                <p>no title</p>    
-                <p>2025/5</p> 
-                <p>contest</p>              
-            </a>
-            
-            
-            <a class="card" href="">
-                <img src="other/5.png" alt="">
-                <p>no title</p>    
-                <p>2025/5</p> 
-                <p>contest</p>              
-            </a>
-            
-            
-            
+        <article-title-comp
+        title1="Logo" title2="ロゴ"
+        ></article-title-comp>
+        <div id="grid">
+            <div class="grid-sizer"></div>
+            <div class="gutter-sizer"></div>
+            <card-comp
+                image="./img/asc.jpg"
+                link="#"
+                title="no title"
+                date="2025/5"
+                tag="contest"
+            ></card-comp>
+            <card-comp
+                image="./img/DAWN.jpg"
+                link="#"
+                title="no title"
+                date="2025/5"
+                tag="contest"
+            ></card-comp>
+            <card-comp
+                image="./img/kokojpg"
+                link="#"
+                title="no title"
+                date="2025/5"
+                tag="contest"
+            ></card-comp>
+            <card-comp
+                image="./img/mooo.webp"
+                link="#"
+                title="no title"
+                date="2025/5"
+                tag="contest"
+            ></card-comp>
+            <card-comp
+                image="./img/Sol.png"
+                link="#"
+                title="no title"
+                date="2025/5"
+                tag="contest"
+            ></card-comp>
+            <card-comp
+                image="./img/Zli.jpg"
+                link="#"
+                title="no title"
+                date="2025/5"
+                tag="contest"
+            ></card-comp>
+            <card-comp
+            image="./img/ほしの.png"
+            link="#"
+            title="no title"
+            date="2025/5"
+            tag="contest"
+            ></card-comp>
+            <card-comp
+            image="./img/手芸.png"
+            link="#"
+            title="no title"
+            date="2025/5"
+            tag="contest"
+            ></card-comp>   
+            <card-comp
+                image="./img/手芸2.png"
+                link="#"
+                title="no title"
+                date="2025/5"
+                tag="contest"
+            ></card-comp>
+            <card-comp
+                image="./img/複数.png"
+                link="#"
+                title="no title"
+                date="2025/5"
+                tag="contest"
+            ></card-comp>
           
         </div>
     </div>  
-    <script src="../sidebar.js"></script>
+
+    <!-- component -->
+    <script src="../components.js"></script>
+    <!-- masonry -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="../masonry.js"></script>
+
 </body>
 </html>

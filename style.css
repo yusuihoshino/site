@@ -7,7 +7,16 @@
 
 
 
-
+.link-btn{
+    border:solid black 1px;
+    border-radius:100px;
+    text-align: center;
+    max-width: 100px;
+    transition: all 0.3s;
+    &:hover{
+        transform: translateX(10px);
+    }
+}
 
 
 
@@ -28,7 +37,6 @@ body{
     }
 }
 .sidebar{
-    background-color: rgb(243, 243, 243);
     position:fixed;
     left:0;
     top:0;
@@ -37,6 +45,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.2) ;
 
     padding: 48px;
     .sidebar-group{
@@ -48,6 +57,7 @@ body{
     a{
         font-size: 0.9rem;
         transition:0.2s all;
+        letter-spacing: 0.15rem;
         
         &:hover{
             transform:translateX(10px);
@@ -59,12 +69,7 @@ body{
         letter-spacing: 10px;
 
     }
-    .link-btn{
-        border:solid black 1px;
-        border-radius:100px;
-        text-align: center;
-
-    }
+  
 }
 .home-container{
     max-width: 800px;
@@ -160,21 +165,25 @@ body{
 .galary-container{
     max-width: 800px;
     margin:100px auto 0;
+    transform: translateX(100px);
     width: 100vw;
     height: 100vh;
     text-align: center;
-    h1{
-        letter-spacing: 0.5rem;
-        font-weight: 300;
+    .article-title{
+        width: 100%;
+        h1{
+            letter-spacing: 0.5rem;
+            font-weight: 300;
+        }
+        h2{
+            font-size: 1rem;
+            font-weight: 300;
+            margin-bottom: 80px;
+        }
     }
-    h2{
-        font-size: 1rem;
-        font-weight: 300;
-        margin-bottom: 80px;
-    }
+
     #grid {
         margin: 0 auto;
-        width: 980px;
         .grid-sizer,
         .grid-item {
             display: block;
@@ -192,6 +201,8 @@ body{
             img{
                 width: 100%;
                 height: auto;
+            border:rgb(200, 200, 200) 1px solid;
+
             }
         }
         @media screen and (max-width: 768px) {

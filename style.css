@@ -4,47 +4,6 @@
 .grid-item { width: 200px; }
 .grid-item--width2 { width: 400px; }
 
-#grid {
-    margin: 0 auto;
-    width: 980px;
-    a{
-        display: block;
-    }
-    .grid-sizer,
-    .grid-item {
-        width: 32%;
-        margin-bottom: 20px;
-    }
-
-    .grid-item img {
-        width: 100%;
-        height: auto;
-    }
-
-    .gutter-sizer {
-        width: 2%;
-    }
-
-    @media screen and (max-width: 768px) {
-    .grid-sizer,
-    .grid-item {
-        width: 48.5%;
-        margin-bottom: 10px;
-        }
-    }
-}
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -171,8 +130,16 @@ body{
         font-size:1rem;
     }
     .duration-year{
-        display:inline-block;
-        flex-direction: column;
+        display:flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+        gap:8px;
+        .line{
+            width:80px;
+            height:1px;
+            background:black;
+        }
     }
     .history-section{
         display:flex;
@@ -196,30 +163,42 @@ body{
     width: 100vw;
     height: 100vh;
     text-align: center;
-    
-    .galary{
-        margin-top:100px;
-    
-        display: flex;
-        flex-direction:row;
-        flex-wrap: wrap;
-        justify-content: center;
-        
-        gap:20px;
-        .card{
-            display: flex;
-            flex-direction:column;
-            gap:0px;
-            background-color: white;
-            width: 385px;
-            
+    h1{
+        letter-spacing: 0.5rem;
+        font-weight: 300;
+    }
+    h2{
+        font-size: 1rem;
+        font-weight: 300;
+        margin-bottom: 80px;
+    }
+    #grid {
+        margin: 0 auto;
+        width: 980px;
+        .grid-sizer,
+        .grid-item {
+            display: block;
+            width: 49%;
+            margin-bottom: 20px;
+        }
+        .gutter-sizer {
+            width: 2%;
+        }
+        .grid-item {
+            display:flex;
+            flex-direction: column;
+            gap:0;
+            font-size:0.8rem;
             img{
-                width:100%;
+                width: 100%;
+                height: auto;
             }
-            p{
-                text-decoration: none;
-                font-size: 0.8rem;
-                
+        }
+        @media screen and (max-width: 768px) {
+        .grid-sizer,
+        .grid-item {
+            width: 48.5%;
+            margin-bottom: 10px;
             }
         }
     }

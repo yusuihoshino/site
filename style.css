@@ -1,6 +1,60 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+.grid-item { width: 200px; }
+.grid-item--width2 { width: 400px; }
+
+#grid {
+    margin: 0 auto;
+    width: 980px;
+    a{
+        display: block;
+    }
+    .grid-sizer,
+    .grid-item {
+        width: 32%;
+        margin-bottom: 20px;
+    }
+
+    .grid-item img {
+        width: 100%;
+        height: auto;
+    }
+
+    .gutter-sizer {
+        width: 2%;
+    }
+
+    @media screen and (max-width: 768px) {
+    .grid-sizer,
+    .grid-item {
+        width: 48.5%;
+        margin-bottom: 10px;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 body{
     line-height: 2.0;

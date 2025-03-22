@@ -3,101 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ポートフォリオ</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- カスタムCSS -->
-    <link href="style.css" rel="stylesheet">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
 </head>
 <body>
-    <div class="wrapper">
-        <!-- サイドバーを読み込む場所 -->
-        <div id="sidebarContainer"></div>
+    
+    <sidebar-comp></sidebar-comp>
 
-        <!-- メインコンテンツ -->
-        <div id="content">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="container-fluid">
-                    <button type="button" id="sidebarCollapse" class="btn">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                </div>
-            </nav>
 
-            <div class="container">
-                <!-- Home Section -->
-                <section id="home" class="home-content text-center">
-                    <h1 class="display-4 fw-bold mb-4">YUSUI<br>HOSHINO</h1>
-                    <div class="scroll-indicator mt-5">
-                        <div class="mouse"></div>
-                        <p class="scroll-text">Scroll</p>
-                    </div>
-                </section>
+    <div class="home-container">
+        <div class="section section1">
+            <dotlottie-player src="https://lottie.host/cc4feda6-0608-44cc-87ad-ee4f12a69594/WTbWwHiqDM.lottie" background="transparent" speed="1" style="width: 600px; height: 600px" loop autoplay></dotlottie-player>
+            <h2>Yusui Hoshino</h2>
+            <p>会津大学コンピュータ理工学部の在学中にデザイナーを目指し始め、複数のハッカソン、インターンに参加。卒業後には日本デザイナー学院グラフィック科に進学し、グラフィックを全般的に学ぶ。2025年からはIT企業のインハウスデザイナーとして務める。</p>
+        </div>
 
-                <!-- About Section -->
-                <section id="about" class="section-padding">
-                    <div class="about-content">
-                        <p class="lead">
-                            会津大学コンピュータ理工学部の在学中にデザイナーを目指し始め、複数のハッカソン、インターンに参加。卒業後には日本デザイナー学院グラフィック科に進学し、グラフィックを全般的に学ぶ。2025年からはIT企業のインハウスデザイナーとして務める。
-                        </p>
-                    </div>
-                </section>
-
-                <!-- Skills Section -->
-                <section id="skills" class="section-padding">
-                    <h2 class="section-title">Skill</h2>
-                    <div class="skills-content">
-                        <div class="skill-category">
-                            <h3>UI/UX Design</h3>
-                            <div class="skill-group">
-                                <h4>できる</h4>
-                                <p>Figma, Ai, Ps, Id</p>
-                                
-                                <h4>ちょいできる</h4>
-                                <p>Ae, Pr, Unity, Blender, Clip Studio</p>
-                                
-                                <h4>ちょい書ける</h4>
-                                <p>HTML/CSS, JS, Processing</p>
-                            </div>
-                            <div class="more-link">
-                                <a href="#" class="btn btn-outline-dark">More ( UI/UXポートフォリオ )</a>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Playfulness Section -->
-                <section id="playfulness" class="section-padding">
-                    <h2 class="section-title">Playfulness</h2>
-                    <div class="playfulness-content">
-                        <p class="lead">
-                            遊び心のあるデザインを作りたいです。機能性だけのデザインは操作パネルにしかならず、人にとって負担になる。それらに遊び心や情動を捉えたデザインを加えることで、初めて人をポジティブにする存在になると考えている。
-                        </p>
-                        <div class="more-link">
-                            <a href="#" class="btn btn-outline-dark">More ( note )</a>
-                        </div>
-                    </div>
-                </section>
-
-                <!-- Contact Section -->
-                <section id="contact" class="section-padding">
-                    <h2 class="section-title">Contact</h2>
-                    <div class="contact-content">
-                        <p><a href="mailto:mazisu99@gmail.com">mazisu99@gmail.com</a></p>
-                        <p><a href="https://twitter.com/yusuihoshino" target="_blank">@yusuihoshino</a></p>
-                    </div>
-                </section>
+        <div class="section section2">
+            <dotlottie-player src="https://lottie.host/19511f07-f096-44a9-9267-5bc172b1f46d/sQRBu7gE61.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+            <div class="text">
+                <h2>Skill →<br>UI/UX Design </h2>
+                <ul>
+                    <li>できる：Figma, Ai, Ps, Id</li>
+                    <li>ちょいできる：Ae, Pr, Unity, Blender, Clip Studio</li>
+                    <li>ちょい書ける：HTML/CSS, JS, Processing</li>
+                </ul>
             </div>
         </div>
-    </div>
-
-    <!-- jQuery を最初に読み込む -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- カスタムJS -->
-    <script src="script.js"></script>
+        
+        <div class="section section3">
+            <dotlottie-player src="https://lottie.host/19511f07-f096-44a9-9267-5bc172b1f46d/sQRBu7gE61.lottie" background="transparent" speed="1" style="width: 300px; height: 300px" loop autoplay></dotlottie-player>
+            <div class="text">
+                <h2>Playfulness</h2>
+                <p>遊び心のあるデザインを作りたいです。機能性だけのデザインは操作パネルにしかならず、人にとって負担になる。それらに遊び心や情動を捉えたデザインを加えることで、初めて人をポジティブにする存在になると考えている。</p>
+            </div>
+        </div>
+        <div class="section section4">
+            <h2>Contact</h2>
+            <hr>
+            <div class="contact-line">
+                <p>email</p>
+                <a href="mazisu99@gmailcom">mazisu99@gmail.com</a>
+            </div>
+            <hr>
+            <div class="contact-line">
+                <p>X</p>
+                <a href="twitter/yusuihoshino">yusuihoshino</a>
+            </div>
+            <hr>
+        </div>
+    </div>  
+    <script src="sidebar.js"></script>
 </body>
-</html> 
+</html>

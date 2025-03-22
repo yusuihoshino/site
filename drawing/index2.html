@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>カードギャラリー（Vue CDN）</title>
+  <link rel="stylesheet" href="../reset.css">
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+
+<body>
+    <div class="galary-container">
+      <h1>画像</h1>
+      <div class="gallery">
+        <div id="app">
+          <div id="app">
+            <card 
+              v-for="(item, index) in cards"
+              :key="index"
+              :title="item.title"
+              :description="item.description"
+              :image="item.image"
+            ></card>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Vue 3 CDN -->
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+  <script>
+    const app = Vue.createApp({ 
+      data() {
+        return {
+          cards: [
+            {   image: 'img/1.png', 
+                title: 'タイトル1',
+                year:'2025', 
+                description: '説明', 
+            },
+            {   image: 'img/2.png', 
+                title: 'タイトル2',
+                year:'2025', 
+                description: '説明', 
+               
+            },
+          ]
+        }
+      }
+    });
+
+    app.component('card', {
+      props: [ 'image','title','year', 'description'],
+      template: `
+        <a class="card" href="">
+                <img :src="image" alt="カード画像">
+                <p>{{ title }}</p>    
+                <p>{{ year }}</p> 
+                <p>{{ description }}</p>              
+        </a>
+      `
+    });
+
+    app.mount('#app');
+  </script>
+</body>
+</html>

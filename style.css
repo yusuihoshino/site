@@ -35,6 +35,25 @@ body{
         text-decoration: none;
         color:rgb(102, 102, 102);
     }
+    h1{
+        font-size:2rem;
+        letter-spacing: 0.5rem;
+        font-weight: 300;
+    }
+    h2{
+        font-size: 1.5rem;
+        letter-spacing: 0.5rem;
+        font-weight: 400;
+    }
+    .article-title{
+        width: 100%;
+        p{
+            font-size:0.8rem;
+            letter-spacing: 0.4rem;
+            margin-bottom: 100px;
+        }
+
+    }
 }
 .sidebar{
     position:fixed;
@@ -55,7 +74,7 @@ body{
     
     }
     a{
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         transition:0.2s all;
         letter-spacing: 0.15rem;
         
@@ -75,14 +94,8 @@ body{
     max-width: 800px;
     margin:0px auto;
     width: 100vw;
-    border:solid 1px gray;
     text-align: center;
-    h2{
-        font-size: 3rem;
-        margin-bottom: 40px;
-        letter-spacing: 0.5rem;
-        font-weight: 300;
-    }
+
     p{
         text-align: left;
     }
@@ -124,7 +137,6 @@ body{
     margin:100px auto 0;
     width: 100vw;
     height: 100vh;
-    border:solid 1px gray;
 
     text-align: center;
     h2{
@@ -169,19 +181,7 @@ body{
     width: 100vw;
     height: 100vh;
     text-align: center;
-    .article-title{
-        width: 100%;
-        h1{
-            letter-spacing: 0.5rem;
-            font-weight: 300;
-        }
-        h2{
-            font-size: 1rem;
-            font-weight: 300;
-            margin-bottom: 80px;
-        }
-    }
-
+    
     #grid {
         margin: 0 auto;
         .grid-sizer,
@@ -189,6 +189,18 @@ body{
             display: block;
             width: 49%;
             margin-bottom: 20px;
+            .grid-item-texts{
+                display:flex;
+                justify-content: left;
+                gap:10px;
+                align-items: center;
+                .line{
+                    width:1px;
+                    height:10px;
+                    background:gray;
+                }
+
+            }
         }
         .gutter-sizer {
             width: 2%;
@@ -217,23 +229,22 @@ body{
 .article-container{
     max-width: 700px;
     margin:100px auto;
+    transform: translateX(100px);
     width: 100vw;
     height: 100vh;
     /* background-color: red; */
     display: flex;
     flex-direction: column;
     gap:40px;
-    h1{
-        font-size:2rem;
-    }
-    h2{
-        font-size:1.5rem;
-    }
-    p{
+    
+    .link-btn{
 
     }
+   
+   
     img{
         width:100%;
+        border:rgb(200, 200, 200) 1px solid;
      }
 
 }

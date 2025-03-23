@@ -3,7 +3,7 @@ customElements.define('sidebar-comp', class extends HTMLElement {
     super();
     this.innerHTML = `
       <div class="sidebar">
-        <a href="../main/" class="title">Yusui<br>Hoshino</a>
+        <a href="../main/index.html" class="title">Yusui<br>Hoshino</a>
 
         <div class="../sidebar-group">
             <a href="../history/index.html">History</a>
@@ -32,30 +32,61 @@ customElements.define('sidebar-comp', class extends HTMLElement {
     `;
   }
 })
+
+
 customElements.define('card-comp', class extends HTMLElement {
   constructor() {
     super();
 
     // 属性を取得
     const image = this.getAttribute('image') || '';
-    const link = this.getAttribute('link') || '';
+    const link = this.getAttribute('link'); // nullになる可能性あり
     const title = this.getAttribute('title') || 'no title';
     const date = this.getAttribute('date') || '----/--';
 
-    // 中身を描画
-    this.innerHTML = `
-      <a class="grid-item" href="${link}">
-        <img src="${image}" alt="${title}">
-        <div class="grid-item-texts">
-          <p>${title}</p>
-          <div class="line"></div>    
-          <p>${date}</p> 
-          <p>detail</>
+    // 中身を描画（リンクの有無で分岐）
+    if (link) {
+      // リンクありの場合
+      this.innerHTML = `
+        <a class="grid-item" href="${link}">
+          <img src="${image}" alt="${title}">
+          <div class="grid-item-below">
+            <div class="grid-item-texts">
+              <p>${title}</p>
+              <div class="line"></div>    
+              <p>${date}</p> 
+            </div>
+            <p>detail</p>
+          </div>
+        </a>
+      `;
+    } else {
+      // リンクなしの場合（aタグではなくdivタグ）
+      this.innerHTML = `
+        <div class="grid-item">
+          <img src="${image}" alt="${title}">
+          <div class="grid-item-below">
+            <div class="grid-item-texts">
+              <p>${title}</p>
+              <div class="line"></div>    
+              <p>${date}</p> 
+            </div>
+          </div>
         </div>
-      </a>
-    `;
+      `;
+    }
   }
 });
+
+
+
+
+
+
+
+
+
+
 customElements.define('article-title-comp', class extends HTMLElement {
   constructor() {
     super();

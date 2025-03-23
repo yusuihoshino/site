@@ -2,32 +2,39 @@ customElements.define('sidebar-comp', class extends HTMLElement {
   constructor() {
     super();
     this.innerHTML = `
-      <div class="sidebar">
-        <a href="../main/index.html" class="sidebar-title">Yusui<br>Hoshino</a>
+      <div class="sidebar opened" id="sidebar">
+        <div class="sidebar-left" id="sidebar-left">
+            <a href="../main/index.html" class="sidebar-title">Yusui<br>Hoshino</a>
 
-        <div class="../sidebar-group">
-            <a href="../history/index.html">History</a>
-            <a href="../portfolio/index.html">Portfolio</a>
-            <a href="../request/index.html">Request</a>
-            <a href="../product/index.html">Product</a>
-            <a href="../poster/index.html">Poster</a>
-            <a href="../logo/index.html">Logo</a>
-            <a href="../other/index.html">Other</a>
-        </div>
-        
-        <div class="sidebar-group">
-            <a href="../thumnail/index.html">Thumnail</a>
-            <a href="../photo/index.html">Photo</a>
-            <a href="../drawing/index.html">Drawing</a>
-            <a href="../modeling/index.html">Modeling</a>
-            <a href="../art/index.html">Art</a>
-        </div>
+            <div class="sidebar-group">
+                <a href="../history/index.html">History</a>
+                <a href="../portfolio/index.html">Portfolio</a>
+                <a href="../request/index.html">Request</a>
+                <a href="../product/index.html">Product</a>
+                <a href="../poster/index.html">Poster</a>
+                <a href="../logo/index.html">Logo</a>
+                <a href="../other/index.html">Other</a>
+            </div>
+            
+            <div class="sidebar-group">
+                <a href="../thumnail/index.html">Thumnail</a>
+                <a href="../photo/index.html">Photo</a>
+                <a href="../drawing/index.html">Drawing</a>
+                <a href="../modeling/index.html">Modeling</a>
+                <a href="../art/index.html">Art</a>
+            </div>
 
-        <div class="sidebar-group">
-            <input type="color" id="colorPicker" class="color-picker" value="#ffffff">
-            <a href="https://note.com/yusuihoshino" target="_blank" class="link-btn">note</a>
-            <a href="https://x.com/yusuihoshino" target="_blank" class="link-btn">X</a>
-        </div>  
+            <div class="sidebar-group">
+                <input type="color" id="colorPicker" class="color-picker" value="#ffffff">
+                <a href="https://note.com/yusuihoshino" target="_blank" class="link-btn">note</a>
+                <a href="https://x.com/yusuihoshino" target="_blank" class="link-btn">X</a>
+            </div>  
+        </div>
+        <div class="sidebar-right">
+          <button id="toggleSidebarBtn" class="toggleSidebarBtn">
+            |||
+          </button>
+        </div>
       </div>
     `;
   }
@@ -100,6 +107,20 @@ customElements.define('title-comp', class extends HTMLElement {
         <h1>${title1}</h1>
         <p>${title2}</p>
       </div>
+      
+    `;
+  }
+});
+
+
+
+customElements.define('back-comp', class extends HTMLElement {
+  constructor() {
+    super();
+
+    // 中身を描画
+    this.innerHTML = `
+      <a class="back-btn" href="index.html">＜</a>
       
     `;
   }

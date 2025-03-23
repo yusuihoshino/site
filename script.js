@@ -1,19 +1,19 @@
 // サイドバー
 document.addEventListener('DOMContentLoaded', () => {
   const sidebar = document.getElementById('sidebar');
-  const toggleBtn = document.getElementById('toggleSidebar');
-
+  const toggleBtn = document.getElementById('toggleSidebarBtn');
+  const container = document.getElementById('container');
   // 開閉切り替え
   toggleBtn.addEventListener('click', () => {
     sidebar.classList.toggle('closed');
-    sidebar.classList.toggle('opened');
+    container.classList.toggle('closed');
   });
 
   // ウィンドウサイズで自動クローズ
   function handleResize() {
     if (window.innerWidth <= 768) {
       sidebar.classList.add('closed');
-      sidebar.classList.remove('opened');
+      container.classList.toggle('closed');
     }
   }
 
@@ -68,29 +68,57 @@ class ColorManager {
 
   // 色を適用し、テキストカラーを自動調整
   applyColor(color) {
-      // 背景色を設定
+      const sidebar = document.getElementById('sidebar-left');
+    
       document.body.style.backgroundColor = color;
-      
-      // ローカルストレージに保存
+      sidebar.style.backgroundColor = color;
       localStorage.setItem('backgroundColor', color);
 
-      // 明度に基づいてテキストカラーを設定
       const luminance = this.getLuminance(color);
-      const textColor = luminance > 0.5 ? '#333333' : '#cccccc';
+      const textColor = luminance > 0.5 ? 
+          getComputedStyle(document.documentElement).getPropertyValue('--font-white').trim() : 
+          getComputedStyle(document.documentElement).getPropertyValue('--font-black').trim();
 
-      // テキストカラーを適用
+      // ボーダーとシャドウの色を設定
+      const borderColor = luminance > 0.5 ? 'rgba(0, 0, 0, 0.2)' : 'rgba(255, 255, 255, 0.2)';
+      document.documentElement.style.setProperty('--img-gray', borderColor);
+
       document.body.style.color = textColor;
 
-      // リンクやその他のテキスト要素にも適用
-      const textElements = document.querySelectorAll('h1, h2, h3, p, a, span, div');
+      // リンクやその他のテキスト要素に適用
+      const textElements = document.querySelectorAll('h1, h2, h3, p, a, span, div,button');
       textElements.forEach(element => {
           element.style.color = textColor;
       });
 
-      // サイドバーのテキストにも適用（必要に応じて）
+      // サイドバーのテキストとシャドウに適用
+      // const sidebar = document.querySelector('.sidebar-left');
+      if (sidebar) {
+          sidebar.style.boxShadow = `0px 0px 3px ${borderColor}`;
+      }
+
+      // サイドバーのリンクに適用
       const sidebarLinks = document.querySelectorAll('#sidebar a');
       sidebarLinks.forEach(link => {
           link.style.color = textColor;
+      });
+
+      // カラーピッカーのボーダーに適用
+      const colorPicker = document.querySelector('.color-picker');
+      if (colorPicker) {
+          colorPicker.style.borderColor = borderColor;
+      }
+
+      // 画像のボーダーに適用
+      const images = document.querySelectorAll('img');
+      images.forEach(img => {
+          img.style.borderColor = borderColor;
+      });
+
+      // .lineクラスの背景色を更新
+      const lineElements = document.querySelectorAll('.line');
+      lineElements.forEach(line => {
+          line.style.background = textColor;
       });
   }
 }
@@ -99,41 +127,3 @@ class ColorManager {
 document.addEventListener('DOMContentLoaded', () => {
   new ColorManager();
 });
-// ＝＝＝＝＝＝＝＝＝＝＝
-// function updateBackgroundColor() {
-//   bgColor = picker.value
-//   document.body.style.backgroundColor = bgColor;
-
-//   const rgbColor = hexToRgb(bgColor);
-//   const luminance = getLuminance(rgbColor); // 輝度を計算
-//   if (luminance < 0.5) {
-//     document.body.classList.add("dark-mode");
-//   } else {
-//     document.body.classList.remove("dark-mode");
-//   }
-// }
-
-
-// function hexToRgb(hex) {
-//   let r = 0, g = 0, b = 0;
-//   if (hex.length === 4) {
-//     r = parseInt(hex[1] + hex[1], 16);
-//     g = parseInt(hex[2] + hex[2], 16);
-//     b = parseInt(hex[3] + hex[3], 16);
-//   } else if (hex.length === 7) {
-//     r = parseInt(hex[1] + hex[2], 16);
-//     g = parseInt(hex[3] + hex[4], 16);
-//     b = parseInt(hex[5] + hex[6], 16);
-//   }
-//   return `rgb(${r}, ${g}, ${b})`;
-// }
-
-// // 照度計算
-// function getLuminance(color) {
-//   const rgb = color.match(/\d+/g); // RGBの数値を取り出す
-//   const r = parseInt(rgb[0], 10) / 255;
-//   const g = parseInt(rgb[1], 10) / 255;
-//   const b = parseInt(rgb[2], 10) / 255;
-//   // 輝度の計算（加重平均）
-//   return 0.2126 * r + 0.7152 * g + 0.0722 * b;
-// }

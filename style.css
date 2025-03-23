@@ -169,18 +169,28 @@ body{
     }
 }
 .home-container{
+    margin-top: 0px;
     
-
+    h2{
+        margin-bottom: 40px;
+    }
     p{
         text-align: left;
     }
     .section{
-        padding:200px 0;
+        padding:0 0 400px;
     }
     .section1{
         dotlottie-player{
             margin:0 auto;
         }
+        
+        
+        max-width: 600px;
+        p{
+            text-align: center;
+        }
+        text-align: center;
 
 
     }
@@ -198,9 +208,6 @@ body{
         }
     }
     .section4{
-        h2{
-            margin-bottom: 100px;
-        }
         .contact-line{
             display:flex;
             flex-direction: row;
@@ -245,6 +252,7 @@ body{
                     background:var(--font-white);
                 }
             }
+            
         }
         .history-right{
             display: flex;
@@ -258,6 +266,12 @@ body{
             }
             ul{
                 margin: 0 0 0 -20px;
+                a{
+                
+                    text-decoration: underline;
+                    text-underline-offset: 4px;
+                    text-decoration-thickness: 1px;
+                }
 
             }
             .year{
@@ -329,7 +343,7 @@ body{
 .article-container{
     display: flex;
     flex-direction: column;
-    gap:40px;
+    gap:20px;
     /* .back-btn{
         position:fixed;
         top:100px;
@@ -344,12 +358,19 @@ body{
         line-height: 45px;
 
     } */
+     iframe{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+     }
     a:not(.back-btn){
         text-decoration: underline;
         text-underline-offset: 8px;
         text-decoration-thickness: 1px;
     }
-   
+   h2{
+    margin-top:40px;
+   }
    
     img{
         width:100%;

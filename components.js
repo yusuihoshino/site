@@ -3,7 +3,7 @@ customElements.define('sidebar-comp', class extends HTMLElement {
     super();
     this.innerHTML = `
       <div class="sidebar">
-        <a href="../main/index.html" class="title">Yusui<br>Hoshino</a>
+        <a href="../main/index.html" class="sidebar-title">Yusui<br>Hoshino</a>
 
         <div class="../sidebar-group">
             <a href="../history/index.html">History</a>
@@ -24,7 +24,7 @@ customElements.define('sidebar-comp', class extends HTMLElement {
         </div>
 
         <div class="sidebar-group">
-            <input>colrchange</input>
+            <input type="color" id="colorPicker" class="color-picker" value="#ffffff">
             <a href="https://note.com/yusuihoshino" target="_blank" class="link-btn">note</a>
             <a href="https://x.com/yusuihoshino" target="_blank" class="link-btn">X</a>
         </div>  
@@ -87,7 +87,7 @@ customElements.define('card-comp', class extends HTMLElement {
 
 
 
-customElements.define('article-title-comp', class extends HTMLElement {
+customElements.define('title-comp', class extends HTMLElement {
   constructor() {
     super();
 
@@ -96,7 +96,7 @@ customElements.define('article-title-comp', class extends HTMLElement {
     const title2 = this.getAttribute('title2') || '';
     // 中身を描画
     this.innerHTML = `
-      <div class="article-title">
+      <div class="title">
         <h1>${title1}</h1>
         <p>${title2}</p>
       </div>

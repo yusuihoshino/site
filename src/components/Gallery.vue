@@ -1,6 +1,6 @@
 <template>
   <div class="gallery">
-    <div class="grid" id="grid">
+    <div class="grid">
       <div class="grid-sizer"></div>
       <div class="gutter-sizer"></div>
       <CardPage
@@ -8,8 +8,8 @@
         :key="index"
         :title="item.title"
         :image="item.image"
-        :description="item.description"
         :year="item.year"
+        :link="item.link"
         class="grid-item"
       />
     </div>
@@ -68,4 +68,4 @@ export default {
     width: 100%;
   }
 }
-</style> 
+</style>

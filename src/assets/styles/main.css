@@ -292,6 +292,7 @@ body{
         .grid-item {
             display: block;
             width: 49%;
+            width:300px;
             margin-bottom: 20px;
             display:flex;
             flex-direction: column;

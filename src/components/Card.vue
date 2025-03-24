@@ -1,13 +1,10 @@
 <template>
-
-  <div class="grid-item">
-      <img :src="image" :alt="title">
-      <div class="grid-item-below">
-        <div class="grid-item-texts">
-          <p>{{ title }}</p>
-          <div class="line"></div>    
-          <p>{{year}}</p> 
-      </div>
+  <div class="card">
+    <img :src="image" :alt="title">
+    <div class="card-content">
+      <h3>{{ title }}</h3>
+      <p>{{ description }}</p>
+      <p class="year">{{ year }}</p>
     </div>
   </div>
 </template>
@@ -24,6 +21,10 @@ export default {
       type: String,
       required: true
     },
+    description: {
+      type: String,
+      default: ''
+    },
     year: {
       type: String,
       default: ''
@@ -38,33 +39,32 @@ export default {
   background: white;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.card-image img {
+.card img {
   width: 100%;
-  height: 300px;
-  object-fit: cover;
+  height: auto;
+  display: block;
 }
 
 .card-content {
-  padding: 20px;
+  padding: 16px;
 }
 
 h3 {
-  color: #2c3e50;
-  margin: 0 0 10px;
+  margin: 0 0 8px;
   font-size: 1.2em;
 }
 
-
-.card-year {
-  color: #42b983;
-  font-size: 0.8em;
-  margin-bottom: 10px;
+p {
+  margin: 0;
+  color: #666;
 }
 
-.card-meta {
-  margin-top: 10px;
+.year {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #999;
 }
 </style>

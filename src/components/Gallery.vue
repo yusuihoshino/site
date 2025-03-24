@@ -34,36 +34,3 @@ export default {
 };
 </script>
 
-<style scoped>
-#grid {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.grid-sizer,
-.grid-item {
-  width: calc(50% - 15px);  /* 2列レイアウト用の固定計算値 */
-}
-
-.gutter-sizer {
-  width: 30px;
-}
-
-.grid-item {
-  float: left;  /* 重要: Masonryのレイアウトに必要 */
-  margin-bottom: 30px;
-}
-
-@media (max-width: 768px) {
-  .grid-sizer,
-  .grid-item {
-    width: 100%;
-  }
-  
-  .gutter-sizer {
-    width: 0;
-  }
-}
-</style>

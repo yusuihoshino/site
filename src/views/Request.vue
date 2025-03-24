@@ -38,6 +38,3 @@
   
   
   
-  <style scoped>
-  
-  </style> 

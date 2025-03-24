@@ -21,17 +21,3 @@ export default {
 }
 </script>
 
-<style scoped>
-h2 {
-  font-size: 2em;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-h3 {
-  font-size: 1.2em;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-</style>

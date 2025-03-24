@@ -6,38 +6,46 @@
   --font-white: #333333;
     --img-gray: rgba(150,150,150,0.3);
 }
-
-.works-container {
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
+.card{
+    p{
+        margin:0;
+        font-size:0.8rem;
+        line-height: 1.2rem;
+        border-bottom:1px solid rgb(205, 205, 205);
+        color:gray;
+    }
+    img{
+        border:1px solid rgb(205, 205, 205);
+    }
 }
-
 .category-filter {
   margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
   text-align: center;
+  button {
+    padding: 8px 8px;
+    /* margin: 0 8px; */
+    border: none;
+    border-radius: 0px;
+    /* background: #f0f0f0; */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &.active {
+        background: #333;
+        color: white;
+    }
+  }
 }
 
-.category-filter button {
-  padding: 8px 8px;
-  /* margin: 0 8px; */
-  border: none;
-  border-radius: 0px;
-  /* background: #f0f0f0; */
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
 
-.category-filter button.active {
-  background: #333;
-  color: white;
-}
 
 .gallery {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 20px;
-  padding: 20px;
 }
 
 @media (max-width: 768px) {
@@ -324,6 +332,12 @@ body{
         
     }
 }
+.card-content{
+    display: flex;
+    flex-direction: column;
+    gap:0;
+    margin:0;
+}
 .galary-container{
     text-align: center;
     #grid {
@@ -409,21 +423,6 @@ body{
 
 }
 
-/* Art Grid スタイル */
-/* .art-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 30px;
-    padding: 20px 0;
-}
-
-.art-card {
-    transition: transform 0.3s ease;
-}
-
-.art-card:hover {
-    transform: translateY(-5px);
-} */
 
 /* レスポンシブ対応 */
 @media (max-width: 768px) {

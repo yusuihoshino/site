@@ -8,8 +8,8 @@
         :key="index"
         :title="item.title"
         :image="item.image"
+        :description="item.description"
         :year="item.year"
-        :link="item.link"
         class="grid-item"
       />
     </div>
@@ -43,29 +43,31 @@ export default {
 }
 
 .grid {
-  width: 100%;
+  margin: 0 auto;
 }
 
 .grid-sizer,
 .grid-item {
-  width: calc(33.333% - 20px);
+  width: 45%;  /* 2列レイアウトのための幅設定 */
 }
 
 .gutter-sizer {
-  width: 30px;
+  width: 5%;  /* 列間の余白 */
+}
+
+.grid-item {
+  margin-bottom: 30px;
+  background: #fff;
 }
 
 @media (max-width: 768px) {
   .grid-sizer,
   .grid-item {
-    width: calc(50% - 15px);
+    width: 100%;  /* モバイル表示時は1列に */
   }
-}
-
-@media (max-width: 480px) {
-  .grid-sizer,
-  .grid-item {
-    width: 100%;
+  
+  .gutter-sizer {
+    width: 0;
   }
 }
 </style>

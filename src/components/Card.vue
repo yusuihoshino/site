@@ -1,7 +1,7 @@
 <template>
-  <div >
+  <div class="grid-item" >
     <a v-if="link"
-       class="grid-item" 
+       
        :href="link" 
        target="_blank" 
        rel="noopener noreferrer">
@@ -15,7 +15,7 @@
         <p class="arrow">＞</p>
       </div>
     </a>
-    <div v-else class="grid-item">
+    <div v-else>
       <img :src="image" :alt="title">
       <div class="grid-item-below">
         <div class="grid-item-texts">

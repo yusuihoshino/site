@@ -7,7 +7,9 @@ export function initMasonry(gridElement) {
     percentPosition: true,
     columnWidth: '.grid-sizer',
     itemSelector: '.grid-item',
-    gutter: '.gutter-sizer'
+    gutter: '.gutter-sizer',
+    transitionDuration: '0.2s',
+    initLayout: true
   });
 
   // 画像が読み込まれた後にレイアウトを更新
@@ -18,33 +20,25 @@ export function initMasonry(gridElement) {
   return masonry;
 }
 
-// Masonryミックスイン
+// Vueミックスイン
 export const masonryMixin = {
   mounted() {
     this.$nextTick(() => {
       const grid = this.$el.querySelector('.grid');
-      if (!grid) return;
-
-      // 画像の読み込みを待ってからMasonryを初期化
-      imagesLoaded(grid, () => {
-        new Masonry(grid, {
-          itemSelector: '.grid-item',
-          columnWidth: '.grid-sizer',
-          gutter: '.gutter-sizer',
-          percentPosition: true
+      if (grid) {
+        // 画像の読み込みを待ってからMasonryを初期化
+        imagesLoaded(grid, () => {
+          this.masonry = initMasonry(grid);
         });
-      });
+      }
     });
   },
-
-  // コンポーネントが更新されたときにレイアウトを再計算
+  
   updated() {
     this.$nextTick(() => {
-      const grid = this.$el.querySelector('.grid');
-      if (!grid) return;
-
-      const masonry = new Masonry(grid);
-      masonry.layout();
+      if (this.masonry) {
+        this.masonry.layout();
+      }
     });
   },
 

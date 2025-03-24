@@ -1,5 +1,5 @@
 <template>
-  <div>
+<div>
   <div class="galary-container container" id="container">
     <TitlePage
       title="Drawing"

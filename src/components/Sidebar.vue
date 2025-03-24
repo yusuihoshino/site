@@ -10,6 +10,7 @@
             <router-link to="/" class="sidebar-title">Yusui<br>Hoshino</router-link>
 
             <div class="sidebar-group">
+                <router-link to="/works">Works</router-link>
                 <router-link to="/history">History</router-link>
                 <router-link to="/request">Request</router-link>
                 <router-link to="/portfolio">Portfolio</router-link>

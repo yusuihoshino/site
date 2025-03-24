@@ -1,24 +1,21 @@
 <template>
-  <div class="grid-item">
-    <router-link v-if="link" :to="link">
+  <div class="grid-item" v-show="isVisible">
+    <router-link v-if="link" :to="link" class="card">
       <img :src="image" :alt="title">
-      <div class="grid-item-below">
-        <div class="grid-item-texts">
-          <p>{{ title }}</p>
-          <div class="line"></div>    
-          <p class="year">{{ year }}</p>
-        </div>
-        <p class="arrow">＞</p>
+      <div class="card-content">
+        <h3>{{ title }}</h3>
+        <p v-if="year">{{ year }}</p>
+        <p class="category-tag">{{ category }}</p>
+        <slot name="meta"></slot>
       </div>
     </router-link>
-    <div v-else>
+    <div v-else class="card">
       <img :src="image" :alt="title">
-      <div class="grid-item-below">
-        <div class="grid-item-texts">
-          <p>{{ title }}</p>
-          <div class="line"></div>    
-          <p class="year">{{ year }}</p>
-        </div>
+      <div class="card-content">
+        <h3>{{ title }}</h3>
+        <p v-if="year">{{ year }}</p>
+        <p class="category-tag">{{ category }}</p>
+        <slot name="meta"></slot>
       </div>
     </div>
   </div>
@@ -38,11 +35,24 @@ export default {
     },
     year: {
       type: String,
-      required: true
+      default: null
     },
     link: {
       type: String,
       default: null
+    },
+    category: {
+      type: String,
+      required: true
+    },
+    selectedCategory: {
+      type: String,
+      default: 'all'
+    }
+  },
+  computed: {
+    isVisible() {
+      return this.selectedCategory === 'all' || this.selectedCategory === this.category;
     }
   }
 };
@@ -52,58 +62,49 @@ export default {
 .grid-item {
   width: 100%;
   margin-bottom: 20px;
+}
+
+.card {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.grid-item img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.grid-item-below {
-  padding: 15px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.grid-item-texts {
-  flex-grow: 1;
-}
-
-.grid-item-texts p {
-  margin: 0;
-  font-size: 14px;
-}
-
-.grid-item-texts .year {
-  color: #666;
-  font-size: 12px;
-  margin-top: 5px;
-}
-
-.line {
-  width: 20px;
-  height: 1px;
-  background-color: #000;
-  margin: 8px 0;
-}
-
-.arrow {
-  margin: 0;
-  font-size: 18px;
-  color: #000;
-}
-
-a {
+  transition: transform 0.3s ease;
   text-decoration: none;
   color: inherit;
-  display: block;
 }
 
-a:hover {
-  opacity: 0.8;
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+}
+
+.card-content p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.category-tag {
+  display: inline-block;
+  padding: 4px 8px;
+  background: #f0f0f0;
+  border-radius: 4px;
+  font-size: 0.9em;
+  color: #555;
 }
 </style>

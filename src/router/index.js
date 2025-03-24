@@ -1,7 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import Home from '@/views/Home.vue';
 import Works from '@/views/Works.vue';
-
+import History from '@/views/History.vue';
+import Request from '@/views/Request.vue';    
+import Portfolio from '@/views/Portfolio.vue';
 // 作品データの定義
 export const works = [
   {
@@ -43,6 +45,21 @@ const routes = [
     path: '/works',
     name: 'Works',
     component: Works
+  },
+  {
+    path: '/history',
+    name: 'History',
+    component: History
+  },  
+  {
+    path: '/request',
+    name: 'Request',
+    component: Request
+  },
+  {
+    path: '/portfolio',
+    name: 'Portfolio',
+    component: Portfolio
   },
   ...detailRoutes
 ];

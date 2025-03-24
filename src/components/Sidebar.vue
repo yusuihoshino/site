@@ -10,23 +10,13 @@
             <router-link to="/" class="sidebar-title">Yusui<br>Hoshino</router-link>
 
             <div class="sidebar-group">
-                <router-link to="/works">Works</router-link>
                 <router-link to="/history">History</router-link>
                 <router-link to="/request">Request</router-link>
                 <router-link to="/portfolio">Portfolio</router-link>
-                <router-link to="/product">Product</router-link>
-                <router-link to="/poster">Poster</router-link>
-                <router-link to="/logo">Logo</router-link>
-                <router-link to="/other">Other</router-link>
+                <router-link to="/works">Works</router-link>
+
             </div>
             
-            <div class="sidebar-group">
-                <router-link to="/photo">Photo</router-link>
-                <router-link to="/drawing">Drawing</router-link>
-                <router-link to="/thumnail">Thumnail</router-link>
-                <router-link to="/modeling">Modeling</router-link>
-                <router-link to="/art">Art</router-link>
-            </div>
 
             <div class="sidebar-group">
                 <input type="color" id="colorPicker" class="color-picker" value="#ffffff">

@@ -1,5 +1,11 @@
 <template>
-  <div class="works-container">
+
+  <div class="galery-container container" in="container">
+    <TitlePage
+      title="Works"
+      description="作品集"
+    />
+
     <div class="category-filter">
       <button 
         v-for="cat in categories" 
@@ -24,16 +30,20 @@
       />
     </div>
   </div>
+  <Sidebar />
 </template>
 
 <script>
 import Card from '@/components/Card.vue';
+import Sidebar from '@/components/Sidebar.vue';
 import { works } from '@/router';
-
+import TitlePage from '@/components/Title.vue';
 export default {
   name: 'WorksPage',
   components: {
-    Card
+    Card,
+    Sidebar,
+    TitlePage
   },
   data() {
     return {
@@ -49,44 +59,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.works-container {
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.category-filter {
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-.category-filter button {
-  padding: 8px 16px;
-  margin: 0 8px;
-  border: none;
-  border-radius: 20px;
-  background: #f0f0f0;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.category-filter button.active {
-  background: #333;
-  color: white;
-}
-
-.gallery {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
-}
-
-@media (max-width: 768px) {
-  .gallery {
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  }
-}
-</style>

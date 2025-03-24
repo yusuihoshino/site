@@ -670,9 +670,9 @@ export const works = [
 // 詳細ページを持つ作品のルートを自動生成する関数
 export const generateDetailRoutes = () => {
   return works
-    .filter(work => work.link)
+    .filter(work => work.content) // contentがある作品のみをフィルタリング
     .map(work => ({
-      path: work.link,
+      path: `/works/${work.id}`,
       component: () => import('@/components/DetailPage.vue'),
       props: { work }
     }));

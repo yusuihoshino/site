@@ -2,6 +2,7 @@ import { createRouter, createWebHistory } from 'vue-router';
 import Home from '../views/Home.vue';
 import About from '../views/About.vue';
 import Contact from '../views/Contact.vue';
+import Gallery from '../views/Gallery.vue';
 
 import History from '../views/History.vue';
 import Request from '../views/Request.vue';
@@ -20,77 +21,130 @@ const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    meta: {
+      title: 'Home'
+    }
   },
   {
     path: '/about',
     name: 'About',
-    component: About
+    component: About,
+    meta: {
+      title: 'About'
+    }
   },
   {
     path: '/contact',
     name: 'Contact',
-    component: Contact
-    },
+    component: Contact,
+    meta: {
+      title: 'Contact'
+    }
+  },
   {
     path: '/history',
     name: 'History',
-    component: History
+    component: History,
+    meta: {
+      title: 'History'
+    }
   },
   {
     path: '/request',
     name: 'Request',
-    component: Request
+    component: Request,
+    meta: {
+      title: 'Request'
+    }
   },
   {
     path: '/portfolio',
     name: 'Portfolio',
-    component: Portfolio
+    component: Portfolio,
+    meta: {
+      title: 'Portfolio'
+    }
   },
   {
     path: '/product',
     name: 'Product',
-    component: Product
+    component: Product,
+    meta: {
+      title: 'Product'
+    }
   },
   {
     path: '/poster',
     name: 'Poster',
-    component: Poster
+    component: Poster,
+    meta: {
+      title: 'Poster'
+    }
   },
   {
     path: '/logo',
     name: 'Logo',
-    component: Logo
+    component: Logo,
+    meta: {
+      title: 'Logo'
+    }
   },
   {
     path: '/other',
     name: 'Other',
-    component: Other
+    component: Other,
+    meta: {
+      title: 'Other'
+    }
   },
   {
     path: '/photo',
     name: 'Photo',
-    component: Photo
+    component: Photo,
+    meta: {
+      title: 'Photo'
+    }
   },
   {
     path: '/drawing',
     name: 'Drawing',
-    component: Drawing
+    component: Drawing,
+    meta: {
+      title: 'Drawing'
+    }
   },
   {
     path: '/thumnail',
     name: 'Thumnail',
-    component: Thumnail
+    component: Thumnail,
+    meta: {
+      title: 'Thumnail'
+    }
   },
   {
     path: '/modeling',
     name: 'Modeling',
-    component: Modeling
+    component: Modeling,
+    meta: {
+      title: 'Modeling'
+    }
   },
   {
     path: '/art',
     name: 'Art',
-    component: Art
+    component: Art,
+    meta: {
+      title: 'Art'
+    }
+  },
+  {
+    path: '/gallery',
+    name: 'Gallery',
+    component: Gallery,
+    meta: {
+      title: 'Gallery'
+    }
   }
 ];
 
@@ -98,5 +152,11 @@ const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
 });
+
+// タイトルを変更するナビゲーションガード
+router.beforeEach((to, from, next) => {
+  document.title = to.meta.title || 'Portfolio'
+  next()
+})
 
 export default router;

@@ -1,83 +1,50 @@
 <template>
-  <div>
+  <div class="art-page">
     <TitlePage
-        title="Art Gallery"
-        description="アート"
+      title="Art"
+      description="アート作品"
     />
-
-    <div class="grid">
-      
-      <CardPage
-        v-for="(w, index) in works"
-        :key="index"
-        :title="w.title"
-        :image="w.image"
-        :year="w.year"
-      >
-      </CardPage>
-    </div>
+    <Gallery :items="artworks" />
     <Sidebar />
   </div>
 </template>
 
 <script>
-import Sidebar from '@/components/Sidebar.vue'
-import CardPage from '@/components/Card.vue'
-import TitlePage from '@/components/Title.vue'
+import Sidebar from '@/components/Sidebar.vue';
+import TitlePage from '@/components/Title.vue';
+import Gallery from '@/views/Gallery.vue';
+
 export default {
   name: 'ArtPage',
   components: {
     Sidebar,
-    CardPage,
-    TitlePage
+    TitlePage,
+    Gallery
   },
   data() {
     return {
-      works: [
+      artworks: [
         {
-          title: '抽象画1',
+          title: '作品1',
+          description: '作品の説明1',
           year: '2024',
-          image: require('@/assets/art/ae1.webp')
+          image: require('@/assets/art/作品1.jpg')
         },
         {
-          title: 'b',
+          title: '作品2',
+          description: '作品の説明2',
           year: '2024',
-          image: require('@/assets/art/ae2.webp')
+          image: require('@/assets/art/作品2.jpg')
         },
-        {
-          title: 'デジタルアート1',
-          year: '2023',
-          image: require('@/assets/art/ae3.png')
-        },
+        // 他の作品データ...
       ]
-    }
+    };
   }
-}
+};
 </script>
 
 <style scoped>
-/* .art-page {
+.art-page {
   padding: 20px;
-} */
-
-h1 {
-  color: #2c3e50;
-  text-align: center;
-  margin-bottom: 40px;
 }
-
-.grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  justify-content: center;
-}
-
-.art-year {
-  color: red;
-  font-size: 0.8em;
-}
-</style> 
+</style>

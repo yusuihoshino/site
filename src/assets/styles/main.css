@@ -339,13 +339,6 @@ body{
             width: 2%;
         }
         
-        /* @media screen and (max-width: 768px) {
-        .grid-sizer,
-        .grid-item {
-            width: 48.5%;
-            
-            }
-        } */
     }
 }
 .article-container{
@@ -376,7 +369,7 @@ body{
 }
 
 /* Art Grid スタイル */
-.art-grid {
+/* .art-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
@@ -389,7 +382,7 @@ body{
 
 .art-card:hover {
     transform: translateY(-5px);
-}
+} */
 
 /* レスポンシブ対応 */
 @media (max-width: 768px) {

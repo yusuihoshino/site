@@ -1,6 +1,6 @@
 <template>
   <div class="gallery">
-    <div class="grid">
+    <div class="grid" id="grid">
       <div class="grid-sizer"></div>
       <div class="gutter-sizer"></div>
       <CardPage
@@ -26,17 +26,22 @@ export default {
     CardPage
   },
   mixins: [masonryMixin],
-  data() {
-    return {
-      items: [
-        // 画像アイテムのデータ
-      ]
-    };
+  props: {
+    items: {
+      type: Array,
+      required: true,
+      default: () => []
+    }
   }
 };
 </script>
 
 <style scoped>
+.gallery {
+  width: 100%;
+  padding: 20px;
+}
+
 .grid {
   width: 100%;
 }

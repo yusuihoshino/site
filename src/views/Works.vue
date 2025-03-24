@@ -55,12 +55,12 @@ export default {
       selectedCategory: 'all',
       categories: [
         { value: 'all', label: 'すべて' },
-        { value: 'art', label: 'デジタルアート' },
+        { value: 'art', label: 'アート' },
         { value: 'drawing', label: 'イラスト' },
         { value: 'photo', label: '写真' },
         { value: 'product', label: 'プロダクト' },
         { value: 'poster', label: 'ポスター' },
-        { value: 'modeling', label: '3Dモデリング' },
+        { value: 'modeling', label: 'モデリング' },
         { value: 'logo', label: 'ロゴ' },
         { value: 'other', label: 'その他' }
       ],
@@ -110,28 +110,24 @@ export default {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
+  padding: 40px 0;
 }
 
 .grid-sizer,
 .grid-item {
-  width: calc(33.333% - 20px);
+  width: calc(50% - 15px);
+  margin-bottom: 30px;
 }
 
 .gutter-sizer {
   width: 30px;
 }
 
-@media (max-width: 1024px) {
-  .grid-sizer,
-  .grid-item {
-    width: calc(50% - 15px);
-  }
-}
-
 @media (max-width: 768px) {
   .grid-sizer,
   .grid-item {
     width: 100%;
+    margin-bottom: 20px;
   }
   
   .gutter-sizer {

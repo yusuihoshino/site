@@ -30,23 +30,22 @@ export default {
           title: 'デジタルアート1',
           year: '2024',
           image: require('@/assets/img/art/ae1.webp'),
-          link: 'https://example.com/art1'  // リンク付きの例
+          link: '/drawing/SpainRyokou'
         },
         {
           title: 'デジタルアート2',
           year: '2024',
-          image: require('@/assets/img/art/ae2.webp')  // リンクなしの例
+          image: require('@/assets/img/art/ae2.webp'),
         },
         {
           title: 'デジタルアート3',
           year: '2023',
-          image: require('@/assets/img/art/ae3.png')
+          image: require('@/assets/img/art/ae3.png'),
         },
         {
           title: 'デジタルアート4',
           year: '2023',
           image: require('@/assets/img/art/ae4.png'),
-          link: 'https://example.com/art4'  // リンク付きの例
         },
         {
           title: 'デジタルアート5',
@@ -61,17 +60,17 @@ export default {
         {
           title: 'Processing作品1',
           year: '2023',
-          image: require('@/assets/img/art/p5-1.webp')
+          image: require('@/assets/img/art/p5-1.webp'),
         },
         {
           title: 'Processing作品2',
           year: '2023',
-          image: require('@/assets/img/art/p5-2.png')
+          image: require('@/assets/img/art/p5-2.png'),
         },
         {
           title: 'ジャケットデザイン',
           year: '2024',
-          image: require('@/assets/img/art/ジャケット.webp')
+          image: require('@/assets/img/art/ジャケット.webp'),
         }
       ]
     };

@@ -1,18 +1,16 @@
 <template>
-  <div class="gallery">
-    <div class="grid">
-      <div class="grid-sizer"></div>
-      <div class="gutter-sizer"></div>
-      <CardPage
-        v-for="(item, index) in items"
-        :key="index"
-        :title="item.title"
-        :image="item.image"
-        :description="item.description"
-        :year="item.year"
-        class="grid-item"
-      />
-    </div>
+  <div id="grid">
+    <div class="grid-sizer"></div>
+    <div class="gutter-sizer"></div>
+    <CardPage
+      v-for="(item, index) in items"
+      :key="index"
+      :title="item.title"
+      :image="item.image"
+      :year="item.year"
+      :link="item.link"
+      class="grid-item"
+    />
   </div>
 </template>
 
@@ -37,33 +35,31 @@ export default {
 </script>
 
 <style scoped>
-.gallery {
+#grid {
   width: 100%;
-  padding: 20px;
-}
-
-.grid {
+  max-width: 1200px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .grid-sizer,
 .grid-item {
-  width: 45%;  /* 2列レイアウトのための幅設定 */
+  width: calc(50% - 15px);  /* 2列レイアウト用の固定計算値 */
 }
 
 .gutter-sizer {
-  width: 5%;  /* 列間の余白 */
+  width: 30px;
 }
 
 .grid-item {
+  float: left;  /* 重要: Masonryのレイアウトに必要 */
   margin-bottom: 30px;
-  background: #fff;
 }
 
 @media (max-width: 768px) {
   .grid-sizer,
   .grid-item {
-    width: 100%;  /* モバイル表示時は1列に */
+    width: 100%;
   }
   
   .gutter-sizer {

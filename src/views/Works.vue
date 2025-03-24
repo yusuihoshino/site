@@ -36,7 +36,7 @@
 <script>
 import Card from '@/components/Card.vue';
 import Sidebar from '@/components/Sidebar.vue';
-import { works } from '@/router';
+import { works } from '@/data/works';
 import TitlePage from '@/components/Title.vue';
 export default {
   name: 'WorksPage',
@@ -52,7 +52,12 @@ export default {
         { value: 'all', label: 'すべて' },
         { value: 'art', label: 'デジタルアート' },
         { value: 'drawing', label: 'イラスト' },
-        { value: 'photo', label: '写真' }
+        { value: 'photo', label: '写真' },
+        { value: 'product', label: 'プロダクト' },
+        { value: 'poster', label: 'ポスター' },
+        { value: 'modeling', label: '3Dモデリング' },
+        { value: 'logo', label: 'ロゴ' },
+        { value: 'other', label: 'その他' }
       ],
       works
     };

@@ -1,13 +1,12 @@
 <template>
-  <div class="card">
-    <div class="card-image">
+
+  <div class="grid-item">
       <img :src="image" :alt="title">
-    </div>
-    <div class="card-content">
-      <h3>{{ title }}</h3>
-      <p class="card-year" v-if="year">{{ year }}</p>
-      <div class="card-meta">
-        <slot name="meta"></slot>
+      <div class="grid-item-below">
+        <div class="grid-item-texts">
+          <p>{{ title }}</p>
+          <div class="line"></div>    
+          <p>{{year}}</p> 
       </div>
     </div>
   </div>

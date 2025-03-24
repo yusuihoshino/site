@@ -1,135 +1,43 @@
 <template>
-  <div class="drawing-page">
+  <div>
+  <div class="galary-container container" id="container">
     <TitlePage
       title="Drawing"
-      description="ドローイング"
+      description="ドローイング作品"
     />
-    <div class="drawing-grid">
-      <CardPage
-        v-for="(work, index) in works"
-        :key="index"
-        :title="work.title"
-        :image="work.image"
-        :description="work.description"
-        :year="work.year"
-      />
-    </div>
-    <Sidebar />
+    <Gallery :items="artworks" />
   </div>
+  <Sidebar />
+</div>
 </template>
 
 <script>
-import Sidebar from '@/components/Sidebar.vue'
-import CardPage from '@/components/Card.vue'
-import TitlePage from '@/components/Title.vue'
+import Sidebar from '@/components/Sidebar.vue';
+import TitlePage from '@/components/Title.vue';
+import Gallery from '@/components/Gallery.vue';
 
 export default {
   name: 'DrawingPage',
-  
   components: {
     Sidebar,
-    CardPage,
-    TitlePage
+    TitlePage,
+    Gallery
   },
-
   data() {
     return {
-      works: [
+      artworks: [
         {
-          title: '日本',
-          description: '和風イラスト',
+          title: '作品1',
           year: '2024',
-          image: require('@/assets/drawing/日本.png')
+          image: require('@/assets/img/art/ae1.webp')
         },
         {
-          title: '蝶',
-          description: '蝶のイラスト',
+          title: '作品2',
           year: '2024',
-          image: require('@/assets/drawing/蝶.png')
+          image: require('@/assets/img/art/ae2.webp')
         },
-        {
-          title: '笑顔',
-          description: '笑顔の女の子',
-          year: '2024',
-          image: require('@/assets/drawing/笑顔.png')
-        },
-        {
-          title: '紫',
-          description: '紫のキャラクター',
-          year: '2024',
-          image: require('@/assets/drawing/紫.jpg')
-        },
-        {
-          title: 'りんご',
-          description: 'りんごのイラスト',
-          year: '2024',
-          image: require('@/assets/drawing/りんご.png')
-        },
-        {
-          title: 'モデル',
-          description: 'ファッションイラスト',
-          year: '2024',
-          image: require('@/assets/drawing/モデル.png')
-        },
-        {
-          title: 'ピンク',
-          description: 'ピンクのキャラクター',
-          year: '2024',
-          image: require('@/assets/drawing/ピンク.png')
-        },
-        {
-          title: 'ツインテール',
-          description: 'ツインテールの女の子',
-          year: '2024',
-          image: require('@/assets/drawing/ツインテール.png')
-        },
-        {
-          title: 'スペイン',
-          description: 'スペインの風景',
-          year: '2024',
-          image: require('@/assets/drawing/スペイン.png')
-        },
-        {
-          title: 'シューズ',
-          description: '靴のイラスト',
-          year: '2024',
-          image: require('@/assets/drawing/シューズ.png')
-        },
-        {
-          title: 'コップ',
-          description: 'コップのイラスト',
-          year: '2024',
-          image: require('@/assets/drawing/コップ.png')
-        }
       ]
-    }
+    };
   }
-}
+};
 </script>
-
-<style scoped>
-.drawing-page {
-  padding: 20px;
-}
-
-.drawing-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-  justify-content: center;
-}
-
-h1 {
-  color: #2c3e50;
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.art-year {
-  color: red;
-  font-size: 0.8em;
-}
-</style> 

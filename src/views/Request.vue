@@ -27,7 +27,7 @@
   import TitlePage from '@/components/Title.vue'
   
   export default {
-    name: 'HistoryPage',
+    name: 'RequestPage',
     components: {
       Sidebar,
       TitlePage

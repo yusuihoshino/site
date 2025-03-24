@@ -19,7 +19,7 @@
 import Sidebar from '@/components/Sidebar.vue'
 
 export default {
-name: 'AboutPage',
+name: 'HomePage',
 components: {
   Sidebar
 }

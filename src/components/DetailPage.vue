@@ -1,18 +1,12 @@
 <template>
-  <div class="detail-container" v-if="work">
-    <div class="detail-header">
-      <h1>{{ work.title }}</h1>
-      <p class="category-tag">{{ work.category }}</p>
-      <p class="year">{{ work.year }}</p>
-    </div>
-
-    <div class="detail-content">
-      <img :src="work.image" :alt="work.title">
-      <div class="description" v-if="work.description">
-        <p>{{ work.description }}</p>
-      </div>
-      <slot></slot>
-    </div>
+  <div class="article-container container" v-if="work">
+    <h1>{{ work.title }}</h1>
+    <p class="category-tag">{{ work.category }}</p>
+    <p class="year">{{ work.year }}</p>
+    <img :src="work.image" :alt="work.title">
+    
+    <!-- HTMLコンテンツを表示 -->
+    <div v-if="work.content" v-html="work.content" class="work-content"></div>
 
     <router-link to="/works" class="back-button">
       ← 作品一覧に戻る
@@ -33,18 +27,13 @@ export default {
 </script>
 
 <style scoped>
-.detail-container {
+.article-container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px 20px;
 }
 
-.detail-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.detail-header h1 {
+h1 {
   margin: 0 0 20px 0;
   font-size: 2.5em;
 }
@@ -62,11 +51,7 @@ export default {
   margin: 10px 0;
 }
 
-.detail-content {
-  margin-bottom: 40px;
-}
-
-.detail-content img {
+img {
   width: 100%;
   max-width: 800px;
   height: auto;
@@ -75,10 +60,42 @@ export default {
   border-radius: 8px;
 }
 
-.description {
+/* HTMLコンテンツのスタイル */
+.work-content {
   max-width: 800px;
   margin: 40px auto;
+}
+
+.work-content :deep(h2) {
+  font-size: 1.8em;
+  margin: 30px 0 15px;
+  color: #333;
+}
+
+.work-content :deep(p) {
   line-height: 1.8;
+  margin: 15px 0;
+  color: #444;
+}
+
+.work-content :deep(ul) {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 15px 0;
+}
+
+.work-content :deep(li) {
+  margin: 8px 0;
+  color: #555;
+}
+
+.work-content :deep(img) {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+  border-radius: 8px;
 }
 
 .back-button {
@@ -89,6 +106,7 @@ export default {
   text-decoration: none;
   color: #333;
   transition: all 0.3s ease;
+  margin-top: 40px;
 }
 
 .back-button:hover {

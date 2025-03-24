@@ -6,7 +6,18 @@ export const works = [
     category: 'art',
     year: '2024',
     image: require('@/assets/img/art/ae1.webp'),
-    link: '/works/ae1'
+    link: '/works/ae1',
+    content: `
+      <p>After Effectsで制作したモーショングラフィックス作品です。</p>
+      <h2>制作意図</h2>
+      <p>抽象的な形状と動きを組み合わせ、視覚的な興味を引き出すことを目指しました。</p>
+      <img src="${require('@/assets/img/art/ae1.webp')}" alt="制作過程">
+      <h2>使用ツール</h2>
+      <ul>
+        <li>Adobe After Effects</li>
+        <li>Adobe Illustrator</li>
+      </ul>
+    `
   },
   {
     id: 'ae2',

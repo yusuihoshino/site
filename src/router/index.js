@@ -32,7 +32,7 @@ const routes = [
     name: 'Portfolio',
     component: Portfolio
   },
-  ...generateDetailRoutes()
+  ...generateDetailRoutes()//worksにある関数を実行
 ];
 
 const router = createRouter({

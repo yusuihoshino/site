@@ -57,6 +57,7 @@ body{
         margin-left: -16px;
      }
     .title{
+        text-align: left;
         width: 100%;
         h3{
             font-size:0.8rem;

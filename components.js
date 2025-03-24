@@ -63,7 +63,7 @@ customElements.define('card-comp', class extends HTMLElement {
               <div class="line"></div>    
               <p>${date}</p> 
             </div>
-            <p>detail</p>
+            <p class="arrow">＞</p>
           </div>
         </a>
       `;
@@ -158,14 +158,7 @@ customElements.define('title-comp', class extends HTMLElement {
 
 
 
-customElements.define('back-comp', class extends HTMLElement {
-  constructor() {
-    super();
 
-    // 中身を描画
-    this.innerHTML = `
-      <a class="back-btn" href="index.html">＜</a>
-      
-    `;
-  }
-});
+
+
+

@@ -21,11 +21,12 @@
       <Card
         v-for="work in works"
         :key="work.id"
+        :id="work.id"
         :title="work.title"
         :image="work.image"
         :year="work.year"
-        :link="work.link"
         :category="work.category"
+        :content="work.content"
         :selectedCategory="selectedCategory"
       />
     </div>

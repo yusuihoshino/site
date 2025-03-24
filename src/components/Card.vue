@@ -1,12 +1,12 @@
 <template>
   <div class="grid-item" v-show="isVisible">
-    <router-link v-if="link" :to="link" class="card">
+    <router-link v-if="content" :to="`/works/${id}`" class="card has-content">
       <img :src="image" :alt="title">
       <div class="card-content">
         <h3>{{ title }}</h3>
         <p v-if="year">{{ year }}</p>
         <p class="category-tag">{{ category }}</p>
-        <slot name="meta"></slot>
+        <p v-if="description" class="description">{{ description }}</p>
       </div>
     </router-link>
     <div v-else class="card">
@@ -15,7 +15,7 @@
         <h3>{{ title }}</h3>
         <p v-if="year">{{ year }}</p>
         <p class="category-tag">{{ category }}</p>
-        <slot name="meta"></slot>
+        <p v-if="description" class="description">{{ description }}</p>
       </div>
     </div>
   </div>
@@ -25,6 +25,10 @@
 export default {
   name: 'Card',
   props: {
+    id: {
+      type: String,
+      required: true
+    },
     title: {
       type: String,
       required: true
@@ -37,10 +41,6 @@ export default {
       type: String,
       default: null
     },
-    link: {
-      type: String,
-      default: null
-    },
     category: {
       type: String,
       required: true
@@ -48,6 +48,14 @@ export default {
     selectedCategory: {
       type: String,
       default: 'all'
+    },
+    description: {
+      type: String,
+      default: ''
+    },
+    content: {
+      type: String,
+      default: ''
     }
   },
   computed: {
@@ -70,12 +78,17 @@ export default {
   overflow: hidden;
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
   text-decoration: none;
   color: inherit;
 }
 
-.card:hover {
+/* 詳細ページがあるカードのみホバーアニメーション */
+.card.has-content {
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card.has-content:hover {
   transform: translateY(-5px);
 }
 
@@ -106,5 +119,12 @@ export default {
   border-radius: 4px;
   font-size: 0.9em;
   color: #555;
+}
+
+.description {
+  font-size: 0.9em;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.4;
 }
 </style>

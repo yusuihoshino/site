@@ -6,7 +6,6 @@ export const works = [
     category: 'art',
     year: '2024',
     image: require('@/assets/img/art/ae1.webp'),
-    link: '/works/ae1',
     content: `
       <p>After Effectsで制作したモーショングラフィックス作品です。</p>
       <h2>制作意図</h2>
@@ -24,64 +23,56 @@ export const works = [
     title: 'ae2',
     category: 'art',
     year: '2024',
-    image: require('@/assets/img/art/ae2.webp'),
-    link: '/works/ae2'
+    image: require('@/assets/img/art/ae2.webp')
   },
   {
     id: 'ae3',
     title: 'ae3',
     category: 'art',
     year: '2024',
-    image: require('@/assets/img/art/ae3.png'),
-    link: '/works/ae3'
+    image: require('@/assets/img/art/ae3.png')
   },
   {
     id: 'ae4',
     title: 'ae4',
     category: 'art',
     year: '2024',
-    image: require('@/assets/img/art/ae4.png'),
-    link: '/works/ae4'
+    image: require('@/assets/img/art/ae4.png')
   },
   {
     id: 'ae5',
     title: 'ae5',
     category: 'art',
     year: '2024',
-    image: require('@/assets/img/art/ae5.png'),
-    link: '/works/ae5'
+    image: require('@/assets/img/art/ae5.png')
   },
   {
     id: 'ae6',
     title: 'ae6',
     category: 'art',
     year: '2024',
-    image: require('@/assets/img/art/ae6.webp'),
-    link: '/works/ae6'
+    image: require('@/assets/img/art/ae6.webp')
   },
   {
     id: 'p5-1',
     title: 'p5-1',
     category: 'art',
     year: '2024',
-    image: require('@/assets/img/art/p5-1.webp'),
-    link: '/works/p5-1'
+    image: require('@/assets/img/art/p5-1.webp')
   },
   {
     id: 'p5-2',
     title: 'p5-2',
     category: 'art',
     year: '2024',
-    image: require('@/assets/img/art/p5-2.png'),
-    link: '/works/p5-2'
+    image: require('@/assets/img/art/p5-2.png')
   },
   {
     id: 'jacket',
     title: 'ジャケット',
     category: 'art',
     year: '2024',
-    image: require('@/assets/img/art/ジャケット.webp'),
-    link: '/works/jacket'
+    image: require('@/assets/img/art/ジャケット.webp')
   },
 
   // Drawing works
@@ -90,88 +81,77 @@ export const works = [
     title: '蝶',
     category: 'drawing',
     year: '2024',
-    image: require('@/assets/img/drawing/蝶.png'),
-    link: '/works/butterfly'
+    image: require('@/assets/img/drawing/蝶.png')
   },
   {
     id: 'purple',
     title: '紫',
     category: 'drawing',
     year: '2024',
-    image: require('@/assets/img/drawing/紫.jpg'),
-    link: '/works/purple'
+    image: require('@/assets/img/drawing/紫.jpg')
   },
   {
     id: 'smile',
     title: '笑顔',
     category: 'drawing',
     year: '2024',
-    image: require('@/assets/img/drawing/笑顔.png'),
-    link: '/works/smile'
+    image: require('@/assets/img/drawing/笑顔.png')
   },
   {
     id: 'japan',
     title: '日本',
     category: 'drawing',
     year: '2024',
-    image: require('@/assets/img/drawing/日本.png'),
-    link: '/works/japan'
+    image: require('@/assets/img/drawing/日本.png')
   },
   {
     id: 'model',
     title: 'モデル',
     category: 'drawing',
     year: '2024',
-    image: require('@/assets/img/drawing/モデル.png'),
-    link: '/works/model'
+    image: require('@/assets/img/drawing/モデル.png')
   },
   {
     id: 'pink',
     title: 'ピンク',
     category: 'drawing',
     year: '2024',
-    image: require('@/assets/img/drawing/ピンク.png'),
-    link: '/works/pink'
+    image: require('@/assets/img/drawing/ピンク.png')
   },
   {
     id: 'twintail',
     title: 'ツインテール',
     category: 'drawing',
     year: '2024',
-    image: require('@/assets/img/drawing/ツインテール.png'),
-    link: '/works/twintail'
+    image: require('@/assets/img/drawing/ツインテール.png')
   },
   {
     id: 'spain',
     title: 'スペイン',
     category: 'drawing',
     year: '2024',
-    image: require('@/assets/img/drawing/スペイン.png'),
-    link: '/works/spain'
+    image: require('@/assets/img/drawing/スペイン.png')
   },
   {
     id: 'shoes',
     title: 'シューズ',
     category: 'drawing',
     year: '2024',
-    image: require('@/assets/img/drawing/シューズ.png'),
-    link: '/works/shoes'
+    image: require('@/assets/img/drawing/シューズ.png')
   },
   {
     id: 'cup',
     title: 'コップ',
     category: 'drawing',
     year: '2024',
-    image: require('@/assets/img/drawing/コップ.png'),
-    link: '/works/cup'
+    image: require('@/assets/img/drawing/コップ.png')
   },
   {
     id: 'apple',
     title: 'りんご',
     category: 'drawing',
     year: '2024',
-    image: require('@/assets/img/drawing/りんご.png'),
-    link: '/works/apple'
+    image: require('@/assets/img/drawing/りんご.png')
   },
 
   // Photo works
@@ -180,96 +160,84 @@ export const works = [
     title: '看板',
     category: 'photo',
     year: '2024',
-    image: require('@/assets/img/photo/看板.jpg'),
-    link: '/works/kanban'
+    image: require('@/assets/img/photo/看板.jpg')
   },
   {
     id: 'eye',
     title: '目',
     category: 'photo',
     year: '2024',
-    image: require('@/assets/img/photo/目.jpg'),
-    link: '/works/eye'
+    image: require('@/assets/img/photo/目.jpg')
   },
   {
     id: 'shibuya',
     title: '渋谷',
     category: 'photo',
     year: '2024',
-    image: require('@/assets/img/photo/渋谷.jpg'),
-    link: '/works/shibuya'
+    image: require('@/assets/img/photo/渋谷.jpg')
   },
   {
     id: 'okinawa',
     title: '沖縄',
     category: 'photo',
     year: '2024',
-    image: require('@/assets/img/photo/沖縄.jpg'),
-    link: '/works/okinawa'
+    image: require('@/assets/img/photo/沖縄.jpg')
   },
   {
     id: 'building',
     title: '建物',
     category: 'photo',
     year: '2024',
-    image: require('@/assets/img/photo/建物.jpg'),
-    link: '/works/building'
+    image: require('@/assets/img/photo/建物.jpg')
   },
   {
     id: 'construction',
     title: '工事',
     category: 'photo',
     year: '2024',
-    image: require('@/assets/img/photo/工事.jpg'),
-    link: '/works/construction'
+    image: require('@/assets/img/photo/工事.jpg')
   },
   {
     id: 'yatai3',
     title: '屋台3',
     category: 'photo',
     year: '2024',
-    image: require('@/assets/img/photo/屋台3.jpg'),
-    link: '/works/yatai3'
+    image: require('@/assets/img/photo/屋台3.jpg')
   },
   {
     id: 'yatai2',
     title: '屋台2',
     category: 'photo',
     year: '2024',
-    image: require('@/assets/img/photo/屋台2.jpg'),
-    link: '/works/yatai2'
+    image: require('@/assets/img/photo/屋台2.jpg')
   },
   {
     id: 'yatai1',
     title: '屋台',
     category: 'photo',
     year: '2024',
-    image: require('@/assets/img/photo/屋台.jpg'),
-    link: '/works/yatai1'
+    image: require('@/assets/img/photo/屋台.jpg')
   },
   {
     id: 'outside',
     title: '外',
     category: 'photo',
     year: '2024',
-    image: require('@/assets/img/photo/外.jpg'),
-    link: '/works/outside'
+    image: require('@/assets/img/photo/外.jpg')
   },
   {
     id: 'museum',
     title: '博物館',
     category: 'photo',
     year: '2024',
-    image: require('@/assets/img/photo/博物館.jpg'),
-    link: '/works/museum'
+    image: require('@/assets/img/photo/博物館.jpg')
   },
   {
     id: 'lionfish',
     title: 'ミノカサゴ',
     category: 'photo',
     year: '2024',
-    image: require('@/assets/img/photo/ミノカサゴ.jpg'),
-    link: '/works/lionfish'
+    image: require('@/assets/img/photo/ミノカサゴ.jpg')
   },
 
   // Product works
@@ -278,128 +246,112 @@ export const works = [
     title: 'timo',
     category: 'product',
     year: '2024',
-    image: require('@/assets/img/product/timo.png'),
-    link: '/works/timo'
+    image: require('@/assets/img/product/timo.png')
   },
   {
     id: 'kohaku-diary',
     title: '琥珀日記',
     category: 'product',
     year: '2024',
-    image: require('@/assets/img/product/琥珀日記.jpg'),
-    link: '/works/kohaku-diary'
+    image: require('@/assets/img/product/琥珀日記.jpg')
   },
   {
     id: 'mouches',
     title: '飛蚊症',
     category: 'product',
     year: '2024',
-    image: require('@/assets/img/product/飛蚊症.webp'),
-    link: '/works/mouches'
+    image: require('@/assets/img/product/飛蚊症.webp')
   },
   {
     id: 'mooo9',
     title: 'mooo9',
     category: 'product',
     year: '2024',
-    image: require('@/assets/img/product/mooo9.png'),
-    link: '/works/mooo9'
+    image: require('@/assets/img/product/mooo9.png')
   },
   {
     id: 'mooo8',
     title: 'mooo8',
     category: 'product',
     year: '2024',
-    image: require('@/assets/img/product/mooo8.png'),
-    link: '/works/mooo8'
+    image: require('@/assets/img/product/mooo8.png')
   },
   {
     id: 'mooo7',
     title: 'mooo7',
     category: 'product',
     year: '2024',
-    image: require('@/assets/img/product/mooo7.png'),
-    link: '/works/mooo7'
+    image: require('@/assets/img/product/mooo7.png')
   },
   {
     id: 'mooo6',
     title: 'mooo6',
     category: 'product',
     year: '2024',
-    image: require('@/assets/img/product/mooo6.png'),
-    link: '/works/mooo6'
+    image: require('@/assets/img/product/mooo6.png')
   },
   {
     id: 'mooo5',
     title: 'mooo5',
     category: 'product',
     year: '2024',
-    image: require('@/assets/img/product/mooo5.png'),
-    link: '/works/mooo5'
+    image: require('@/assets/img/product/mooo5.png')
   },
   {
     id: 'mooo4',
     title: 'mooo4',
     category: 'product',
     year: '2024',
-    image: require('@/assets/img/product/mooo4.png'),
-    link: '/works/mooo4'
+    image: require('@/assets/img/product/mooo4.png')
   },
   {
     id: 'mooo3',
     title: 'mooo3',
     category: 'product',
     year: '2024',
-    image: require('@/assets/img/product/mooo3.png'),
-    link: '/works/mooo3'
+    image: require('@/assets/img/product/mooo3.png')
   },
   {
     id: 'mooo2',
     title: 'mooo2',
     category: 'product',
     year: '2024',
-    image: require('@/assets/img/product/mooo2.png'),
-    link: '/works/mooo2'
+    image: require('@/assets/img/product/mooo2.png')
   },
   {
     id: 'mooo10',
     title: 'mooo10',
     category: 'product',
     year: '2024',
-    image: require('@/assets/img/product/mooo10.png'),
-    link: '/works/mooo10'
+    image: require('@/assets/img/product/mooo10.png')
   },
   {
     id: 'mooo1',
     title: 'mooo1',
     category: 'product',
     year: '2024',
-    image: require('@/assets/img/product/mooo1.png'),
-    link: '/works/mooo1'
+    image: require('@/assets/img/product/mooo1.png')
   },
   {
     id: 'mm',
     title: 'mm',
     category: 'product',
     year: '2024',
-    image: require('@/assets/img/product/mm.png'),
-    link: '/works/mm'
+    image: require('@/assets/img/product/mm.png')
   },
   {
     id: 'mooo',
     title: 'mooo',
     category: 'product',
     year: '2024',
-    image: require('@/assets/img/product/mooo.webp'),
-    link: '/works/mooo'
+    image: require('@/assets/img/product/mooo.webp')
   },
   {
     id: 'make',
     title: 'make',
     category: 'product',
     year: '2024',
-    image: require('@/assets/img/product/make.png'),
-    link: '/works/make'
+    image: require('@/assets/img/product/make.png')
   },
 
   // Poster works
@@ -408,72 +360,63 @@ export const works = [
     title: '飛翔する光',
     category: 'poster',
     year: '2024',
-    image: require('@/assets/img/poster/飛翔する光.png'),
-    link: '/works/flying-light'
+    image: require('@/assets/img/poster/飛翔する光.png')
   },
   {
     id: 'self-portrait',
     title: '自画像',
     category: 'poster',
     year: '2024',
-    image: require('@/assets/img/poster/自画像.png'),
-    link: '/works/self-portrait'
+    image: require('@/assets/img/poster/自画像.png')
   },
   {
     id: 'festival',
     title: 'フェスティバル',
     category: 'poster',
     year: '2024',
-    image: require('@/assets/img/poster/フェスティバル.jpg'),
-    link: '/works/festival'
+    image: require('@/assets/img/poster/フェスティバル.jpg')
   },
   {
     id: 'oac3',
     title: 'OAC3',
     category: 'poster',
     year: '2024',
-    image: require('@/assets/img/poster/OAC3.png'),
-    link: '/works/oac3'
+    image: require('@/assets/img/poster/OAC3.png')
   },
   {
     id: 'oac2',
     title: 'OAC2',
     category: 'poster',
     year: '2024',
-    image: require('@/assets/img/poster/OAC2.png'),
-    link: '/works/oac2'
+    image: require('@/assets/img/poster/OAC2.png')
   },
   {
     id: 'oac1',
     title: 'OAC1',
     category: 'poster',
     year: '2024',
-    image: require('@/assets/img/poster/OAC1.png'),
-    link: '/works/oac1'
+    image: require('@/assets/img/poster/OAC1.png')
   },
   {
     id: 'jagda3',
     title: 'JAGDA3',
     category: 'poster',
     year: '2024',
-    image: require('@/assets/img/poster/JAGDA3.webp'),
-    link: '/works/jagda3'
+    image: require('@/assets/img/poster/JAGDA3.webp')
   },
   {
     id: 'jagda2',
     title: 'JAGDA2',
     category: 'poster',
     year: '2024',
-    image: require('@/assets/img/poster/JAGDA2.webp'),
-    link: '/works/jagda2'
+    image: require('@/assets/img/poster/JAGDA2.webp')
   },
   {
     id: 'jagda1',
     title: 'JAGDA1',
     category: 'poster',
     year: '2024',
-    image: require('@/assets/img/poster/JAGDA1.webp'),
-    link: '/works/jagda1'
+    image: require('@/assets/img/poster/JAGDA1.webp')
   },
 
   // Modeling works
@@ -482,40 +425,35 @@ export const works = [
     title: '机',
     category: 'modeling',
     year: '2024',
-    image: require('@/assets/img/modeling/机.jpg'),
-    link: '/works/desk1'
+    image: require('@/assets/img/modeling/机.jpg')
   },
   {
     id: 'desk2',
     title: '机2',
     category: 'modeling',
     year: '2024',
-    image: require('@/assets/img/modeling/机2.jpg'),
-    link: '/works/desk2'
+    image: require('@/assets/img/modeling/机2.jpg')
   },
   {
     id: 'water',
     title: '水',
     category: 'modeling',
     year: '2024',
-    image: require('@/assets/img/modeling/水.jpg'),
-    link: '/works/water'
+    image: require('@/assets/img/modeling/水.jpg')
   },
   {
     id: 'gun',
     title: '銃',
     category: 'modeling',
     year: '2024',
-    image: require('@/assets/img/modeling/銃.jpg'),
-    link: '/works/gun'
+    image: require('@/assets/img/modeling/銃.jpg')
   },
   {
     id: '2045',
     title: '2045',
     category: 'modeling',
     year: '2024',
-    image: require('@/assets/img/modeling/2045.webp'),
-    link: '/works/2045'
+    image: require('@/assets/img/modeling/2045.webp')
   },
 
   // Logo works
@@ -524,88 +462,77 @@ export const works = [
     title: '複数',
     category: 'logo',
     year: '2024',
-    image: require('@/assets/img/logo/複数.png'),
-    link: '/works/multiple'
+    image: require('@/assets/img/logo/複数.png')
   },
   {
     id: 'handicraft1',
     title: '手芸',
     category: 'logo',
     year: '2024',
-    image: require('@/assets/img/logo/手芸.png'),
-    link: '/works/handicraft1'
+    image: require('@/assets/img/logo/手芸.png')
   },
   {
     id: 'handicraft2',
     title: '手芸2',
     category: 'logo',
     year: '2024',
-    image: require('@/assets/img/logo/手芸2.png'),
-    link: '/works/handicraft2'
+    image: require('@/assets/img/logo/手芸2.png')
   },
   {
     id: 'hoshino',
     title: 'ほしの',
     category: 'logo',
     year: '2024',
-    image: require('@/assets/img/logo/ほしの.png'),
-    link: '/works/hoshino'
+    image: require('@/assets/img/logo/ほしの.png')
   },
   {
     id: 'suginoko',
     title: 'すぎのこ',
     category: 'logo',
     year: '2024',
-    image: require('@/assets/img/logo/すぎのこ.png'),
-    link: '/works/suginoko'
+    image: require('@/assets/img/logo/すぎのこ.png')
   },
   {
     id: 'mooo-logo',
     title: 'mooo',
     category: 'logo',
     year: '2024',
-    image: require('@/assets/img/logo/mooo.webp'),
-    link: '/works/mooo-logo'
+    image: require('@/assets/img/logo/mooo.webp')
   },
   {
     id: 'zli',
     title: 'Zli',
     category: 'logo',
     year: '2024',
-    image: require('@/assets/img/logo/Zli.jpg'),
-    link: '/works/zli'
+    image: require('@/assets/img/logo/Zli.jpg')
   },
   {
     id: 'asc',
     title: 'asc',
     category: 'logo',
     year: '2024',
-    image: require('@/assets/img/logo/asc.jpg'),
-    link: '/works/asc'
+    image: require('@/assets/img/logo/asc.jpg')
   },
   {
     id: 'koko',
     title: 'koko',
     category: 'logo',
     year: '2024',
-    image: require('@/assets/img/logo/koko.png'),
-    link: '/works/koko'
+    image: require('@/assets/img/logo/koko.png')
   },
   {
     id: 'sol',
     title: 'Sol',
     category: 'logo',
     year: '2024',
-    image: require('@/assets/img/logo/Sol.png'),
-    link: '/works/sol'
+    image: require('@/assets/img/logo/Sol.png')
   },
   {
     id: 'dawn',
     title: 'DAWN',
     category: 'logo',
     year: '2024',
-    image: require('@/assets/img/logo/DAWN.jpg'),
-    link: '/works/dawn'
+    image: require('@/assets/img/logo/DAWN.jpg')
   },
 
   // Other works
@@ -614,56 +541,49 @@ export const works = [
     title: '枝2',
     category: 'other',
     year: '2024',
-    image: require('@/assets/img/other/枝2.png'),
-    link: '/works/branch2'
+    image: require('@/assets/img/other/枝2.png')
   },
   {
     id: 'human2',
     title: '人間2',
     category: 'other',
     year: '2024',
-    image: require('@/assets/img/other/人間2.png'),
-    link: '/works/human2'
+    image: require('@/assets/img/other/人間2.png')
   },
   {
     id: 'branch1',
     title: '枝',
     category: 'other',
     year: '2024',
-    image: require('@/assets/img/other/枝.png'),
-    link: '/works/branch1'
+    image: require('@/assets/img/other/枝.png')
   },
   {
     id: 'human1',
     title: '人間',
     category: 'other',
     year: '2024',
-    image: require('@/assets/img/other/人間.jpg'),
-    link: '/works/human1'
+    image: require('@/assets/img/other/人間.jpg')
   },
   {
     id: 'mooo-other2',
     title: 'mooo2',
     category: 'other',
     year: '2024',
-    image: require('@/assets/img/other/mooo2.png'),
-    link: '/works/mooo-other2'
+    image: require('@/assets/img/other/mooo2.png')
   },
   {
     id: 'cron',
     title: 'cron',
     category: 'other',
     year: '2024',
-    image: require('@/assets/img/other/cron.png'),
-    link: '/works/cron'
+    image: require('@/assets/img/other/cron.png')
   },
   {
     id: 'mooo-other1',
     title: 'mooo',
     category: 'other',
     year: '2024',
-    image: require('@/assets/img/other/mooo.webp'),
-    link: '/works/mooo-other1'
+    image: require('@/assets/img/other/mooo.webp')
   }
 ];
 

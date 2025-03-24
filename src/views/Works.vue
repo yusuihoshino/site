@@ -68,7 +68,6 @@ export default {
     };
   },
   watch: {
-    // カテゴリーが変更されたときにMasonryレイアウトを更新
     selectedCategory() {
       this.$nextTick(() => {
         if (this.masonry) {
@@ -79,59 +78,3 @@ export default {
   }
 };
 </script>
-
-<style scoped>
-.galery-container {
-  padding: 20px;
-}
-
-.category-filter {
-  margin-bottom: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.category-filter button {
-  padding: 8px 16px;
-  border: none;
-  border-radius: 20px;
-  background: #f0f0f0;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-.category-filter button.active {
-  background: #333;
-  color: white;
-}
-
-#grid {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 40px 0;
-}
-
-.grid-sizer,
-.grid-item {
-  width: calc(50% - 15px);
-  margin-bottom: 30px;
-}
-
-.gutter-sizer {
-  width: 30px;
-}
-
-@media (max-width: 768px) {
-  .grid-sizer,
-  .grid-item {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  
-  .gutter-sizer {
-    width: 0;
-  }
-}
-</style>

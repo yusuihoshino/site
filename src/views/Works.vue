@@ -92,14 +92,14 @@ export default {
   text-align: center;
 
   button {
-    padding: 8px 8px;
+    padding: 4px 8px;
     border: none;
     border-radius: 0px;
     cursor: pointer;
     transition: all 0.3s ease;
     background: none;
     color: var(--font-black);
-
+    border-radius: 100px;
     &:hover {
       background: var(--img-gray);
     }

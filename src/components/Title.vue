@@ -47,9 +47,5 @@ export default {
   }
 }
 
-/* ダークモード対応 */
-:root[data-theme="dark"] .title {
-  background-color: rgba(26, 26, 26, 0.8);
-}
 </style>
 

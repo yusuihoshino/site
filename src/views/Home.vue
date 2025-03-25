@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="home-container container" id="container">
+    <div class="container" id="container">
         <div class="section section1">
             <dotlottie-player src="https://lottie.host/cc4feda6-0608-44cc-87ad-ee4f12a69594/WTbWwHiqDM.lottie" background="transparent" speed="1" style="width: 600px; height: 600px" loop autoplay></dotlottie-player>
             <h2>Yusui Hoshino</h2>
@@ -59,8 +59,6 @@ components: {
 
 <style scoped>
 
-.home-container{
-    margin-top: 0px;
     
     h2{
         margin-bottom: 40px;
@@ -112,6 +110,5 @@ components: {
         }
     }
 
-}
 
 </style>

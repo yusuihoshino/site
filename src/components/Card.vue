@@ -1,25 +1,21 @@
 <template>
-  <div class="grid-item" v-show="isVisible">
-    <router-link v-if="content" :to="`/works/${id}`" class="card has-content">
-      <img :src="image" :alt="title">
+  <div class="card" :class="{ 'has-content': content }">
+    <router-link 
+      v-if="content" 
+      :to="{ name: `work-${id}` }"
+      class="card-link"
+    >
+      <img :src="image" :alt="title" class="card-image">
       <div class="card-content">
-        <div class="card-content-left">
-          <p>{{ title }}</p>
-          <p v-if="year">{{ year }}</p>
-          <p class="category-tag">{{ category }}</p>
-        </div>  
-        <div class="card-content-right">＞</div>
+        <h3>{{ title }}</h3>
+        <p>{{ category }} - {{ year }}</p>
       </div>
     </router-link>
-
-    <div v-else class="card">
-      <img :src="image" :alt="title">
+    <div v-else class="card-static">
+      <img :src="image" :alt="title" class="card-image">
       <div class="card-content">
-        <div class="card-content-left">
-        <p>{{ title }}</p>
-        <p v-if="year">{{ year }}</p>
-        <p class="category-tag">{{ category }}</p>
-        </div>
+        <h3>{{ title }}</h3>
+        <p>{{ category }} - {{ year }}</p>
       </div>
     </div>
   </div>
@@ -43,88 +39,66 @@ export default {
     },
     year: {
       type: String,
-      default: null
+      required: true
     },
     category: {
       type: String,
       required: true
     },
-    selectedCategory: {
-      type: String,
-      default: 'all'
-    },
     content: {
       type: String,
-      default: ''
-    }
-  },
-  computed: {
-    isVisible() {
-      return this.selectedCategory === 'all' || this.selectedCategory === this.category;
+      default: null
     }
   }
 };
 </script>
 
-<style scoped>  
-
-.card{
-    &:hover .card-content-right{
-        background:gray;
-        color:white;
-    }
-    &.has-content:hover{
-      background:rgb(232, 232, 232);
-      display:block;
-
-    }
-
-    .card-content{
-        display: flex;
-        flex-direction: column;
-        gap:0;
-        margin:0;
-    }
-    p{
-        margin:0;
-        font-size:0.8rem;
-        line-height: 1.2rem;
-        border-bottom:1px solid rgb(205, 205, 205);
-        color:gray;
-    }
-    .card-content{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
-    .card-content-right{
-        border:1px solid black;
-        width:60px;
-        height:60px;
-        text-align: center;
-        line-height: 60px;
-       
-    }
-    .card-content-left{
-        width:100%;
-    }
-    img{
-        border:1px solid rgb(205, 205, 205);
-    }
+<style scoped>
+.card {
+  background: var(--bg-white);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
 }
 
-@keyframes arrowMove {
-    0% {
-        transform: translateX(0);
-        opacity: 1;
-    }
-    40% {
-        transform: translateX(-10px);
-        opacity: 1;
-    }
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+.card.has-content {
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-5px);
+  }
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-static {
+  display: block;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: var(--img-gray) 1px solid;
+}
+
+.card-content {
+  padding: 15px;
+
+  h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: var(--font-black);
+  }
+
+  p {
+    margin: 5px 0 0;
+    font-size: 0.8rem;
+    color: var(--font-white);
+  }
 }
 </style>

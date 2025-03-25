@@ -1,5 +1,5 @@
 <template>
-  <div class="gallery-container container">
+  <div class="container">
     <TitlePage
       title="Works"
       description="作品集"
@@ -88,11 +88,7 @@ export default {
 </script>
 
 <style scoped>
-.gallery-container {
-  padding: 20px;
-  max-width: 1000px;
-  margin: 0 auto;
-}
+
 
 .category-selecter {
   margin-bottom: 30px;
@@ -153,6 +149,7 @@ export default {
 @media screen and (max-width: 768px) {
   .gallery-container {
     padding: 10px;
+    padding-top: 80px; /* タイトルの高さ分の余白を維持 */
   }
 
   #grid {

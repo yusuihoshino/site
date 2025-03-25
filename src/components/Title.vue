@@ -16,8 +16,11 @@ export default {
     description: {
       type: String,
       required: true
-    },
+    }
   }
 }
 </script>
+
+<style scoped>
+</style>
 

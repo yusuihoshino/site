@@ -38,7 +38,7 @@ body{
         font-size: 1.2rem;
         letter-spacing: 0.3rem;
         font-weight: 400;
-        margin-bottom: 20px;
+       
     }
     p{
         font-weight: 300;
@@ -63,7 +63,6 @@ body{
 
 
 .container{
-    max-width: 800px;
     width: 100vw;
     margin:100px auto 100px;
     transform: translateX(100px);
@@ -71,6 +70,11 @@ body{
     &.closed{
         transform: translateX(0px);
     }
+
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 80px; /* タイトルの高さ分だけ余白を追加 */
 }
 
 /* レスポンシブ対応 */

@@ -1,5 +1,5 @@
 <template>
-  <div class="article-container container" id="container">
+  <div class="container" id="container">
         <TitlePage
               title="Portfolio"
               description="ポートフォリオ"

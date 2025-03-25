@@ -7,16 +7,19 @@ import Portfolio from '@/views/Portfolio.vue';
 import DetailPage from '@/components/DetailPage.vue';
 import { works } from '@/data/works';
 
-// 詳細ページのルートを生成
+// 詳細ページのルートを生成（contentがある作品のみ）
 const generateDetailRoutes = () => {
-  return works
+  console.log('Generating detail routes for works:', works);
+  const detailRoutes = works
     .filter(work => work.content)
     .map(work => ({
       path: `/works/${work.id}`,
       name: `work-${work.id}`,
       component: DetailPage,
-      props: true
+      props: { id: work.id }
     }));
+  console.log('Generated detail routes:', detailRoutes);
+  return detailRoutes;
 };
 
 const routes = [
@@ -51,6 +54,17 @@ const routes = [
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
   routes
+});
+
+// ルートの変更をログに記録
+router.beforeEach((to, from, next) => {
+  console.log('Route navigation:', {
+    to: to.path,
+    params: to.params,
+    query: to.query,
+    props: to.props
+  });
+  next();
 });
 
 export default router;

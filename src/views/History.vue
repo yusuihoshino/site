@@ -1,5 +1,5 @@
 <template>
-<div class="history-container container" id="container">
+<div class="container" id="container">
         <TitlePage
               title="History"
               description="履歴"
@@ -110,8 +110,6 @@ export default {
 <style scoped>
 
 
-.history-container{
-    text-align: center;
     
     
    
@@ -170,7 +168,6 @@ export default {
         }
         
     }
-}
 </style>
 
 

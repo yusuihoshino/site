@@ -11,7 +11,7 @@
             <hr>
         </div>
 
-        <div class="content" v-html="work.content"></div>
+        <div class="article-content" v-html="work.content"></div>
     </div>
   </div>
 </template>
@@ -42,6 +42,7 @@ export default {
 </script>
 
 <style scoped>
+ 
 .container {
   max-width: 600px;
 }
@@ -71,16 +72,34 @@ export default {
     margin-bottom: 20px;
   }
 }
-.content{
-  color:red;
+.article-content{
   display: flex;
   flex-direction: column;
   gap: 10px;
-  /* h2{
-    margin-top: 400px;
-  } */
 }
+</style>
 
+<style>
+.article-content{
+  p{
+    letter-spacing: 0.1em;
+  }
+  img{
+    margin-bottom: 20px;
+    border: 1px solid var(--img-gray);
+   }
+   a{
+      text-decoration: underline;
+      width: 100%;
+      height:70px;
+      padding: 20px;
+      text-align: center;
 
+      border:solid 1px var(--img-gray);
 
+      &:hover {
+        background-color: var(--img-gray);
+      }
+    }
+}
 </style>

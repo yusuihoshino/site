@@ -89,6 +89,7 @@ export default {
   h3 {
     margin: 0;
     font-size: 1rem;
+    letter-spacing: 0.1em;
     color: var(--font-black);
   }
 

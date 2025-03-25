@@ -2,17 +2,16 @@
   <div>
     
     <div class="container">
-      
-        <router-link :to="{ path: '/works', query: $route.query }" class="back-link">← 作品一覧に戻る
-        </router-link>
-
 
         <div class="detail-info">
             <h1 class="detail-title">{{ work.title }}</h1>
             <div class="detail-year">{{ work.year }}</div>
+            <router-link :to="{ path: '/works', query: $route.query }" class="back-link">← 作品一覧に戻る
+            </router-link>
+            <hr>
         </div>
 
-        <div class="article-content" v-html="work.content"></div>
+        <div class="content" v-html="work.content"></div>
     </div>
   </div>
 </template>
@@ -43,19 +42,33 @@ export default {
 </script>
 
 <style scoped>
+.container {
+  max-width: 600px;
+}
+.back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--font-black);
+  text-decoration: none;
 
+  &:hover {
+    opacity: 0.7;
+  }
+
+}
 .detail-info {
-  margin-bottom: 20px;
+  margin: 40px 0;
+  /* border-top: 1px solid var(--font-black); */
 
   .detail-title {
-    font-size: 24px;
-    font-weight: 600;
+    font-size: 3rem;
+    font-weight: 300;
     margin-bottom: 10px;
     color: var(--font-black);
   }
   .detail-year {
-
-    border-bottom: 1px solid var(--font-black);
+    margin-bottom: 20px;
   }
 }
 .content{
@@ -70,19 +83,4 @@ export default {
 
 
 
-.back-link {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: var(--font-black);
-  text-decoration: none;
-
-  &:hover {
-    opacity: 0.7;
-  }
-
-  .arrow {
-    font-size: 1.2rem;
-  }
-}
 </style>

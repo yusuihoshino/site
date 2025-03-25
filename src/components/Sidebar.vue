@@ -125,8 +125,8 @@ export default {
       display: flex;
       flex-direction: column;
       gap: 10px;
-
-      a {
+    }
+    a {
         color: var(--font-black);
         transition: all 0.2s ease;
         letter-spacing: 0.15rem;
@@ -136,12 +136,11 @@ export default {
           letter-spacing: 2px;
         }
       }
-    }
 
     .sidebar-title {
       font-weight: 900;
-      color: var(--font-black);
-      transition: color 0.4s ease;
+      /* color: var(--font-black); */
+      /* transition: color 0.4s ease; */
     }
 
     .color-picker {

@@ -23,22 +23,25 @@ export default {
 
 <style scoped>
 .title {
-  animation: scaleIn 0.6s ease-out forwards;
-  transform-origin: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: var(--bg-gray);
+  padding: 20px 0;
+  text-align: left;
+  width: 100%;
+  h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--font-black);
+  }
   h3{
-    opacity: 0.5;
+      font-size:0.8rem;
+      letter-spacing: 0.4rem;
+      opacity: 0.5;
   }
 }
 
-@keyframes scaleIn {
-  0% {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  100% {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
 </style>
 

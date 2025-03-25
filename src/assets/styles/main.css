@@ -48,17 +48,7 @@ body{
      ul{
         margin-left: -16px;
      }
-    .title{
-        text-align: left;
-        width: 100%;
-        h3{
-            font-size:0.8rem;
-            letter-spacing: 0.4rem;
-            margin-bottom: 100px;
-            opacity: 0.6;
-        }
-
-    }
+   
 }
 
 

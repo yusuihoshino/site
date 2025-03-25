@@ -1,0 +1,186 @@
+/* グローバルスタイル */
+:root {
+  --font-black: #333333;
+  --font-white: #666666;
+  --img-gray: #e5e5e5;
+  --bg-gray: #f5f5f5;
+  --bg-white: #ffffff;
+}
+
+/* ダークモード */
+:root[data-theme="dark"] {
+  --font-black: #ffffff;
+  --font-white: #cccccc;
+  --img-gray: #333333;
+  --bg-gray: #1a1a1a;
+  --bg-white: #2d2d2d;
+}
+
+/* 基本スタイル */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: var(--bg-gray);
+  color: var(--font-black);
+}
+
+#app {
+  min-height: 100vh;
+  padding-left: 0;
+  transition: padding-left 0.3s ease;
+}
+
+#app.sidebar-open {
+  padding-left: 250px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* リンクと画像の基本スタイル */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* カードスタイル */
+.card {
+  background: transparent;
+  overflow: hidden;
+}
+
+.card.has-content {
+  cursor: pointer;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.card-static {
+  display: block;
+}
+
+.card-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: var(--img-gray) 1px solid;
+}
+
+.card-content {
+  padding: 8px;
+}
+
+.card-content h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--font-black);
+}
+
+.card-content p {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 0.8rem;
+  color: var(--font-white);
+}
+
+/* グリッドレイアウト */
+#grid {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 0;
+}
+
+.grid-sizer,
+.grid-item {
+  width: calc(50% - 10px);
+}
+
+.gutter-sizer {
+  width: 20px;
+}
+
+.grid-item {
+  margin-bottom: 20px;
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: top;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border: var(--img-gray) 1px solid;
+}
+
+/* カテゴリーセレクター */
+.category-selecter {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  gap: 20px;
+  text-align: center;
+}
+
+.category-selecter button {
+  padding: 8px 8px;
+  border: none;
+  border-radius: 0px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: none;
+  color: var(--font-black);
+}
+
+.category-selecter button:hover {
+  background: var(--img-gray);
+}
+
+.category-selecter button.active {
+  background: var(--font-black);
+  color: #ffffff;
+}
+
+/* ダークモードのカテゴリーセレクター */
+:root[data-theme="dark"] .container .category-selecter button.active {
+  background-color: #ffffff !important;
+  color: #333333;
+}
+
+/* レスポンシブデザイン */
+@media screen and (max-width: 768px) {
+  .gallery-container {
+    padding: 10px;
+    padding-top: 80px;
+  }
+
+  #grid .grid-sizer,
+  #grid .grid-item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  #grid .gutter-sizer {
+    width: 0;
+  }
+
+  .category-selecter {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+} 

@@ -52,7 +52,6 @@ export default {
   mixins: [masonryMixin],
   data() {
     return {
-      selectedCategory: 'all',
       categories: [
         { value: 'all', label: 'すべて' },
         { value: 'art', label: 'アート' },
@@ -68,6 +67,14 @@ export default {
     };
   },
   computed: {
+    selectedCategory: {
+      get() {
+        return this.$route.query.category || 'all';
+      },
+      set(value) {
+        this.$router.replace({ query: { category: value === 'all' ? null : value } });
+      }
+    },
     filteredWorks() {
       if (this.selectedCategory === 'all') {
         return this.works;

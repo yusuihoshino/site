@@ -2,7 +2,10 @@
   <div class="card" :class="{ 'has-content': content }">
     <router-link 
       v-if="content" 
-      :to="{ name: `work-${id}` }"
+      :to="{ 
+        name: `work-${id}`,
+        query: { category: $route.query.category }
+      }"
       class="card-link"
     >
       <img :src="image" :alt="title" class="card-image">

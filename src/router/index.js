@@ -15,7 +15,10 @@ const generateDetailRoutes = () => {
       path: `/works/${work.id}`,
       name: `work-${work.id}`,
       component: DetailPage,
-      props: { id: work.id }
+      props: route => ({
+        id: work.id,
+        category: route.query.category
+      })
     }));
 };
 

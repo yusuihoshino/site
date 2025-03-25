@@ -2,7 +2,7 @@
   <div>
     
     <div class="container">
-        <router-link to="/works" class="back-link">
+        <router-link :to="{ path: '/works', query: $route.query }" class="back-link">
           <span class="arrow">←</span> 作品一覧に戻る
         </router-link>
 
@@ -32,6 +32,10 @@ export default {
     id: {
       type: String,
       required: true
+    },
+    category: {
+      type: String,
+      default: 'all'
     }
   },
   computed: {

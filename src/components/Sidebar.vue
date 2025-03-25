@@ -71,11 +71,11 @@ export default {
       const style = document.documentElement.style;
       if (theme === 'dark') {
         style.setProperty('--font-black', '#ffffff');
-        // style.setProperty('--font-white', '#dddddd');
-        style.setProperty('--img-gray', '#333333');
+        style.setProperty('--font-white', '#dddddd');
+        style.setProperty('--img-gray', '#999999');
       } else {
         style.setProperty('--font-black', '#333333');
-        // style.setProperty('--font-white', '#666666');
+        style.setProperty('--font-white', '#666666');
         style.setProperty('--img-gray', '#dddddd');//明るい時の画像とサイドバーの色
       }
 

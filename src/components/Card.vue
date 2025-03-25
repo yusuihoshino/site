@@ -96,7 +96,8 @@ export default {
     margin: 0;
     font-size: 0.8rem;
     line-height: 0.8rem;
-    color: var(--font-white);
+    color: var(--font-black);
+    opacity: 0.5;
   }
 }
 </style>

@@ -25,6 +25,9 @@ export default {
 .title {
   animation: scaleIn 0.6s ease-out forwards;
   transform-origin: center;
+  h3{
+    opacity: 0.5;
+  }
 }
 
 @keyframes scaleIn {

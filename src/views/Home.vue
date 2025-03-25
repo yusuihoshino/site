@@ -56,3 +56,62 @@ components: {
 }
 };
 </script>
+
+<style scoped>
+
+.home-container{
+    margin-top: 0px;
+    
+    h2{
+        margin-bottom: 40px;
+    }
+    p{
+        text-align: left;
+    }
+    .section{
+        padding:0 0 400px;
+    }
+    .section1{
+        dotlottie-player{
+            margin:0 auto;
+        }
+        
+        
+        max-width: 600px;
+        p{
+            text-align: center;
+        }
+        text-align: center;
+
+
+    }
+    .section2, .section3{
+        text-align: left;
+        display:flex;
+        flex-direction: row;
+        gap:80px;
+        align-items: center;
+        dotlottie-player{
+            flex:1;
+        }
+        .text{
+            flex:1;
+        }
+    }
+    .section4{
+        .contact-line{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding:0 24px;
+        }
+        a{
+            text-decoration: underline;
+            text-underline-offset: 4px;
+            text-decoration-thickness: 1px;
+        }
+    }
+
+}
+
+</style>

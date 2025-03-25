@@ -107,4 +107,70 @@ export default {
 </script>
 
 
+<style scoped>
+
+
+.history-container{
+    text-align: center;
+    
+    
+   
+    .history-section{
+        display:flex;
+        flex-direction: row;
+        gap:80px;
+        padding:0 0 100px;
+        
+        .history-left{
+            text-align: right;
+            flex:1;
+            h2{
+                font-size: 2rem;
+            }
+            .duration-year{
+                display:flex;
+                flex-direction: row;
+                justify-content: right;
+                align-items: center;
+                gap:8px;
+                letter-spacing: 0.1rem;
+                .line{
+                    width:80px;
+                    height:1px;
+                    background:var(--font-white);
+                }
+            }
+            
+        }
+        .history-right{
+            display: flex;
+            flex-direction: column;
+            gap:0px;
+            text-align: left;
+            flex:1;
+            
+            .sub-title{
+                font-size:1rem;
+            }
+            ul{
+                margin: 0 0 0 -20px;
+                a{
+                
+                    text-decoration: underline;
+                    text-underline-offset: 4px;
+                    text-decoration-thickness: 1px;
+                }
+
+            }
+            .year{
+                letter-spacing: 0.1rem;
+                font-weight: 500;
+                margin-top:16px;
+            }
+        }
+        
+    }
+}
+</style>
+
 

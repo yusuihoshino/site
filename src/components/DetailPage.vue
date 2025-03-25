@@ -25,3 +25,35 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+
+.article-container{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    max-width: 600px;
+    text-align: left;
+     iframe{
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+     }
+    a:not(.back-btn){
+        text-decoration: underline;
+        text-underline-offset: 8px;
+        text-decoration-thickness: 1px;
+    }
+   h2{
+    margin-top:40px;
+   }
+   
+    img{
+        width:100%;
+        border:var(--img-gray) 1px solid;
+     }
+
+}
+
+
+</style>

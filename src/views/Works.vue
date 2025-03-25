@@ -78,3 +78,115 @@ export default {
   }
 };
 </script>
+
+<style scoped>
+
+.category-filter {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  
+  text-align: center;
+  button {
+    padding: 8px 8px;
+    /* margin: 0 8px; */
+    border: none;
+    border-radius: 0px;
+    /* background: #f0f0f0; */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &.active {
+        background: #333;
+        color: white;
+    }
+  }
+}
+
+.galary-container{
+    text-align: center;
+    #grid {
+        margin: 0 auto;
+        .grid-sizer,
+        .grid-item {
+            display: block;
+            width: 49%;
+            margin-bottom: 20px;
+            display:flex;
+            flex-direction: column;
+            gap:0;
+            @media screen and (max-width: 768px) {
+                & {
+                    width: 100%;
+                    max-width: 100%;
+                    margin: 0 auto;
+                    margin-bottom: 10px;
+                }
+            }
+            img{
+                width: 100%;
+                height: auto;
+                border:var(--img-gray) 1px solid;
+            }
+            .grid-item-below{
+                font-size:0.8rem;
+                display:flex;
+                flex-direction: row;
+                justify-content: space-between;
+                .grid-item-texts{
+                    display:flex;
+                    justify-content: left;
+                    gap:10px;
+                    align-items: center;
+                    .line{
+                        width:1px;
+                        height:10px;
+                        background:var(--font-white);
+                    }
+                    
+                }
+                .arrow{
+                    font-weight:300;
+                    font-size: 1.2rem;
+                    display: inline-block;
+                    animation: arrowMove 2s infinite ease-in-out;
+                    transform-origin: center;
+                }
+            }   
+            
+        }
+        .gutter-sizer {
+            width: 2%;
+        }
+        
+    }
+}
+
+
+/* Works page styles */
+.galery-container {
+  padding: 20px;
+
+  .category-filter {
+    margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    button {
+      padding: 8px 16px;
+      border: none;
+      border-radius: 20px;
+      background: #f0f0f0;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &.active {
+        background: #333;
+        color: white;
+      }
+    }
+  }
+}
+
+</style>

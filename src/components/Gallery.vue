@@ -34,3 +34,37 @@ export default {
 };
 </script>
 
+<style scoped>
+
+#grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 0;
+
+    .grid-sizer,
+    .grid-item {
+      width: calc(50% - 15px);
+      margin-bottom: 30px;
+    }
+
+    .gutter-sizer {
+      width: 30px;
+    }
+
+    @media (max-width: 768px) {
+      .grid-sizer,
+      .grid-item {
+        width: 100%;
+        margin-bottom: 20px;
+      }
+      
+      .gutter-sizer {
+        width: 0;
+      }
+    }
+  }
+}
+
+
+</style>

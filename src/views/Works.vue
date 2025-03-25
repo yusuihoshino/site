@@ -137,6 +137,8 @@ export default {
     display: inline-block;
     font-size: 16px; /* フォントサイズを戻す */
     vertical-align: top; /* 上端揃えにする */
+    transition: all 0.3s ease;
+
   }
 
   .grid-item img {

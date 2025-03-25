@@ -2,16 +2,17 @@
   <div>
     
     <div class="container">
-        <router-link :to="{ path: '/works', query: $route.query }" class="back-link">
-          <span class="arrow">←</span> 作品一覧に戻る
+      
+        <router-link :to="{ path: '/works', query: $route.query }" class="back-link">← 作品一覧に戻る
         </router-link>
 
 
-          <div class="detail-info">
-              <h2>{{ work.title }}</h2>
-              <span class="year">{{ work.year }}</span>
+        <div class="detail-info">
+            <h1 class="detail-title">{{ work.title }}</h1>
+            <div class="detail-year">{{ work.year }}</div>
         </div>
-        <div class="detail-text" v-html="work.content"></div>
+
+        <div class="article-content" v-html="work.content"></div>
     </div>
   </div>
 </template>
@@ -42,58 +43,32 @@ export default {
 </script>
 
 <style scoped>
-#detail {
-  width: 100%;
-  min-height: 100vh;
-}
-
-
-.detail-content {
-  margin-bottom: 40px;
- 
-}
-
-.detail-image {
-  width: 100%;
-  height: auto;
-  margin-bottom: 20px;
-  border: var(--img-gray) 1px solid;
-}
 
 .detail-info {
-  .detail-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 
-    h2 {
-      margin: 0;
-      font-size: 1.5rem;
-      color: var(--font-black);
-    }
-
-    .year {
-      color: var(--font-white);
-      font-size: 0.9rem;
-    }
+  .detail-title {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: var(--font-black);
   }
+  .detail-year {
 
-  .detail-text {
-    color: var(--font-white);
-    line-height: 1.6;
-    flex-direction: column;
-    gap:100px;
-
-
-    img {
-      width: 100%;
-      height: auto;
-      margin: 20px 0;
-      border: var(--img-gray) 1px solid;
-    }
+    border-bottom: 1px solid var(--font-black);
   }
 }
+.content{
+  color:red;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  /* h2{
+    margin-top: 400px;
+  } */
+}
+
+
 
 .back-link {
   display: inline-flex;
@@ -108,24 +83,6 @@ export default {
 
   .arrow {
     font-size: 1.2rem;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container {
-    padding: 10px;
-  }
-
-  .content-wrapper {
-    margin-top: 60px;
-  }
-
-  .detail-info {
-    .detail-header {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 10px;
-    }
   }
 }
 </style>

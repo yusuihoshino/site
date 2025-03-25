@@ -32,21 +32,18 @@
       />
     </div>
   </div>
-  <Sidebar />
 </template>
 
 <script>
 import Card from '@/components/Card.vue';
-import Sidebar from '@/components/Sidebar.vue';
-import { works } from '@/data/works';
 import TitlePage from '@/components/Title.vue';
+import { works } from '@/data/works';
 import { masonryMixin } from '@/assets/scripts/masonry.js';
 
 export default {
   name: 'WorksPage',
   components: {
     Card,
-    Sidebar,
     TitlePage
   },
   mixins: [masonryMixin],
@@ -86,8 +83,6 @@ export default {
 </script>
 
 <style scoped>
-
-
 .category-selecter {
   margin-bottom: 30px;
   width: 100%;
@@ -103,16 +98,23 @@ export default {
     cursor: pointer;
     transition: all 0.3s ease;
     background: none;
+    color: var(--font-black);
 
     &:hover {
-      background: #d4cfcf;
+      background: var(--img-gray);
     }
   }
 
   button.active {
-    background: #333;
-    color: white;
+    background: var(--font-black);
+    color: #ffffff;
   }
+}
+
+/* 暗い背景のとき */
+:root[data-theme="dark"] .container .category-selecter button.active {
+  background-color: #ffffff !important;
+  color: #333333;
 }
 
 #grid {

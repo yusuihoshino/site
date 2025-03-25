@@ -16,25 +16,21 @@
               <li>デザインレビュー</li>
           </ul>
      </div>  
-    <Sidebar />
-  </template>
-  
-  
-  
-  
-  <script>
-  import Sidebar from '@/components/Sidebar.vue'
-  import TitlePage from '@/components/Title.vue'
-  
-  export default {
-    name: 'RequestPage',
-    components: {
-      Sidebar,
-      TitlePage
-    }
-  };
-  </script>
-  
-  
-  
-  
+</template>
+
+
+
+
+<script>
+import TitlePage from '@/components/Title.vue'
+
+export default {
+  name: 'RequestPage',
+  components: {
+    TitlePage
+  }
+};
+</script>
+
+
+

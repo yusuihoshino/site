@@ -58,18 +58,12 @@ export default {
 
 <style scoped>
 .card {
-  background: var(--bg-white);
-  border-radius: 8px;
+  background: transparent;
   overflow: hidden;
-  transition: transform 0.3s ease;
 }
 
 .card.has-content {
   cursor: pointer;
-
-  &:hover {
-    transform: translateY(-5px);
-  }
 }
 
 .card-link {
@@ -90,7 +84,7 @@ export default {
 }
 
 .card-content {
-  padding: 15px;
+  padding: 8px;
 
   h3 {
     margin: 0;
@@ -99,8 +93,9 @@ export default {
   }
 
   p {
-    margin: 5px 0 0;
+    margin: 0;
     font-size: 0.8rem;
+    line-height: 0.8rem;
     color: var(--font-white);
   }
 }

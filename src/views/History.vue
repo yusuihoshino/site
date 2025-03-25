@@ -87,20 +87,17 @@
         </div>
 
     </div>  
-  <Sidebar />
 </template>
 
 
 
 
 <script>
-import Sidebar from '@/components/Sidebar.vue'
 import TitlePage from '@/components/Title.vue'
 
 export default {
   name: 'HistoryPage',
   components: {
-    Sidebar,
     TitlePage
   }
 };

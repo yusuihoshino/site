@@ -13,20 +13,17 @@
         </div>
         <div class="detail-text" v-html="work.content"></div>
     </div>
-    <Sidebar />
   </div>
 </template>
 
 <script>
 import { works } from '@/data/works';
 import TitlePage from '@/components/Title.vue';
-import Sidebar from '@/components/Sidebar.vue';
 
 export default {
   name: 'DetailPage',
   components: {
-    TitlePage,
-    Sidebar
+    TitlePage
   },
   props: {
     id: {

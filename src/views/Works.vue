@@ -5,7 +5,7 @@
       description="作品集"
     />
 
-    <div class="category-filter">
+    <div class="category-selecter">
       <button 
         v-for="cat in categories" 
         :key="cat.value"
@@ -88,111 +88,80 @@ export default {
 </script>
 
 <style scoped>
+.gallery-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-.category-filter {
+.category-selecter {
   margin-bottom: 30px;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  
+  justify-content: left;
+  gap:20px;
   text-align: center;
   button {
     padding: 8px 8px;
-    /* margin: 0 8px; */
     border: none;
     border-radius: 0px;
-    /* background: #f0f0f0; */
     cursor: pointer;
     transition: all 0.3s ease;
-    &.active {
-        background: #333;
-        color: white;
+    background: none;
+    &:hover{
+      background: #d4cfcf;
     }
+  }
+  button.active {
+    background: #333;
+    color: white;
   }
 }
 
-.galary-container{
-    text-align: center;
-    #grid {
-        margin: 0 auto;
-        .grid-sizer,
-        .grid-item {
-            display: block;
-            width: 49%;
-            margin-bottom: 20px;
-            display:flex;
-            flex-direction: column;
-            gap:0;
-            @media screen and (max-width: 768px) {
-                & {
-                    width: 100%;
-                    max-width: 100%;
-                    margin: 0 auto;
-                    margin-bottom: 10px;
-                }
-            }
-            img{
-                width: 100%;
-                height: auto;
-                border:var(--img-gray) 1px solid;
-            }
-            .grid-item-below{
-                font-size:0.8rem;
-                display:flex;
-                flex-direction: row;
-                justify-content: space-between;
-                .grid-item-texts{
-                    display:flex;
-                    justify-content: left;
-                    gap:10px;
-                    align-items: center;
-                    .line{
-                        width:1px;
-                        height:10px;
-                        background:var(--font-white);
-                    }
-                    
-                }
-                .arrow{
-                    font-weight:300;
-                    font-size: 1.2rem;
-                    display: inline-block;
-                    animation: arrowMove 2s infinite ease-in-out;
-                    transform-origin: center;
-                }
-            }   
-            
-        }
-        .gutter-sizer {
-            width: 2%;
-        }
-        
-    }
-}
 
+#grid {
+  width: 100%;
+  margin: 0 auto;
 
-/* Works page styles */
-.galery-container {
-  padding: 20px;
+  .grid-sizer,
+  .grid-item {
+    width: calc(50% - 15px);
+  }
 
-  .category-filter {
+  .gutter-sizer {
+    width: 30px;
+  }
+
+  .grid-item {
     margin-bottom: 30px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+    display: inline-block;
+  }
 
-    button {
-      padding: 8px 16px;
-      border: none;
-      border-radius: 20px;
-      background: #f0f0f0;
-      cursor: pointer;
-      transition: all 0.3s ease;
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    border: var(--img-gray) 1px solid;
+  }
 
-      &.active {
-        background: #333;
-        color: white;
-      }
+  @media screen and (max-width: 768px) {
+    .gallery-container {
+      padding: 10px;
+    }
+
+    .grid-sizer,
+    .grid-item {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    .gutter-sizer {
+      width: 0;
+    }
+
+    .category-filter {
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
     }
   }
 }

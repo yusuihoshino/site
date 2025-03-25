@@ -73,6 +73,11 @@ export default {
         background:gray;
         color:white;
     }
+    &.has-content:hover{
+      background:rgb(232, 232, 232);
+      display:block;
+
+    }
 
     .card-content{
         display: flex;

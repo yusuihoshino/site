@@ -99,8 +99,9 @@ export default {
   width: 100%;
   display: flex;
   justify-content: left;
-  gap:20px;
+  gap: 20px;
   text-align: center;
+
   button {
     padding: 8px 8px;
     border: none;
@@ -108,62 +109,68 @@ export default {
     cursor: pointer;
     transition: all 0.3s ease;
     background: none;
-    &:hover{
+
+    &:hover {
       background: #d4cfcf;
     }
   }
+
   button.active {
     background: #333;
     color: white;
   }
 }
 
-
 #grid {
   width: 100%;
   margin: 0 auto;
+  font-size: 0; /* インラインブロック間の隙間を消す */
 
   .grid-sizer,
   .grid-item {
-    width: calc(50% - 15px);
+    width: calc(50% - 10px); /* 横の余白を調整 */
   }
 
   .gutter-sizer {
-    width: 30px;
+    width: 20px; /* 横の余白を調整 */
   }
 
   .grid-item {
-    margin-bottom: 30px;
+    margin-bottom: 20px; /* 縦の余白を少し減らす */
     display: inline-block;
+    font-size: 16px; /* フォントサイズを戻す */
+    vertical-align: top; /* 上端揃えにする */
   }
 
   .grid-item img {
     width: 100%;
     height: auto;
+    display: block; /* 画像下部の余白を消す */
     border: var(--img-gray) 1px solid;
   }
+}
 
-  @media screen and (max-width: 768px) {
-    .gallery-container {
-      padding: 10px;
-    }
+@media screen and (max-width: 768px) {
+  .gallery-container {
+    padding: 10px;
+  }
 
+  #grid {
     .grid-sizer,
     .grid-item {
       width: 100%;
-      margin-bottom: 20px;
+      margin-bottom: 15px;
     }
 
     .gutter-sizer {
       width: 0;
     }
+  }
 
-    .category-filter {
-      flex-wrap: wrap;
-      gap: 10px;
-      justify-content: center;
-    }
+  .category-selecter {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
   }
 }
-
 </style>

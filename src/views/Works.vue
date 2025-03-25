@@ -19,7 +19,7 @@
     <div id="grid">
       <div class="grid-sizer"></div>
       <div class="gutter-sizer"></div>
-      <Card
+      <CardPage
         v-for="work in filteredWorks"
         :key="work.id"
         :id="work.id"
@@ -35,7 +35,7 @@
 </template>
 
 <script>
-import Card from '@/components/Card.vue';
+import CardPage from '@/components/Card.vue';
 import TitlePage from '@/components/Title.vue';
 import { works } from '@/data/works';
 import { masonryMixin } from '@/assets/scripts/masonry.js';
@@ -43,7 +43,7 @@ import { masonryMixin } from '@/assets/scripts/masonry.js';
 export default {
   name: 'WorksPage',
   components: {
-    Card,
+    CardPage,
     TitlePage
   },
   mixins: [masonryMixin],

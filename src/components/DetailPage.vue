@@ -18,12 +18,10 @@
 
 <script>
 import { works } from '@/data/works';
-import TitlePage from '@/components/Title.vue';
 
 export default {
   name: 'DetailPage',
   components: {
-    TitlePage
   },
   props: {
     id: {

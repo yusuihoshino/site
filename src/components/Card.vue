@@ -26,7 +26,7 @@
 
 <script>
 export default {
-  name: 'Card',
+  name: 'CardPage',
   props: {
     id: {
       type: String,

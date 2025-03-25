@@ -130,7 +130,12 @@ export const works = [
     title: 'スペイン',
     category: 'drawing',
     year: '2024',
-    image: require('@/assets/img/drawing/スペイン.png')
+    image: require('@/assets/img/drawing/スペイン.png'),
+    content: `
+      <p>スペインの風景を描いた作品です。</p>
+      <p>スペイン旅行で撮影した写真をもとに作成</p>
+        <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/4852ddfebaee4ca38d44303ac1952568" title="スペイン旅行" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px; width: 100%; height: auto; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px; --darkreader-inline-bgimage: initial; --darkreader-inline-bgcolor: rgba(0, 0, 0, 0); --darkreader-inline-boxshadow: rgba(0, 0, 0, 0) 0px 0px 0px; aspect-ratio: 560 / 397;" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-darkreader-inline-bgimage="" data-darkreader-inline-bgcolor="" data-darkreader-inline-boxshadow="" data-ratio="1.4105793450881612"></iframe>
+    `
   },
   {
     id: 'shoes',
@@ -453,7 +458,12 @@ export const works = [
     title: '2045',
     category: 'modeling',
     year: '2024',
-    image: require('@/assets/img/modeling/2045.webp')
+    image: require('@/assets/img/modeling/2045.webp'),
+    content: `
+       <h1>2045</h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/xPI5JWlV96A?si=jJX8RYlL5erpfWjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <a href="https://note.com/yusuihoshino/n/n1668aa2d7258?magazine_key=m27cad5495964">nooteでの解説</a>
+    `
   },
 
   // Logo works
@@ -537,13 +547,6 @@ export const works = [
 
   // Other works
   {
-    id: 'branch2',
-    title: '枝2',
-    category: 'other',
-    year: '2024',
-    image: require('@/assets/img/other/枝2.png')
-  },
-  {
     id: 'human2',
     title: '人間2',
     category: 'other',
@@ -555,14 +558,32 @@ export const works = [
     title: '枝',
     category: 'other',
     year: '2024',
-    image: require('@/assets/img/other/枝.png')
+    image: require('@/assets/img/other/枝.png'),
+    content: `
+      <h1>楽曲『あの枝の葉』PV制作</h1>
+        <h2>概要</h2>
+        <ul>
+            <li>cagtegory：専門学校課題</li>
+            <li>when：１ヶ月（2024/1）</li>
+        </ul>
+        <p>友人の楽曲のPVを制作した。実際の植物の撮影から編集まで一貫して行った。全体を通して、雰囲気の統一を意識して行った。</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EftAitBwAYM?si=RsfKwxN832CWDIym" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <img src="img/枝2.png" alt="">
+    `
   },
   {
     id: 'human1',
     title: '人間',
     category: 'other',
     year: '2024',
-    image: require('@/assets/img/other/人間.jpg')
+    image: require('@/assets/img/other/人間.jpg'),
+    content: `
+    <h1>人間標本</h1>
+        <img src="img/人間.jpg" alt="">
+        <p>表紙の花は四角に切られており、本来の形を無理やり、加害者の美的感覚によって変化させられた暴力性、異常性を表現している。背景は写真の雰囲気を崩さない結麗目な表現にすることで、より花の無惨さをより印象付けている。裏表紙には切られた花びらを配置し、花が四角に切られたことをより強調し、切り落とされた体のようにも見えるグロテスクさも表現している。帯はテキストは縦横比や行間を狭め異常さを表現した。
+        </p>
+        <img src="@/assets/img/other/人間.jp" alt="">
+    `
   },
   {
     id: 'mooo-other2',

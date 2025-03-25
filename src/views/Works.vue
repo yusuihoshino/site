@@ -1,5 +1,5 @@
 <template>
-  <div class="galery-container container" in="container">
+  <div class="gallery-container container">
     <TitlePage
       title="Works"
       description="作品集"
@@ -20,7 +20,7 @@
       <div class="grid-sizer"></div>
       <div class="gutter-sizer"></div>
       <Card
-        v-for="work in works"
+        v-for="work in filteredWorks"
         :key="work.id"
         :id="work.id"
         :title="work.title"
@@ -28,7 +28,7 @@
         :year="work.year"
         :category="work.category"
         :content="work.content"
-        :selectedCategory="selectedCategory"
+        class="grid-item"
       />
     </div>
   </div>
@@ -66,6 +66,14 @@ export default {
       ],
       works
     };
+  },
+  computed: {
+    filteredWorks() {
+      if (this.selectedCategory === 'all') {
+        return this.works;
+      }
+      return this.works.filter(work => work.category === this.selectedCategory);
+    }
   },
   watch: {
     selectedCategory() {

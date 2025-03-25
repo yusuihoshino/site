@@ -4,7 +4,20 @@ import Works from '@/views/Works.vue';
 import History from '@/views/History.vue';
 import Request from '@/views/Request.vue';    
 import Portfolio from '@/views/Portfolio.vue';
-import { generateDetailRoutes } from '@/data/works';
+import DetailPage from '@/components/DetailPage.vue';
+import { works } from '@/data/works';
+
+// 詳細ページのルートを生成
+const generateDetailRoutes = () => {
+  return works
+    .filter(work => work.content)
+    .map(work => ({
+      path: `/works/${work.id}`,
+      name: `work-${work.id}`,
+      component: DetailPage,
+      props: true
+    }));
+};
 
 const routes = [
   {

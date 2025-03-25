@@ -30,18 +30,26 @@ export default {
   padding: 20px 0;
   text-align: left;
   width: 100%;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  /* background-color: rgba(245, 245, 245, 0.8); */
+  /* border-bottom: 1px solid var(--img-gray); */
   h2 {
-  margin: 0;
-  font-size: 2rem;
-  font-weight: 700;
-  color: var(--font-black);
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--font-black);
   }
-  h3{
-      font-size:0.8rem;
-      letter-spacing: 0.4rem;
-      opacity: 0.5;
+  h3 {
+    font-size: 0.8rem;
+    letter-spacing: 0.4rem;
+    opacity: 0.5;
   }
 }
 
+/* ダークモード対応 */
+:root[data-theme="dark"] .title {
+  background-color: rgba(26, 26, 26, 0.8);
+}
 </style>
 

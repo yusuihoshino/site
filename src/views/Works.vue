@@ -81,15 +81,6 @@ export default {
       }
       return this.works.filter(work => work.category === this.selectedCategory);
     }
-  },
-  watch: {
-    selectedCategory() {
-      this.$nextTick(() => {
-        if (this.masonry) {
-          this.masonry.layout();
-        }
-      });
-    }
   }
 };
 </script>

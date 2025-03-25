@@ -8,30 +8,42 @@ export const masonryMixin = {
   },
 
   mounted() {
-    this.$nextTick(() => {
-      const grid = document.getElementById('grid');
-      if (!grid) return;
+    this.initMasonry();
+  },
 
-      this.masonry = new Masonry(grid, {
-        itemSelector: '.grid-item',
-        columnWidth: '.grid-sizer',
-        gutter: '.gutter-sizer',
-        percentPosition: true,
-        transitionDuration: '0.2s'
-      });
+  methods: {
+    initMasonry() {
+      this.$nextTick(() => {
+        const grid = document.getElementById('grid');
+        if (!grid) return;
 
-      // 画像が読み込まれた後にレイアウトを更新
-      imagesLoaded(grid, () => {
-        this.masonry.layout();
+        // 既存のMasonryインスタンスがあれば破棄
+        if (this.masonry) {
+          this.masonry.destroy();
+        }
+
+        this.masonry = new Masonry(grid, {
+          itemSelector: '.grid-item',
+          columnWidth: '.grid-sizer',
+          gutter: '.gutter-sizer',
+          percentPosition: true,
+          transitionDuration: 0 // アニメーションを無効化
+        });
+
+        // 画像が読み込まれた後にレイアウトを更新
+        imagesLoaded(grid).on('progress', () => {
+          this.masonry.layout();
+        }).on('done', () => {
+          this.masonry.layout();
+        });
       });
-    });
+    }
   },
 
   updated() {
     this.$nextTick(() => {
-      if (this.masonry) {
-        this.masonry.layout();
-      }
+      // DOM更新後にMasonryを再初期化
+      this.initMasonry();
     });
   },
 

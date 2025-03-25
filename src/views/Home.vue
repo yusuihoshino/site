@@ -64,7 +64,7 @@ export default {
 
     }
     .section1{
-        width: 500px;
+        width: 600px;
         margin:0 auto;
         dotlottie-player{
             margin:0 auto;

@@ -101,7 +101,6 @@ export default {
   gap: 10px;
   color: var(--font-black);
   text-decoration: none;
-  transition: opacity 0.3s ease;
 
   &:hover {
     opacity: 0.7;

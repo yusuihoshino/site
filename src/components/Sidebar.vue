@@ -106,7 +106,10 @@ export default {
       background: transparent;
       border: none;
       color: var(--font-black);
-      transition: color 0.4s ease;
+      transition: 0.3s ease;
+      &:hover{
+        letter-spacing: 0.2rem;
+      }
     }
   }
 

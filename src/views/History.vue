@@ -114,7 +114,7 @@ export default {
         display:flex;
         flex-direction: row;
         gap:80px;
-        padding:0 0 100px;
+        padding:100px 0 0;
         
         .history-left{
             text-align: right;

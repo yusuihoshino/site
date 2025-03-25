@@ -18,7 +18,6 @@ body{
     font-weight: 300;
     color:var(--font-black);
     background-color: #ffffff;
-    transition: 0.5s all;
    
     a{
         text-decoration: none;
@@ -26,12 +25,12 @@ body{
     }
     h1{
         font-size:2rem;
-        letter-spacing: 0.5rem;
+        letter-spacing: 0.3rem;
         font-weight: 300;
     }
     h2{
         font-size: 1.3rem;
-        letter-spacing: 0.5rem;
+        letter-spacing: 0.3rem;
         font-weight: 400;
     }
     h3{
@@ -56,7 +55,6 @@ body{
     width: 100vw;
     margin:100px auto 100px;
     transform: translateX(100px);
-    transition: all 0.3s;
     &.closed{
         transform: translateX(0px);
     }

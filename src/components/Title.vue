@@ -32,20 +32,35 @@ export default {
   width: 100%;
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  /* background-color: rgba(245, 245, 245, 0.8); */
-  /* border-bottom: 1px solid var(--img-gray); */
-  h2 {
-    margin: 0;
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--font-black);
+  transition: all 0.3s ease-in-out;
+  color: var(--font-black);
+  animation: slideIn 0.6s ease-out forwards;
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
   }
-  h3 {
-    font-size: 0.8rem;
-    letter-spacing: 0.4rem;
-    opacity: 0.5;
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
 }
 
+.title h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.title h3 {
+  font-size: 0.8rem;
+  letter-spacing: 0.4rem;
+  opacity: 0.5;
+}
 </style>
 

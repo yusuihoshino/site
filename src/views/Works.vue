@@ -90,6 +90,7 @@ export default {
   justify-content: left;
   gap: 20px;
   text-align: center;
+  padding:100px 0 0px;
 
   button {
     padding: 4px 8px;
@@ -168,6 +169,7 @@ export default {
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
+    
   }
 }
 </style>

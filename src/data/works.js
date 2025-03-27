@@ -2,9 +2,9 @@ export const works = [
   // Art works
   {
     id: 'ae1',
-    title: 'processing集',
+    title: 'p5.js集',
     category: 'art',
-    year: '2021',
+    year: '2022',
     image: require('@/assets/img/art/p5-2.png'),
     content: `
        <iframe width="560" height="315" src="https://www.youtube.com/embed/2GaekwoS2No?si=FAIGdwiHmzMVkDxD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -12,10 +12,10 @@ export const works = [
   },
   {
     id: 'ae2',
-    title: 'after effects集',
+    title: 'After Effects集',
     category: 'art',
-    year: '2021',
-    image: require('@/assets/img/art/ae2.webp'),
+    year: '2024',
+    image: require('@/assets/img/art/ae5.png'),
     content: `
       <img src="${require('@/assets/img/art/ae2.webp')}" alt="">
       <img src="${require('@/assets/img/art/ae4.png')}" alt="">
@@ -39,36 +39,8 @@ export const works = [
     id: 'butterfly',
     title: '蝶',
     category: 'drawing',
-    year: '2024',
+    year: '2022',
     image: require('@/assets/img/drawing/蝶.png')
-  },
-  {
-    id: 'purple',
-    title: '紫',
-    category: 'drawing',
-    year: '2024',
-    image: require('@/assets/img/drawing/紫.jpg')
-  },
-  {
-    id: 'smile',
-    title: '笑顔',
-    category: 'drawing',
-    year: '2024',
-    image: require('@/assets/img/drawing/笑顔.png')
-  },
-  {
-    id: 'japan',
-    title: '日本',
-    category: 'drawing',
-    year: '2022',
-    image: require('@/assets/img/drawing/日本.png')
-  },
-  {
-    id: 'model',
-    title: 'モデル',
-    category: 'drawing',
-    year: '2022',
-    image: require('@/assets/img/drawing/モデル.png')
   },
   {
     id: 'pink',
@@ -78,6 +50,27 @@ export const works = [
     image: require('@/assets/img/drawing/ピンク.png')
   },
   {
+    id: 'model',
+    title: 'モデル',
+    category: 'drawing',
+    year: '2022',
+    image: require('@/assets/img/drawing/モデル.png')
+  },
+  {
+    id: 'japan',
+    title: '日本',
+    category: 'drawing',
+    year: '2022',
+    image: require('@/assets/img/drawing/日本.png')
+  },
+  {
+    id: 'purple',
+    title: '紫',
+    category: 'drawing',
+    year: '2025',
+    image: require('@/assets/img/drawing/紫.jpg')
+  },
+  {
     id: 'twintail',
     title: 'ツインテール',
     category: 'drawing',
@@ -85,15 +78,20 @@ export const works = [
     image: require('@/assets/img/drawing/ツインテール.png')
   },
   {
+    id: 'smile',
+    title: '笑顔',
+    category: 'drawing',
+    year: '2024',
+    image: require('@/assets/img/drawing/笑顔.png')
+  },
+  {
     id: 'spain',
-    title: 'スペイン',
+    title: 'スペイン旅行イラスト',
     category: 'drawing',
     year: '2024',
     image: require('@/assets/img/drawing/スペイン.png'),
     content: `
-      <p>スペインの風景を描いた作品です。</p>
-      <p>スペイン旅行で撮影した写真をもとに作成</p>
-        <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/4852ddfebaee4ca38d44303ac1952568" title="スペイン旅行" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px; width: 100%; height: auto; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px; --darkreader-inline-bgimage: initial; --darkreader-inline-bgcolor: rgba(0, 0, 0, 0); --darkreader-inline-boxshadow: rgba(0, 0, 0, 0) 0px 0px 0px; aspect-ratio: 560 / 397;" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-darkreader-inline-bgimage="" data-darkreader-inline-bgcolor="" data-darkreader-inline-boxshadow="" data-ratio="1.4105793450881612"></iframe>
+      <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/4852ddfebaee4ca38d44303ac1952568" title="スペイン旅行" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px; width: 100%; height: auto; --darkreader-inline-border-top: 0px; --darkreader-inline-border-right: 0px; --darkreader-inline-border-bottom: 0px; --darkreader-inline-border-left: 0px; --darkreader-inline-bgimage: initial; --darkreader-inline-bgcolor: rgba(0, 0, 0, 0); --darkreader-inline-boxshadow: rgba(0, 0, 0, 0) 0px 0px 0px; aspect-ratio: 560 / 397;" data-darkreader-inline-border-top="" data-darkreader-inline-border-right="" data-darkreader-inline-border-bottom="" data-darkreader-inline-border-left="" data-darkreader-inline-bgimage="" data-darkreader-inline-bgcolor="" data-darkreader-inline-boxshadow="" data-ratio="1.4105793450881612"></iframe>
     `
   },
   {
@@ -120,6 +118,49 @@ export const works = [
 
   // Photo works
   {
+    id: 'yatai1',
+    title: '屋台',
+    category: 'photo',
+    year: '2019',
+    image: require('@/assets/img/photo/屋台.jpg')
+  },
+  {
+    id: 'yatai2',
+    title: '屋台2',
+    category: 'photo',
+    year: '2019',
+    image: require('@/assets/img/photo/屋台2.jpg')
+  },
+  {
+    id: 'yatai3',
+    title: '屋台3',
+    category: 'photo',
+    year: '2019',
+    image: require('@/assets/img/photo/屋台3.jpg')
+  },
+  {
+    id: 'shibuya',
+    title: '渋谷',
+    category: 'photo',
+    year: '2023',
+    image: require('@/assets/img/photo/渋谷.jpg')
+  },
+  {
+    id: 'outside',
+    title: '外',
+    category: 'photo',
+    year: '2023',
+    image: require('@/assets/img/photo/外.jpg')
+  },
+
+  {
+    id: 'lionfish',
+    title: 'ミノカサゴ',
+    category: 'photo',
+    year: '2025',
+    image: require('@/assets/img/photo/ミノカサゴ.jpg')
+  },
+  {
     id: 'kanban',
     title: '看板',
     category: 'photo',
@@ -133,13 +174,7 @@ export const works = [
     year: '2025',
     image: require('@/assets/img/photo/目.jpg')
   },
-  {
-    id: 'shibuya',
-    title: '渋谷',
-    category: 'photo',
-    year: '2023',
-    image: require('@/assets/img/photo/渋谷.jpg')
-  },
+  
   {
     id: 'okinawa',
     title: '沖縄',
@@ -162,46 +197,11 @@ export const works = [
     image: require('@/assets/img/photo/工事.jpg')
   },
   {
-    id: 'yatai3',
-    title: '屋台3',
-    category: 'photo',
-    year: '2019',
-    image: require('@/assets/img/photo/屋台3.jpg')
-  },
-  {
-    id: 'yatai2',
-    title: '屋台2',
-    category: 'photo',
-    year: '2019',
-    image: require('@/assets/img/photo/屋台2.jpg')
-  },
-  {
-    id: 'yatai1',
-    title: '屋台',
-    category: 'photo',
-    year: '2019',
-    image: require('@/assets/img/photo/屋台.jpg')
-  },
-  {
-    id: 'outside',
-    title: '外',
-    category: 'photo',
-    year: '2023',
-    image: require('@/assets/img/photo/外.jpg')
-  },
-  {
     id: 'museum',
     title: '博物館',
     category: 'photo',
     year: '2023',
     image: require('@/assets/img/photo/博物館.jpg')
-  },
-  {
-    id: 'lionfish',
-    title: 'ミノカサゴ',
-    category: 'photo',
-    year: '2025',
-    image: require('@/assets/img/photo/ミノカサゴ.jpg')
   },
 
   // Product works
@@ -227,12 +227,32 @@ export const works = [
   },
   {
     id: 'mouches',
-    title: '飛蚊症',
+    title: '飛蚊症の不安を和らげる飛蚊症記録スライド',
     category: 'product',
     year: '2024',
     image: require('@/assets/img/product/飛蚊症.webp'),
     content: `
+      <ul>
+        <li>cagtegory：自主制作</li>
+        <li>when：2023/11</li>
+      </ul>
+      <p>飛蚊症（視界にゴミが見える症状）の不安解消、患者と医者のコミュニケーションを目的とした、飛蚊症を記録できるGoogleスライドを制作し、公開した。既存の手段の濃さや位置を指定できないという課題を解決した。</p>
       <img src="${require('@/assets/img/product/飛蚊症.webp')}" alt="">
+    `
+  },
+  {
+    id: 'vue',
+    title: 'Vue.jsで作成したポートフォリオサイト',
+    category: 'product',
+    year: '2024',
+    image: require('@/assets/img/no.png'),
+    content: `
+      <ul>
+        <li>cagtegory：自主制作</li>
+        <li>when：1週間（2025/3）</li>
+      </ul>
+      <p>Vue.jsを初めて利用したポートフォリオサイト。背景色を設定して、楽しめる。</p>
+      <img src="${require('@/assets/img/no.png')}" alt="">
     `
   },
   {
@@ -373,6 +393,18 @@ export const works = [
   },
 
   // Modeling works
+
+  {
+    id: '2045',
+    title: '2045',
+    category: 'modeling',
+    year: '2022',
+    image: require('@/assets/img/modeling/2045.webp'),
+    content: `
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/xPI5JWlV96A?si=jJX8RYlL5erpfWjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <a href="https://note.com/yusuihoshino/n/n1668aa2d7258?magazine_key=m27cad5495964">nooteでの解説</a>
+    `
+  },
   {
     id: 'desk1',
     title: '机',
@@ -400,17 +432,6 @@ export const works = [
     category: 'modeling',
     year: '2019',
     image: require('@/assets/img/modeling/銃.jpg')
-  },
-  {
-    id: '2045',
-    title: '2045',
-    category: 'modeling',
-    year: '2022',
-    image: require('@/assets/img/modeling/2045.webp'),
-    content: `
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/xPI5JWlV96A?si=jJX8RYlL5erpfWjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-        <a href="https://note.com/yusuihoshino/n/n1668aa2d7258?magazine_key=m27cad5495964">nooteでの解説</a>
-    `
   },
 
   // Logo works
@@ -492,7 +513,7 @@ export const works = [
   // Other works
   {
     id: 'branch1',
-    title: '楽曲『あの枝の葉』PV制作',
+    title: '楽曲『あの枝の葉』非公式PV制作',
     category: 'other',
     year: '2024',
     image: require('@/assets/img/other/枝.png'),
@@ -509,12 +530,15 @@ export const works = [
   },
   {
     id: 'human1',
-    title: '人間標本リデザイン',
+    title: '文庫本カバーリデザイン『人間標本』湊かなえ',
     category: 'other',
     year: '2024',
     image: require('@/assets/img/other/人間.jpg'),
     content: `
-    <h1>人間標本</h1>
+    <ul>
+        <li>cagtegory：専門学校課題</li>
+        <li>when：１ヶ月(2024/1)</li>
+    </ul>
     <img src="${require('@/assets/img/other/人間.jpg')}" alt="">
     <p>表紙の花は四角に切られており、本来の形を無理やり、加害者の美的感覚によって変化させられた暴力性、異常性を表現している。背景は写真の雰囲気を崩さない結麗目な表現にすることで、より花の無惨さをより印象付けている。裏表紙には切られた花びらを配置し、花が四角に切られたことをより強調し、切り落とされた体のようにも見えるグロテスクさも表現している。帯はテキストは縦横比や行間を狭め異常さを表現した。
     </p>
@@ -529,17 +553,29 @@ export const works = [
     year: '2023',
     image: require('@/assets/img/other/mooo2.png'),
     content: `
+      <ul>
+        <li>cagtegory：専門学校課題</li>
+        <li>when：１ヶ月(2024/1)</li>
+      </ul>
       <img src="${require('@/assets/img/other/mooo2.png')}" alt="">
       <img src="${require('@/assets/img/other/mooo.webp')}" alt="">
-      <p>アプリmoooの裏話などをまとめた8ページの冊子を作成した</p>
+      <p>デザイナーとして参加していたアプリmoooの裏話をまとめた12ページの冊子を制作した。BRUTUS、Casa、ブレーンのようなシンプルなものを目指し、ページごとのレイアウトが同じにならないように意識した。</p>
     `
   },
   {
     id: 'cron',
-    title: 'cron',
+    title: 'コロコロ転がる自作フォントCoron Font',
     category: 'other',
     year: '2024',
-    image: require('@/assets/img/other/cron.png')
+    image: require('@/assets/img/other/cron.png'),
+    content: `
+      <ul>
+        <li>cagtegory：専門学校課題 + 自主制作</li>
+        <li>when：１ヶ月(2024/1)</li>
+      </ul>
+      <img src="${require('@/assets/img/other/cron.png')}" alt="">
+      <p>小さな石ころをモチーフとした角丸を多用したフォントである。ディスプレイ書体としてボードゲームのタイトルなどに使われる想定。文字の丸さを強調するため文字間は広くとった。</p>
+    `
   },
 ];
 

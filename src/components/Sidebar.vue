@@ -81,7 +81,7 @@ export default {
         style.setProperty('--img-gray', '#999999');
       } else {
         style.setProperty('--font-black', '#333333');
-        style.setProperty('--font-white', '#666666');
+        style.setProperty('--font-white', '#ffffff');
         style.setProperty('--img-gray', '#dddddd');
       }
 

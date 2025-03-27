@@ -51,12 +51,12 @@ export default {
     return {
       categories: [
         { value: 'product', label: 'Product' },
-        { value: 'art', label: 'Art' },
-        { value: 'drawing', label: 'Drawing' },
-        { value: 'photo', label: 'Photo' },
         { value: 'poster', label: 'Poster' },
-        { value: 'modeling', label: 'Modeling' },
         { value: 'logo', label: 'Logo' },
+        { value: 'photo', label: 'Photo' },
+        { value: 'modeling', label: 'Modeling' },
+        { value: 'drawing', label: 'Drawing' },
+        { value: 'art', label: 'Art' },
         { value: 'other', label: 'Other' }
       ],
       works

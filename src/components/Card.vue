@@ -10,7 +10,7 @@
     >
       <img :src="image" :alt="title" class="card-image">
       <div class="card-content">
-        <h3>{{ title }}</h3>
+        <h3>{{ title }}<span class="card-click">click</span></h3>
         <p>{{ category }} - {{ year }}</p>
       </div>
     </router-link>
@@ -62,6 +62,15 @@ export default {
   overflow: hidden;
 }
 
+.card-click {
+  font-size: 0.8rem;
+  background: var(--font-black);
+  color: var(--font-white);
+  font-weight: 300;
+  padding: 0 0.5rem;
+  margin-left: 0.5rem;
+}
+
 .card.has-content {
   cursor: pointer;
 }
@@ -88,8 +97,8 @@ export default {
 
   h3 {
     margin: 0;
-    font-size: 1rem;
-    letter-spacing: 0.1em;
+    font-size: 1.2rem;
+    letter-spacing: 0rem;
     color: var(--font-black);
   }
 

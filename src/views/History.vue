@@ -113,6 +113,7 @@ export default {
     .history-section{
         display:flex;
         flex-direction: row;
+        flex-wrap: wrap;
         gap:80px;
         padding:100px 0 0;
         

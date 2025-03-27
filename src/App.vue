@@ -51,7 +51,7 @@ export default {
   display: none; /* PCでは非表示 */
   position: fixed;
   top: 20px;
-  left: 20px;
+  right: 20px;
   z-index: 1000;
   width: 30px;
   height: 24px;

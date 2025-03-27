@@ -116,7 +116,9 @@ export default {
         flex-wrap: wrap;
         gap:80px;
         padding:100px 0 0;
-        
+        h2{
+            margin-top:0;
+        }
         .history-left{
             text-align: right;
             flex:1;

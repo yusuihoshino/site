@@ -32,7 +32,7 @@
             <hr>
             <div class="contact-line">
                 <p>email</p>
-                <a href="mazisu99@gmailcom">mazisu99@gmail.com</a>
+                <a href="mailto:mazisu99@gmailcom">mazisu99@gmail.com</a>
             </div>
             <hr>
             <div class="contact-line">

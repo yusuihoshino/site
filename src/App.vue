@@ -86,19 +86,13 @@ export default {
 }
 
 /* モバイル表示時のスタイル */
-@media (max-width: 767px) {
+@media (max-width: 999px) {
   .hamburger {
     display: block;
   }
 
   .main-content {
     padding-top: 60px; /* ハンバーガーメニューの高さ分 */
-  }
-
-  /* メニューオープン時 */
-  /* メニューオープン時はメインコンテンツを非表示 */
-  .menu-open .main-content {
-    /* display: none;  */
   }
 }
 </style>

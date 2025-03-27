@@ -92,6 +92,8 @@ export default {
   justify-content: start;
   text-align: center;
   padding: 100px 0 0px;
+  flex-wrap: wrap;
+
 
   button {
     padding: 4px 16px;
@@ -162,13 +164,6 @@ export default {
     .gutter-sizer {
       width: 0;
     }
-  }
-
-  .category-selecter {
-    flex-wrap: wrap;
-    gap: 10px;
-    justify-content: center;
-    
   }
 }
 </style>

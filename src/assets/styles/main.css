@@ -30,12 +30,13 @@ body{
         font-size: 1.3rem;
         letter-spacing: 0.3rem;
         font-weight: 400;
+        margin-top: 50px;
     }
     h3{
-        font-size: 1.2rem;
+        font-size: 1rem;
         letter-spacing: 0.3rem;
         font-weight: 400;
-       
+        margin-top: 20px;
     }
     p{
         font-weight: 300;
@@ -47,7 +48,21 @@ body{
      }
    
 }
-
+.article-content{
+    margin-bottom: 100px;
+    h2{
+        font-size: 1.3rem;
+        letter-spacing: 0.3rem;
+        font-weight: 400;
+        margin-top: 50px;
+    }
+    h3{
+        font-size: 1rem;
+        letter-spacing: 0.3rem;
+        font-weight: 400;
+        margin-top: 20px;
+    }
+}
 .container{
     width: 100vw;
     margin:100px auto 100px;

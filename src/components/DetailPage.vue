@@ -4,10 +4,13 @@
     <div class="container">
 
         <div class="detail-info">
-            <h1 class="detail-title">{{ work.title }}</h1>
-            <div class="detail-year">{{ work.year }}</div>
-            <router-link :to="{ path: '/works', query: $route.query }" class="back-link">← 作品一覧に戻る
+            <router-link :to="{ path: '/works', query: $route.query }" class="back-link">← Back
             </router-link>
+            <TitlePage
+                :title="work.title"
+                :description="work.year"
+            />
+           
             <hr>
         </div>
 
@@ -18,10 +21,11 @@
 
 <script>
 import { works } from '@/data/works';
-
+import TitlePage from '@/components/Title.vue';
 export default {
   name: 'DetailPage',
   components: {
+    TitlePage
   },
   props: {
     id: {
@@ -45,6 +49,7 @@ export default {
  
 .container {
   max-width: 600px;
+  
 }
 .back-link {
   display: inline-flex;

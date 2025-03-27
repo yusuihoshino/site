@@ -69,6 +69,7 @@ export default {
   font-weight: 300;
   padding: 0 0.5rem;
   margin-left: 0.5rem;
+  letter-spacing: 0.1rem;
 }
 
 .card.has-content {

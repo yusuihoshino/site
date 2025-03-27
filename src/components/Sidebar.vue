@@ -77,7 +77,7 @@ export default {
 
       if (theme === 'dark') {
         style.setProperty('--font-black', '#ffffff');
-        style.setProperty('--font-white', '#dddddd');
+        style.setProperty('--font-white', '#000000');
         style.setProperty('--img-gray', '#999999');
       } else {
         style.setProperty('--font-black', '#333333');

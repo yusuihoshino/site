@@ -339,12 +339,42 @@ export const works = [
 
 
   // Poster works
+
   {
-    id: 'flying-light',
-    title: '飛翔する光',
+    id: 'oac2',
+    title: 'OAC学生広告クリエイティブアワード',
     category: 'poster',
-    year: '2023',
-    image: require('@/assets/img/poster/飛翔する光.png')
+    year: '2024',
+    image: require('@/assets/img/poster/OAC2.png'),
+    content: `
+      <h2>概要</h2>
+      <ul>
+          <li>専門学校課題、外部コンペ</li>
+          <li>1ヶ月（2024/9）</li>
+      </ul>
+      <p>OACクリエイティブアワードは実際の企業が中心となり、課題の提供と賞を決定する学生向けコンパティション。授業内では全日本空輸株式会社、株式会社森沢についてのポスターラフ制作を5回繰り返した。</p>
+      
+      <h2>課題文一部麥更•省略</h2>
+      <h3>全日本空輸株式会社</h3>
+      <p>若い世代の方々に「ANAで働きたい」と感じていただき行動を起こしていただける様な広告。パイロットや客室素務員以外の職種に焦点を当て制作をする。</p>
+      <h3>株式会社モリサワ</h3>
+      <p>モリサワでは新たな学生向けフォント製品「Morisawa Fontsスタンダードプラン 学生価格」（990円）を発売。より多くの学生さんに、モリサワのフォント選びの楽しさが伝わるような広告を制作する。</p>
+      
+      <h2>第一印象はフォントから</h2>
+      <p>モリサワフォント ①</p>
+      <img src="${require('@/assets/img/poster/OAC1.png')}" alt="">
+      <p>就活生が会社に見せる第一印象は、履歴書の顔写真よりも文字のフォントである。この気づきからお化粧をするようにフォントを整える学生を描いた。</p>
+
+      <h2>フライトを支える仕事</h2>
+      <p>全日本空輸行き会社 ①</p>
+      <img src="${require('@/assets/img/poster/OAC3.png')}" alt="">
+      <p>地上で業務をする作業をキーボードで、それが航空を支える姿をキーボードの「A」と「N」を飛行機が行き来しすることで ANAの航空を支えていることを表現している。</p>
+
+      <h2>上を向く仕事。 ①</h2>
+      <p>全日本空輸行き会社 ②</p>
+      <img src="${require('@/assets/img/poster/OAC2.png')}" alt="">
+      <p>キャッチコピーベースで制作した作業員の人たちの視点と心持ちをポジティブに表現した。</p>
+    `
   },
   {
     id: 'self-portrait',
@@ -354,29 +384,6 @@ export const works = [
     image: require('@/assets/img/poster/自画像.png')
   },
   {
-    id: 'festival',
-    title: 'フェスティバル',
-    category: 'poster',
-    year: '2023',
-    image: require('@/assets/img/poster/フェスティバル.jpg')
-  },
-  {
-    id: 'oac2',
-    title: 'OAC',
-    category: 'poster',
-    year: '2024',
-    image: require('@/assets/img/poster/OAC2.png'),
-    content: `
-     
-      <img src="${require('@/assets/img/poster/OAC1.png')}" alt="">
-      <p>OAC1</p>
-      <img src="${require('@/assets/img/poster/OAC3.png')}" alt="">
-      <p>OAC3</p>
-      <img src="${require('@/assets/img/poster/OAC2.png')}" alt="">
-      <p>OAC2</p>
-    `
-  },
-  {
     id: 'jagda2',
     title: 'JAGDA',
     category: 'poster',
@@ -384,13 +391,29 @@ export const works = [
     image: require('@/assets/img/poster/JAGDA2.webp'),
     content: `
      <img src="${require('@/assets/img/poster/JAGDA1.webp')}" alt="">
-      <p>JAGDA1</p>
+      <p>街で見かける点字ブロックのかけている部分を簡単に繋げることができたらPEACEだと思った。</p>
       <img src="${require('@/assets/img/poster/JAGDA2.webp')}" alt="">
-      <p>JAGDA2</p>
+      <p>爪があるからお互いを傷付けあうとしたら、それらがつながった世界はPEACEかもしれない。</p>
       <img src="${require('@/assets/img/poster/JAGDA3.webp')}" alt="">
-      <p>JAGDA3</p>
+      <p>コードのオスとメスが決められたもの意外と繋がれたら、その自由な発想はPEACEかもしれない</p>
     `
   },
+  {
+    id: 'flying-light',
+    title: '飛翔する光',
+    category: 'poster',
+    year: '2023',
+    image: require('@/assets/img/poster/飛翔する光.png')
+  },
+  
+  {
+    id: 'festival',
+    title: 'フェスティバル',
+    category: 'poster',
+    year: '2023',
+    image: require('@/assets/img/poster/フェスティバル.jpg')
+  },
+  
 
   // Modeling works
 
@@ -435,79 +458,78 @@ export const works = [
   },
 
   // Logo works
-  {
-    id: 'multiple',
-    title: '複数',
-    category: 'logo',
-    year: '2023',
-    image: require('@/assets/img/logo/複数.png')
-  },
+  
   {
     id: 'handicraft1',
-    title: '手芸',
+    title: '手芸サークルロゴ',
     category: 'logo',
     year: '2024',
     image: require('@/assets/img/logo/手芸.png'),
     content: `
-      <img src="@/assets/img/logo/手芸.png" alt="">
-      <img src="@/assets/img/logo/手芸2.png" alt="">
+      <img src="${require('@/assets/img/logo/手芸.png')}" alt="">
     `
   },
   {
     id: 'hoshino',
-    title: 'ほしの',
+    title: '自分のロゴ',
     category: 'logo',
     year: '2023',
     image: require('@/assets/img/logo/ほしの.png')
   },
   {
     id: 'suginoko',
-    title: 'すぎのこ',
+    title: 'すぎのこ幼稚園ロゴ案',
     category: 'logo',
     year: '2023',
     image: require('@/assets/img/logo/すぎのこ.png')
   },
   {
     id: 'mooo-logo',
-    title: 'mooo',
+    title: 'アプリmoooロゴ',
     category: 'logo',
     year: '2023',
     image: require('@/assets/img/logo/mooo.webp')
   },
-  {
-    id: 'zli',
-    title: 'Zli',
-    category: 'logo',
-    year: '2022',
-    image: require('@/assets/img/logo/Zli.jpg')
-  },
+  
   {
     id: 'asc',
-    title: 'asc',
+    title: 'ascサークルロゴ',
     category: 'logo',
     year: '2020',
     image: require('@/assets/img/logo/asc.jpg')
   },
   {
     id: 'koko',
-    title: 'koko',
+    title: '架空の結婚式場kokoロゴ',
     category: 'logo',
     year: '2024',
     image: require('@/assets/img/logo/koko.png')
   },
   {
     id: 'sol',
-    title: 'Sol',
+    title: '蜂蜜専門店Sol Honeyロゴ',
     category: 'logo',
     year: '2023',
     image: require('@/assets/img/logo/Sol.png')
   },
   {
     id: 'dawn',
-    title: 'DAWN',
+    title: '旅行を記録できるアプリDAWNのロゴ',
     category: 'logo',
     year: '2021',
     image: require('@/assets/img/logo/DAWN.jpg')
+  },
+  {
+    id: 'practice',
+    title: 'ロゴ練習',
+    category: 'logo',
+    year: '2024',
+    image: require('@/assets/img/logo/複数.png'),
+    content: `
+      <img src="${require('@/assets/img/logo/複数.png')}" alt="">
+       <img src="${require('@/assets/img/logo/Zli.jpg')}" alt="">
+        <img src="${require('@/assets/img/logo/手芸2.png')}" alt="">
+    `
   },
 
   // Other works

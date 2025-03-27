@@ -50,15 +50,14 @@ export default {
   data() {
     return {
       categories: [
-        { value: 'all', label: 'すべて' },
-        { value: 'product', label: 'プロダクト' },
-        { value: 'logo', label: 'ロゴ' },
-        { value: 'poster', label: 'ポスター' },
-        { value: 'photo', label: '写真' },
-        { value: 'other', label: 'その他' }
-        { value: 'art', label: 'アート' },
-        { value: 'drawing', label: 'イラスト' },
-        { value: 'modeling', label: 'モデリング' },
+        { value: 'product', label: 'Product' },
+        { value: 'art', label: 'Art' },
+        { value: 'drawing', label: 'Drawing' },
+        { value: 'photo', label: 'Photo' },
+        { value: 'poster', label: 'Poster' },
+        { value: 'modeling', label: 'Modeling' },
+        { value: 'logo', label: 'Logo' },
+        { value: 'other', label: 'Other' }
       ],
       works
     };
@@ -66,16 +65,13 @@ export default {
   computed: {
     selectedCategory: {
       get() {
-        return this.$route.query.category || 'all';
+        return this.$route.query.category || 'product';
       },
       set(value) {
-        this.$router.replace({ query: { category: value === 'all' ? null : value } });
+        this.$router.replace({ query: { category: value } });
       }
     },
     filteredWorks() {
-      if (this.selectedCategory === 'all') {
-        return this.works;
-      }
       return this.works.filter(work => work.category === this.selectedCategory);
     }
   }
@@ -94,9 +90,8 @@ export default {
   width: 100%;
   display: flex;
   justify-content: left;
-  gap: 0px;
   text-align: center;
-  padding:100px 0 0px;
+  padding: 100px 0 0px;
 
   button {
     padding: 4px 16px;
@@ -113,8 +108,8 @@ export default {
 
   button.active {
     background: var(--font-black);
-    font-weight: 600;
-    color: var(--bg);
+    font-weight: 400;
+    color: #ffffff;
   }
 }
 

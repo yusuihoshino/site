@@ -37,6 +37,9 @@ export default {
 <style scoped>  
 .content{
   padding:100px 0 0;
+  p {
+    margin-bottom: 60px;
+  }
 }
 
 </style>

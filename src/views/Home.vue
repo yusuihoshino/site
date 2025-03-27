@@ -66,6 +66,10 @@ export default {
         margin:0 auto;
         max-width: 600px;
         text-align: center;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        gap:0;
 
         dotlottie-player{
             margin:0 auto;

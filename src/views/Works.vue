@@ -100,6 +100,7 @@ export default {
     cursor: pointer;
     transition: all 0.3s ease;
     background: none;
+    letter-spacing: 0.15rem;
     color: var(--font-black);
     &:hover {
       background: var(--img-gray);
@@ -108,7 +109,7 @@ export default {
 
   button.active {
     background: var(--font-black);
-    font-weight: 400;
+    /* font-weight: 400; */
     color: #ffffff;
   }
 }

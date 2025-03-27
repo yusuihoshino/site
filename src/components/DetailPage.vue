@@ -6,10 +6,8 @@
         <div class="detail-info">
             <router-link :to="{ path: '/works', query: $route.query }" class="back-link">← Back
             </router-link>
-            <TitlePage
-                :title="work.title"
-                :description="work.year"
-            />
+            <h1 class="detail-title">{{ work.title }}</h1>
+            <div class="detail-year">{{ work.year }}</div>
            
             <hr>
         </div>
@@ -21,11 +19,11 @@
 
 <script>
 import { works } from '@/data/works';
-import TitlePage from '@/components/Title.vue';
+// import TitlePage from '@/components/Title.vue';
 export default {
   name: 'DetailPage',
   components: {
-    TitlePage
+    // TitlePage
   },
   props: {
     id: {
@@ -46,7 +44,9 @@ export default {
 </script>
 
 <style scoped>
- 
+ hr{
+  size: 0.5px;
+ }
 .container {
   max-width: 600px;
   
@@ -68,7 +68,7 @@ export default {
   /* border-top: 1px solid var(--font-black); */
 
   .detail-title {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 300;
     margin-bottom: 10px;
     color: var(--font-black);

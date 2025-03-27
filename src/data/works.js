@@ -17,7 +17,7 @@ export const works = [
     year: '2024',
     image: require('@/assets/img/art/ae5.png'),
     content: `
-      <img src="${require('@/assets/img/art/ae2.webp')}" alt="">
+      <img src="${require('@/assets/img/art/ae2.png')}" alt="">
       <img src="${require('@/assets/img/art/ae4.png')}" alt="">
       <img src="${require('@/assets/img/art/ae5.png')}" alt="">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/wy6mpLfVUVg?si=4qb2M98YklJR1LBy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -366,16 +366,11 @@ export const works = [
     id: 'wake',
     title: 'wakeupwith',
     category: 'product',
-    year: '2025',
+    year: '2025/3（2ヶ月）',
+    type: '100Programアプリ賞',
+    asign: 'UI/UXデザイン、プロモーション。他メンバーはエンジニア2名',
     image: require('@/assets/img/no.png'),
     content: `
-      <ul>
-            <li>cagtegory：自主制作</li>
-            <li>when：2024の半年</li>
-            <li>other member：エンジニア2 </li>
-            <li>assign：UI/UXデザイン、プロモーション</li>
-            <li>award：100program アプリ賞</li>
-        </ul>
         <a href="https://wakeupwith.framer.website/">wakeupwithのサイト</a>
         <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
         padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
@@ -397,15 +392,10 @@ export const works = [
     id: 'oac2',
     title: 'OAC学生広告クリエイティブアワード',
     category: 'poster',
-    year: '2024（１ヶ月）',
-    type: '課題、OACコンペ',
+    year: '2024/9（１ヶ月）',
+    type: '専門学校課題、OACコンペ',
     image: require('@/assets/img/poster/OAC2.png'),
     content: `
-      <h2>概要</h2>
-      <ul>
-          <li>専門学校課題、外部コンペ</li>
-          <li>1ヶ月（2024/9）</li>
-      </ul>
       <p>OACクリエイティブアワードは実際の企業が中心となり、課題の提供と賞を決定する学生向けコンパティション。授業内では全日本空輸株式会社、株式会社森沢についてのポスターラフ制作を5回繰り返した。</p>
       
       <h2>課題文一部麥更•省略</h2>
@@ -595,30 +585,22 @@ export const works = [
     id: 'branch1',
     title: '楽曲『あの枝の葉』非公式PV制作',
     category: 'other',
-    year: '2024',
+    year: '2024（1ヶ月）',
+    type: '専門学校課題',
     image: require('@/assets/img/other/枝.png'),
     content: `
-      <h2>概要</h2>
-      <ul>
-          <li>cagtegory：専門学校課題</li>
-          <li>when：１ヶ月（2024/1）</li>
-      </ul>
       <p>友人の楽曲のPVを制作した。実際の植物の撮影から編集まで一貫して行った。全体を通して、雰囲気の統一を意識して行った。</p>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/EftAitBwAYM?si=RsfKwxN832CWDIym" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-      <img src="img/枝2.png" alt="">
     `
   },
   {
     id: 'human1',
     title: '文庫本カバーリデザイン『人間標本』湊かなえ',
     category: 'other',
-    year: '2024',
+    year: '2024（1ヶ月）',
+    type: '専門学校課題',
     image: require('@/assets/img/other/人間.jpg'),
     content: `
-    <ul>
-        <li>cagtegory：専門学校課題</li>
-        <li>when：１ヶ月(2024/1)</li>
-    </ul>
     <img src="${require('@/assets/img/other/人間.jpg')}" alt="">
     <p>表紙の花は四角に切られており、本来の形を無理やり、加害者の美的感覚によって変化させられた暴力性、異常性を表現している。背景は写真の雰囲気を崩さない結麗目な表現にすることで、より花の無惨さをより印象付けている。裏表紙には切られた花びらを配置し、花が四角に切られたことをより強調し、切り落とされた体のようにも見えるグロテスクさも表現している。帯はテキストは縦横比や行間を狭め異常さを表現した。
     </p>
@@ -630,13 +612,10 @@ export const works = [
     id: 'mooo-other2',
     title: 'mooo冊子',
     category: 'other',
-    year: '2023',
+    year: '2023（1ヶ月）',
+    type: '専門学校課題',
     image: require('@/assets/img/other/mooo2.png'),
     content: `
-      <ul>
-        <li>cagtegory：専門学校課題</li>
-        <li>when：１ヶ月(2024/1)</li>
-      </ul>
       <img src="${require('@/assets/img/other/mooo2.png')}" alt="">
       <img src="${require('@/assets/img/other/mooo.webp')}" alt="">
       <p>デザイナーとして参加していたアプリmoooの裏話をまとめた12ページの冊子を制作した。BRUTUS、Casa、ブレーンのようなシンプルなものを目指し、ページごとのレイアウトが同じにならないように意識した。</p>
@@ -646,13 +625,10 @@ export const works = [
     id: 'cron',
     title: 'コロコロ転がる自作フォントCoron Font',
     category: 'other',
-    year: '2024',
+    year: '2024（1ヶ月）',
+    type: '専門学校課題',
     image: require('@/assets/img/other/cron.png'),
     content: `
-      <ul>
-        <li>cagtegory：専門学校課題 + 自主制作</li>
-        <li>when：１ヶ月(2024/1)</li>
-      </ul>
       <img src="${require('@/assets/img/other/cron.png')}" alt="">
       <p>小さな石ころをモチーフとした角丸を多用したフォントである。ディスプレイ書体としてボードゲームのタイトルなどに使われる想定。文字の丸さを強調するため文字間は広くとった。</p>
     `

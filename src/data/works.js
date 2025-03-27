@@ -207,12 +207,35 @@ export const works = [
   // Product works
   {
     id: 'timo',
-    title: 'timo',
+    title: '身の回りのモノで作った時間を刻むアプリTimo',
     category: 'product',
-    year: '2024',
+    year: '2024/2（2ヶ月）',
     image: require('@/assets/img/product/timo.png'),
+    type: '専門学校卒業制作（奨励賞2位/40名）',
+    asign: 'UI/UXデザイン、実装',
     content: `
+      <p>身の回りのモノを組み合わせて10種類の数字のフォントを制作し、それらを活用した時計、タイマー、ストップウォッチのウェブアプリを開発し、公開した。</p>
       <img src="${require('@/assets/img/product/timo.png')}" alt="">
+      <h2>コンセプト</h2>
+      <h3>課題</h3>
+      <p>既存のウェブのストップウォッチ、タイマーアプリのデザインは複雑すぎるものや無機質で面白みのないものが多い。</p>
+      <h3>解決策</h3>
+      <p>子供が身の回りのモノを組み合わせることで数字や文字を形作って遊ぶようなアナログな表現を取り入れる。</p>
+      <h3>ターゲット</h3>
+      <p>理系の男子大学生のような機能性を重視する方に対して機能性以外の価値を考えるきっかけを作る。</p>
+      
+      <h2>ロゴ</h2>
+      <p>Time+ObjectでTimo（タイモ）と名付けた。</p>
+      <p>ロゴの「i」はモノが時間を刻む砂時計の砂のように落ちていく様子を表現している。</p>
+
+      <h2>モノから作った10種類の数字フォント</h2>
+      <p>モノから作った10種類の数字フォントを使用した時計、タイマー、ストップウォッチのウェブアプリを開発し、公開した。</p>
+      <img src="${require('@/assets/img/product/timo2.png')}" alt="">
+
+      <h2>時計、タイマー、ストップウォッチ</h2>
+      <p>背景色、フォントサイズを自由に設定し、好みの設定を探求する楽しみがある。</p>
+      <img src="${require('@/assets/img/product/timo3.png')}" alt="">
+
     `
   },
   {
@@ -220,54 +243,77 @@ export const works = [
     title: '琥珀日記',
     category: 'product',
     year: '2024',
+    type: 'アオタケプロジェクト',
+    asign: 'UI/UXデザイン。他メンバーはエンジニア複数人',
     image: require('@/assets/img/product/琥珀日記.jpg'),
     content: `
       <img src="${require('@/assets/img/product/琥珀日記.jpg')}" alt="">
+      <a target="_blank" href="https://aizu-startups-foundation.com/aotake/top">アオタケプロジェクト</a>
+      <a target="_blank" href="https://note.com/spurcle_tohoku/n/n4bc9a7f632b3">参考記事</a>
+    `
+  },
+  {
+    id: 'dawn',
+    title: 'DAWN',
+    category: 'product',
+    year: '2021',
+    type: 'TOHOKU GRROWTH ACCERARETOR、自主制作',
+    asign: 'アイデア、UI/UXデザイン。他メンバーエンジニア5名、ビジネス1名',
+    image: require('@/assets/img/logo/DAWN.jpg'),
+    content: `
+        <img src="${require('@/assets/img/product/dawn1.png')}" alt="">
+        <img src="${require('@/assets/img/product/dawn2.png')}" alt="">
+        <img src="${require('@/assets/img/product/dawn3.png')}" alt="">
+        <img src="${require('@/assets/img/product/dawn4.png')}" alt="">
+        <img src="${require('@/assets/img/product/dawn5.png')}" alt="">
+        <img src="${require('@/assets/img/product/dawn6.png')}" alt="">
+        <img src="${require('@/assets/img/product/dawn7.png')}" alt="">
+        <img src="${require('@/assets/img/product/dawn8.png')}" alt="">
+        
     `
   },
   {
     id: 'mouches',
     title: '飛蚊症の不安を和らげる飛蚊症記録スライド',
     category: 'product',
-    year: '2024',
+    year: '2024（1週間）',
     image: require('@/assets/img/product/飛蚊症.webp'),
+    type: '自主制作',
     content: `
-      <ul>
-        <li>cagtegory：自主制作</li>
-        <li>when：2023/11</li>
-      </ul>
       <p>飛蚊症（視界にゴミが見える症状）の不安解消、患者と医者のコミュニケーションを目的とした、飛蚊症を記録できるGoogleスライドを制作し、公開した。既存の手段の濃さや位置を指定できないという課題を解決した。</p>
       <img src="${require('@/assets/img/product/飛蚊症.webp')}" alt="">
+      <a target="_blank" href="https://note.com/yusuihoshino/n/n7dbc225dc067">解説note</a>
     `
   },
   {
     id: 'vue',
     title: 'Vue.jsで作成したポートフォリオサイト',
     category: 'product',
-    year: '2024',
-    image: require('@/assets/img/no.png'),
+    year: '2025/3（1週間）',
+    image: require('@/assets/img/product/site.png'),
+    type: '自主制作',
+    asign: 'デザイン、実装',
     content: `
-      <ul>
-        <li>cagtegory：自主制作</li>
-        <li>when：1週間（2025/3）</li>
-      </ul>
-      <p>Vue.jsを初めて利用したポートフォリオサイト。背景色を設定して、楽しめる。</p>
-      <img src="${require('@/assets/img/no.png')}" alt="">
+      <img src="${require('@/assets/img/product/site.png')}" alt="">
+      <p>Vue.jsを初めて利用したポートフォリオサイト。</p>
+
+      <img src="${require('@/assets/img/product/site2.png')}" alt="">
+      <p>背景色を設定して、楽しめる。</p>
+
+      <img src="${require('@/assets/img/product/site3.png')}" alt="">
+      <p>データはJSに全てまとまっており、自動で作品のカード生成、詳細ページ生成を行っている。</p>
+
     `
   },
   {
     id: 'mooo9',
     title: 'mooo（カップルがおはようを伝えるアプリ',
     category: 'product',
-    year: '2023',
-    image: require('@/assets/img/product/mooo9.png'),
+    year: '2023（半年）',
+    type: '自主制作',
+    asign: 'UI/UXデザイン、プロモーション。他メンバーはエンジニア5名',
+    image: require('@/assets/img/product/mooo.webp'),
     content: `
-     <ul>
-            <li>cagtegory：自主制作</li>
-            <li>when：2023の半年</li>
-            <li>other member：エンジニア5 </li>
-            <li>assign：UI/UXデザイン、プロモーション</li>
-        </ul>
      <img src="${require('@/assets/img/product/mooo1.png')}" alt="">
      <img src="${require('@/assets/img/product/mooo2.png')}" alt="">
      <img src="${require('@/assets/img/product/mooo3.png')}" alt="">
@@ -282,31 +328,38 @@ export const works = [
     id: 'mm',
     title: 'mm',
     category: 'product',
-    year: '2024',
-    image: require('@/assets/img/product/mm.png')
-  },
-  {
-    id: 'mooo',
-    title: 'カップル向けアプリmooo',
-    category: 'product',
-    year: '2023',
-    image: require('@/assets/img/product/mooo.webp')
+    year: '2024（2週間）',
+    type: '自主制作',
+    asign: '企画、デザイン、実装',
+    image: require('@/assets/img/product/mm.png'),
+    content: `
+    <p>ウェブにあるストップウォッチのデザインに我慢ならなかったので、世界で一番ミニマルでデザインを楽しめるものを作りました。既存のストップウォッチがごちゃごちゃして見える、背景色を変えるだけでウキウキできる そんな人にオススメ！</p>
+      <img src="${require('@/assets/img/product/mm.png')}" alt="">
+      <a target="_blank" href="https://yusuihoshino.github.io/mm/timer/index.html">mmアプリ</a>
+
+    `
   },
   {
     id: 'make',
     title: 'make',
     category: 'product',
     year: '2024',
-    image: require('@/assets/img/product/make.png')
+    image: require('@/assets/img/product/make.png'),
+    content: `
+      <img src="${require('@/assets/img/product/make.png')}" alt="">
+    `
   },
   {
     id: 'ryoomoi',
-    title: '両思い',
+    title: '両思いチェッカー',
     category: 'product',
     year: '2021',
+    type: 'Hack U',
+    asign: 'アイデア、UI/UXデザイン。他メンバーはエンジニア3名、ビジネス１名',
     image: require('@/assets/img/no.png'),
     content: `
       <img src="${require('@/assets/img/no.png')}" alt="">
+      <a target="_blank" href="https://note.com/yusuihoshino/n/n62841f487d36?magazine_key=m27cad5495964">参加レポートnote</a>
     `
   },
   {
@@ -344,7 +397,8 @@ export const works = [
     id: 'oac2',
     title: 'OAC学生広告クリエイティブアワード',
     category: 'poster',
-    year: '2024',
+    year: '2024（１ヶ月）',
+    type: '課題、OACコンペ',
     image: require('@/assets/img/poster/OAC2.png'),
     content: `
       <h2>概要</h2>
@@ -517,7 +571,11 @@ export const works = [
     title: '旅行を記録できるアプリDAWNのロゴ',
     category: 'logo',
     year: '2021',
-    image: require('@/assets/img/logo/DAWN.jpg')
+    image: require('@/assets/img/logo/DAWN.jpg'),
+    content: `
+      <img src="${require('@/assets/img/logo/DAWN.jpg')}" alt="">
+      <a target="_blank" href="https://note.com/yusuihoshino/n/nca8c32b90238?magazine_key=m27cad5495964">参加レポートnote</a>
+    `
   },
   {
     id: 'practice',

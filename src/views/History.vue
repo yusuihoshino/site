@@ -133,7 +133,7 @@ export default {
                 .line{
                     width:80px;
                     height:1px;
-                    background:var(--font-white);
+                    background:var(--font-black);
                 }
             }
             

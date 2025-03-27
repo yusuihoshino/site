@@ -6,10 +6,19 @@
         <div class="detail-info">
             <router-link :to="{ path: '/works', query: $route.query }" class="back-link">← Back
             </router-link>
+
             <h1 class="detail-title">{{ work.title }}</h1>
-            <div class="detail-year">{{ work.year }}</div>
-           
-            <hr>
+            <div class="detail-items">
+              <div v-if="work.year" class="detail-item">
+                <span class="detail-item-title">When</span>{{ work.year }}
+              </div>
+              <div v-if="work.type" class="detail-item">
+                <span class="detail-item-title">Type</span>{{ work.type }}
+              </div>
+              <div v-if="work.asign" class="detail-item">
+                <span class="detail-item-title">Asign</span>{{ work.asign }}
+              </div>
+            </div>
         </div>
 
         <div class="article-content" v-html="work.content"></div>
@@ -33,6 +42,14 @@ export default {
     category: {
       type: String,
       default: 'all'
+    },
+    type: {
+      type: String,
+      default: ''
+    },
+    asign: {
+      type: String,
+      default: ''
     }
   },
   computed: {
@@ -66,21 +83,30 @@ export default {
 .detail-info {
   margin: 40px 0;
   /* border-top: 1px solid var(--font-black); */
+  .detail-items{
+    border-left: 0.5px solid var(--font-black);
+    padding-left: 30px;
+    margin: 40px 0;
 
-  .detail-title {
-    font-size: 2rem;
-    font-weight: 300;
-    margin-bottom: 10px;
-    color: var(--font-black);
+  .detail-item {
+    .detail-item-title {
+    font-size: 1rem;
+    font-weight: 400;
+    margin-right: 20px;
+    display:inline-block;
+    width:40px;
+    text-align: right;
+    letter-spacing: 0.1em;
+    }
   }
-  .detail-year {
-    margin-bottom: 20px;
+
   }
+
 }
 .article-content{
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 40px;
 }
 </style>
 

@@ -51,14 +51,14 @@ export default {
     return {
       categories: [
         { value: 'all', label: 'すべて' },
+        { value: 'product', label: 'プロダクト' },
+        { value: 'logo', label: 'ロゴ' },
+        { value: 'poster', label: 'ポスター' },
+        { value: 'photo', label: '写真' },
+        { value: 'other', label: 'その他' }
         { value: 'art', label: 'アート' },
         { value: 'drawing', label: 'イラスト' },
-        { value: 'photo', label: '写真' },
-        { value: 'product', label: 'プロダクト' },
-        { value: 'poster', label: 'ポスター' },
         { value: 'modeling', label: 'モデリング' },
-        { value: 'logo', label: 'ロゴ' },
-        { value: 'other', label: 'その他' }
       ],
       works
     };
@@ -83,24 +83,29 @@ export default {
 </script>
 
 <style scoped>
+
+/* 暗い背景のとき */
+:root[data-theme="dark"] .container .category-selecter button.active {
+  background-color: #ffffff !important;
+  color: #333333;
+}
 .category-selecter {
   margin-bottom: 30px;
   width: 100%;
   display: flex;
   justify-content: left;
-  gap: 20px;
+  gap: 0px;
   text-align: center;
   padding:100px 0 0px;
 
   button {
-    padding: 4px 8px;
+    padding: 4px 16px;
     border: none;
     border-radius: 0px;
     cursor: pointer;
     transition: all 0.3s ease;
     background: none;
     color: var(--font-black);
-    border-radius: 100px;
     &:hover {
       background: var(--img-gray);
     }
@@ -108,15 +113,11 @@ export default {
 
   button.active {
     background: var(--font-black);
-    color: #ffffff;
+    font-weight: 600;
+    color: var(--bg);
   }
 }
 
-/* 暗い背景のとき */
-:root[data-theme="dark"] .container .category-selecter button.active {
-  background-color: #ffffff !important;
-  color: #333333;
-}
 
 #grid {
   width: 100%;

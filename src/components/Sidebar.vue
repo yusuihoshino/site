@@ -73,6 +73,8 @@ export default {
 
       // CSSカスタムプロパティを更新
       const style = document.documentElement.style;
+      style.setProperty('--bg', color); // 背景色を--bgで設定
+
       if (theme === 'dark') {
         style.setProperty('--font-black', '#ffffff');
         style.setProperty('--font-white', '#dddddd');
@@ -80,11 +82,8 @@ export default {
       } else {
         style.setProperty('--font-black', '#333333');
         style.setProperty('--font-white', '#666666');
-        style.setProperty('--img-gray', '#dddddd');//明るい時の画像とサイドバーの色
+        style.setProperty('--img-gray', '#dddddd');
       }
-
-      // 背景色を設定
-      document.body.style.backgroundColor = color;
 
       // ファビコンの色を変更
       this.updateFavicon(color);
@@ -134,10 +133,7 @@ export default {
   flex-direction: column;
   justify-content: space-between;
   box-shadow: 0px 0px 3px var(--img-gray);
-  /* background:red; */
-  background: var(-bg);
-
-
+  background-color: var(--bg);
   font-size: 0.8rem;
 
   .sidebar-group {

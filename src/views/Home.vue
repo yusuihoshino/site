@@ -60,7 +60,7 @@ export default {
         text-align: left;
     }
     .section{
-        padding:0 0 400px;
+        padding:0 0 300px;
 
     }
     .section1{

@@ -64,7 +64,7 @@ export default {
 .hamburger span {
   display: block;
   width: 100%;
-  height: 2px;
+  height: 1.5px;
   background-color: var(--font-black);
   position: absolute;
   transition: all 0.3s;

@@ -94,7 +94,7 @@ export default {
 }
 
 .card-content {
-  padding: 8px;
+  padding: 2px 8px 8px;
 
   h3 {
     margin: 0;

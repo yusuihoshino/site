@@ -85,12 +85,12 @@ export default {
   /* border-top: 1px solid var(--font-black); */
   .detail-items{
     border-left: 0.5px solid var(--font-black);
-    padding-left: 30px;
-    margin: 40px 0;
+    padding: 20px 0px 20px 30px;
+    margin: 80px 0 40px;
 
   .detail-item {
     .detail-item-title {
-    font-size: 1rem;
+    font-size: 0.9rem;
     font-weight: 400;
     margin-right: 20px;
     display:inline-block;

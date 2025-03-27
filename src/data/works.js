@@ -214,7 +214,7 @@ export const works = [
     type: '専門学校卒業制作（奨励賞2位/40名）',
     asign: 'UI/UXデザイン、実装',
     content: `
-      <p>身の回りのモノを組み合わせて10種類の数字のフォントを制作し、それらを活用した時計、タイマー、ストップウォッチのウェブアプリを開発し、公開した。</p>
+      <p>身の回りのモノを組み合わせて10種類の数字のフォントを制作し、それらを活用した時計、タイマー、ストップウォッチのウェブアプリを開発、公開した。</p>
       <img src="${require('@/assets/img/product/timo.png')}" alt="">
       <h2>コンセプト</h2>
       <h3>課題</h3>
@@ -225,16 +225,185 @@ export const works = [
       <p>理系の男子大学生のような機能性を重視する方に対して機能性以外の価値を考えるきっかけを作る。</p>
       
       <h2>ロゴ</h2>
-      <p>Time+ObjectでTimo（タイモ）と名付けた。</p>
-      <p>ロゴの「i」はモノが時間を刻む砂時計の砂のように落ちていく様子を表現している。</p>
+      <p>Time+ObjectでTimo（タイモ）と名付けた。ロゴの「i」はモノが時間を刻む砂時計の砂のように落ちていく様子を表現している。</p>
+
+      <img src="${require('@/assets/img/product/timo4.png')}" alt="">
 
       <h2>モノから作った10種類の数字フォント</h2>
-      <p>モノから作った10種類の数字フォントを使用した時計、タイマー、ストップウォッチのウェブアプリを開発し、公開した。</p>
+      <p>子供の頃にモノで何かを形作った体験を思い出すように、身の回りにあるモノを選んだ。</p>
       <img src="${require('@/assets/img/product/timo2.png')}" alt="">
 
       <h2>時計、タイマー、ストップウォッチ</h2>
       <p>背景色、フォントサイズを自由に設定し、好みの設定を探求する楽しみがある。</p>
       <img src="${require('@/assets/img/product/timo3.png')}" alt="">
+
+    `
+  },
+  {
+    id: 'wake',
+    title: '目覚ましアプリwakeupwith',
+    category: 'product',
+    year: '2025/3（2ヶ月）',
+    type: '100Programアプリ賞',
+    asign: 'UI/UXデザイン、プロモーション。他メンバーはエンジニア2名',
+    image: require('@/assets/img/no.png'),
+    content: `
+        
+
+        <p>目覚ましアプリのUIを100Pgoram期間中に作成した。</p>
+
+        <h2>100prgoram発表資料</h2>
+
+        <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px will-change: transform;">
+          <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;" src="https://www.canva.com/design/DAGiPA3xlYg/BbHY2HZvMYa2bDsxYCotLw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+          </iframe>
+        </div>
+
+         <h2>PV</h2>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4LJp2tdUPgI?si=acu2OkBQrcTyY7ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+        <a href="https://100program.jp/works/100program_2025_01_wakeupwith/" target="_blank">100Programのサイト</a>
+        <a href="https://wakeupwith.framer.website/">wakeupwithのサイト</a>
+
+    `
+  },
+  {
+    id: 'mouches',
+    title: '飛蚊症の不安を和らげる飛蚊症記録スライド',
+    category: 'product',
+    year: '2024（1週間）',
+    image: require('@/assets/img/product/飛蚊症.webp'),
+    type: '自主制作',
+    content: `
+      <p>飛蚊症（視界にゴミが見える症状）の不安解消、患者と医者のコミュニケーションを目的とした、飛蚊症を記録できるGoogleスライドを制作し、公開した。既存の手段の濃さや位置を指定できないという課題を解決した。</p>
+      <img src="${require('@/assets/img/product/飛蚊症.webp')}" alt="">
+      <a target="_blank" href="https://note.com/yusuihoshino/n/n7dbc225dc067">解説note</a>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSXOKy4D3Cub1jZfWeR387CBy7DYZfCVRY394gsByK-b4lUSAUMP3ccwp-g7csoNK9tFf_6O8bPcZ1_/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    `
+  },
+  {
+    id: 'vue',
+    title: 'Vue.jsで作成したポートフォリオサイト',
+    category: 'product',
+    year: '2025/3（1週間）',
+    image: require('@/assets/img/product/site.png'),
+    type: '自主制作',
+    asign: 'デザイン、実装',
+    content: `
+      <p>Vue.jsを利用してポートフォリオサイトを作成した。</p>
+      <img src="${require('@/assets/img/product/site.png')}" alt="">
+
+      <p>背景色を設定して、楽しめる。</p>
+      <img src="${require('@/assets/img/product/site2.png')}" alt="">
+
+      <p>データはJS１ファイルにまとめており、自動で作品のカード生成、詳細ページ生成を行っている。</p>
+      <img src="${require('@/assets/img/product/site3.png')}" alt="">
+
+    `
+  },
+  {
+    id: 'mooo9',
+    title: 'mooo（カップルがおはようを伝えるアプリ',
+    category: 'product',
+    year: '2023（半年）',
+    type: 'AKATSUKI、アオタケプロジェクト',
+    asign: 'UI/UXデザイン、プロモーション。他メンバーはエンジニア5名、デザイナー３名',
+    image: require('@/assets/img/product/mooo.png'),
+    content: `
+      <a target="_blank" href="https://aizu-startups-foundation.com/aotake/top">アオタケプロジェクト</a>
+      <a target="_blank" href="https://mitouteki.jp/">AKATUIKIプロジェクト</a>
+     <img src="${require('@/assets/img/product/mooo1.png')}" alt="">
+     <img src="${require('@/assets/img/product/mooo2.png')}" alt="">
+     <img src="${require('@/assets/img/product/mooo3.png')}" alt="">
+     <img src="${require('@/assets/img/product/mooo4.png')}" alt="">
+    <img src="${require('@/assets/img/product/mooo6.png')}" alt="">
+    <img src="${require('@/assets/img/product/mooo7.png')}" alt="">
+    <img src="${require('@/assets/img/product/mooo8.png')}" alt="">
+    <img src="${require('@/assets/img/product/mooo10.png')}" alt="">
+    <a target="_blank" href="https://note.com/moooapp/n/n2f5be0745b40?sub_rt=share_pb">バレンタインにお届けする、カップル向け音声共有アプリ”mooo note"</a>
+ 
+    <a target="_blank" href="https://note.com/moooapp/n/n2f5be0745b40?sub_rt=share_pb">スパークル主催「アオタケプロジェクト」より”学生起業家”第一号が誕生！</a>
+
+    <h2>AKATSUKIカンファレンス発表資料</h2>
+    <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/71017346140c4cc3a6e95f05ab275e26" title="AKATSUKIカンファレンス発表資料" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+
+    <h2>TikTok用PV</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/rZXRNzFZivo?si=_eh-doDIKp2UrldT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    
+    `
+  },
+  {
+    id: 'dawn',
+    title: 'DAWN',
+    category: 'product',
+    year: '2021/12（1ヶ月）',
+    type: 'TOHOKU GRROWTH Accelerator Growth Cource（ビジネスプログラム）',
+    asign: 'リサーチ、アイデア、UI/UX、PVデザイン。他メンバーエンジニア5名、ビジネス1名',
+    image: require('@/assets/img/logo/DAWN.png'),
+    content: `
+        <img src="${require('@/assets/img/product/dawn0.png')}" alt="">
+        <img src="${require('@/assets/img/product/dawn1.png')}" alt="">
+        <img src="${require('@/assets/img/product/dawn2.png')}" alt="">
+        <img src="${require('@/assets/img/product/dawn3.png')}" alt="">
+        <img src="${require('@/assets/img/product/dawn4.png')}" alt="">
+        <img src="${require('@/assets/img/product/dawn5.png')}" alt="">
+        <img src="${require('@/assets/img/product/dawn6.png')}" alt="">
+        <img src="${require('@/assets/img/product/dawn7.png')}" alt="">
+        <img src="${require('@/assets/img/product/dawn8.png')}" alt="">
+        <h2>1分間PV</h2>
+        <iframe title="vimeo-player" src="https://player.vimeo.com/video/651897990?h=2a3d71924f" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
+        <a target="_blank" href="https://youtube.com/shorts/kuvQ0r6W_E4?si=kDtBnhicPCpSet2E">UIフロー動画</a>
+    `
+  },
+  {
+    id: 'make',
+    title: 'ボードゲームMake Wall Game',
+    category: 'product',
+    year: '2021（2週間）',
+    type: '自主制作',
+    asign: '企画、デザイン、実装',
+    image: require('@/assets/img/product/make.png'),
+    content: `
+      <p>JSの練習用に二人用のボードゲームを制作した。二人が順番に自分のコマの移動と壁を立てる動作を繰り返し、コマの四方が壁に囲まれた方が負けのルール。</p>
+      <img src="${require('@/assets/img/product/make.png')}" alt="">
+      <a target="_blank" href="https://yusuihoshino.github.io/MakeWallGame/">ボードゲームMake Wall Game</a>
+
+    `
+  },
+  {
+    id: 'ryoomoi',
+    title: '両思いチェッカー',
+    category: 'product',
+    year: '2021（2週間）',
+    type: 'Open Hack U 2021 Online Vol.3',
+    asign: 'アイデア、UI/UXデザイン。他メンバーはエンジニア3名、ビジネス１名',
+    image: require('@/assets/img/no.png'),
+    content: `
+      <img src="${require('@/assets/img/no.png')}" alt="">
+      <h2>レポート</h2>
+      <a target="_blank" href="https://note.com/yusuihoshino/n/n62841f487d36?magazine_key=m27cad5495964">参加レポートnote</a>
+      <h2>プレゼン動画、資料</h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/Nm17wqU1jng?si=5fYL485QMiOme47q&amp;start=4493" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/65421410ac11409790eb909801ee6c0b" title="HACK U2022" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
+      <h2>Open Hack U 2021 Online Vol.3</h2>
+      <a target="_blank" href="https://hacku.yahoo.co.jp/hacku2021online3/">Open Hack U 2021 Online Vol.3</a>
+
+
+    `
+  },
+  {
+    id: 'mm',
+    title: '世界一シンプルなタイマー、ストップウォッチmm',
+    category: 'product',
+    year: '2024（2週間）',
+    type: '自主制作',
+    asign: '企画、デザイン、実装',
+    image: require('@/assets/img/product/mm.png'),
+    content: `
+      <a target="_blank" href="https://yusuihoshino.github.io/mm/timer/index.html">mmアプリ</a>
+      <p>ウェブにあるストップウォッチのデザインは広告があったり、他の要素で複雑だったりするものが多い。このアプリは、世界で一番ミニマルでデザインを楽しめるものを作ろうちう考えで制作した。シンプルながらも背景色を変える機能で、背景と常に動く数字の美しさを楽しめる。</p>
+      <img src="${require('@/assets/img/product/mm.png')}" alt="">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/PFZaAJp8lcA?si=MbY3mlTtIJuZtPOF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     `
   },
@@ -249,140 +418,7 @@ export const works = [
     content: `
       <img src="${require('@/assets/img/product/琥珀日記.jpg')}" alt="">
       <a target="_blank" href="https://aizu-startups-foundation.com/aotake/top">アオタケプロジェクト</a>
-      <a target="_blank" href="https://note.com/spurcle_tohoku/n/n4bc9a7f632b3">参考記事</a>
-    `
-  },
-  {
-    id: 'dawn',
-    title: 'DAWN',
-    category: 'product',
-    year: '2021',
-    type: 'TOHOKU GRROWTH ACCERARETOR、自主制作',
-    asign: 'アイデア、UI/UXデザイン。他メンバーエンジニア5名、ビジネス1名',
-    image: require('@/assets/img/logo/DAWN.png'),
-    content: `
-        <img src="${require('@/assets/img/product/dawn1.png')}" alt="">
-        <img src="${require('@/assets/img/product/dawn2.png')}" alt="">
-        <img src="${require('@/assets/img/product/dawn3.png')}" alt="">
-        <img src="${require('@/assets/img/product/dawn4.png')}" alt="">
-        <img src="${require('@/assets/img/product/dawn5.png')}" alt="">
-        <img src="${require('@/assets/img/product/dawn6.png')}" alt="">
-        <img src="${require('@/assets/img/product/dawn7.png')}" alt="">
-        <img src="${require('@/assets/img/product/dawn8.png')}" alt="">
-        
-    `
-  },
-  {
-    id: 'mouches',
-    title: '飛蚊症の不安を和らげる飛蚊症記録スライド',
-    category: 'product',
-    year: '2024（1週間）',
-    image: require('@/assets/img/product/飛蚊症.webp'),
-    type: '自主制作',
-    content: `
-      <p>飛蚊症（視界にゴミが見える症状）の不安解消、患者と医者のコミュニケーションを目的とした、飛蚊症を記録できるGoogleスライドを制作し、公開した。既存の手段の濃さや位置を指定できないという課題を解決した。</p>
-      <img src="${require('@/assets/img/product/飛蚊症.webp')}" alt="">
-      <a target="_blank" href="https://note.com/yusuihoshino/n/n7dbc225dc067">解説note</a>
-    `
-  },
-  {
-    id: 'vue',
-    title: 'Vue.jsで作成したポートフォリオサイト',
-    category: 'product',
-    year: '2025/3（1週間）',
-    image: require('@/assets/img/product/site.png'),
-    type: '自主制作',
-    asign: 'デザイン、実装',
-    content: `
-      <img src="${require('@/assets/img/product/site.png')}" alt="">
-      <p>Vue.jsを初めて利用したポートフォリオサイト。</p>
-
-      <img src="${require('@/assets/img/product/site2.png')}" alt="">
-      <p>背景色を設定して、楽しめる。</p>
-
-      <img src="${require('@/assets/img/product/site3.png')}" alt="">
-      <p>データはJSに全てまとまっており、自動で作品のカード生成、詳細ページ生成を行っている。</p>
-
-    `
-  },
-  {
-    id: 'mooo9',
-    title: 'mooo（カップルがおはようを伝えるアプリ',
-    category: 'product',
-    year: '2023（半年）',
-    type: '自主制作',
-    asign: 'UI/UXデザイン、プロモーション。他メンバーはエンジニア5名',
-    image: require('@/assets/img/product/mooo.png'),
-    content: `
-     <img src="${require('@/assets/img/product/mooo1.png')}" alt="">
-     <img src="${require('@/assets/img/product/mooo2.png')}" alt="">
-     <img src="${require('@/assets/img/product/mooo3.png')}" alt="">
-     <img src="${require('@/assets/img/product/mooo4.png')}" alt="">
-    <img src="${require('@/assets/img/product/mooo6.png')}" alt="">
-    <img src="${require('@/assets/img/product/mooo7.png')}" alt="">
-    <img src="${require('@/assets/img/product/mooo8.png')}" alt="">
-    <img src="${require('@/assets/img/product/mooo10.png')}" alt="">
-    `
-  },
-  {
-    id: 'mm',
-    title: 'mm',
-    category: 'product',
-    year: '2024（2週間）',
-    type: '自主制作',
-    asign: '企画、デザイン、実装',
-    image: require('@/assets/img/product/mm.png'),
-    content: `
-      <p>ウェブにあるストップウォッチのデザインに我慢ならなかったので、世界で一番ミニマルでデザインを楽しめるものを作りました。既存のストップウォッチがごちゃごちゃして見える、背景色を変えるだけでウキウキできる そんな人にオススメ！</p>
-      <img src="${require('@/assets/img/product/mm.png')}" alt="">
-      <a target="_blank" href="https://yusuihoshino.github.io/mm/timer/index.html">mmアプリ</a>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/PFZaAJp8lcA?si=MbY3mlTtIJuZtPOF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-    `
-  },
-  {
-    id: 'make',
-    title: 'make',
-    category: 'product',
-    year: '2024',
-    image: require('@/assets/img/product/make.png'),
-    content: `
-      <img src="${require('@/assets/img/product/make.png')}" alt="">
-    `
-  },
-  {
-    id: 'ryoomoi',
-    title: '両思いチェッカー',
-    category: 'product',
-    year: '2021',
-    type: 'Hack U',
-    asign: 'アイデア、UI/UXデザイン。他メンバーはエンジニア3名、ビジネス１名',
-    image: require('@/assets/img/no.png'),
-    content: `
-      <img src="${require('@/assets/img/no.png')}" alt="">
-      <a target="_blank" href="https://note.com/yusuihoshino/n/n62841f487d36?magazine_key=m27cad5495964">参加レポートnote</a>
-    `
-  },
-  {
-    id: 'wake',
-    title: 'wakeupwith',
-    category: 'product',
-    year: '2025/3（2ヶ月）',
-    type: '100Programアプリ賞',
-    asign: 'UI/UXデザイン、プロモーション。他メンバーはエンジニア2名',
-    image: require('@/assets/img/no.png'),
-    content: `
-        <a href="https://wakeupwith.framer.website/">wakeupwithのサイト</a>
-        <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
-        padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
-        border-radius: 8px; will-change: transform;">
-        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
-           src="https://www.canva.com/design/DAGiPA3xlYg/BbHY2HZvMYa2bDsxYCotLw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
-         </iframe>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/4LJp2tdUPgI?si=acu2OkBQrcTyY7ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-       </div>
-       <iframe width="560" height="315" src="https://www.youtube.com/embed/4LJp2tdUPgI?si=acu2OkBQrcTyY7ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
+      <a target="_blank" href="https://note.com/spurcle_tohoku/n/n4bc9a7f632b3">アオタケプロジェクト 採択者紹介⑧ 安井番厘さん</a>
     `
   },
 
@@ -406,19 +442,16 @@ export const works = [
       <p>モリサワでは新たな学生向けフォント製品「Morisawa Fontsスタンダードプラン 学生価格」（990円）を発売。より多くの学生さんに、モリサワのフォント選びの楽しさが伝わるような広告を制作する。</p>
       
       <h2>第一印象はフォントから</h2>
-      <p>モリサワフォント ①</p>
+      <p>モリサワフォント ①。就活生が会社に見せる第一印象は、履歴書の顔写真よりも文字のフォントである。この気づきからお化粧をするようにフォントを整える学生を描いた。</p>
       <img src="${require('@/assets/img/poster/OAC1.png')}" alt="">
-      <p>就活生が会社に見せる第一印象は、履歴書の顔写真よりも文字のフォントである。この気づきからお化粧をするようにフォントを整える学生を描いた。</p>
 
       <h2>フライトを支える仕事</h2>
-      <p>全日本空輸行き会社 ①</p>
+      <p>全日本空輸行き会社 ①。地上で業務をする作業をキーボードで、それが航空を支える姿をキーボードの「A」と「N」を飛行機が行き来しすることで ANAの航空を支えていることを表現している。</p>
       <img src="${require('@/assets/img/poster/OAC3.png')}" alt="">
-      <p>地上で業務をする作業をキーボードで、それが航空を支える姿をキーボードの「A」と「N」を飛行機が行き来しすることで ANAの航空を支えていることを表現している。</p>
 
-      <h2>上を向く仕事。 ①</h2>
-      <p>全日本空輸行き会社 ②</p>
+      <h2>上を向く仕事。</h2>
+      <p>全日本空輸行き会社 ②。キャッチコピーベースで制作した作業員の人たちの視点と心持ちをポジティブに表現した。</p>
       <img src="${require('@/assets/img/poster/OAC2.png')}" alt="">
-      <p>キャッチコピーベースで制作した作業員の人たちの視点と心持ちをポジティブに表現した。</p>
     `
   },
   {
@@ -430,17 +463,25 @@ export const works = [
   },
   {
     id: 'jagda2',
-    title: 'JAGDA',
+    title: 'JAGDA国際学生ポスターアワード',
     category: 'poster',
-    year: '2024',
+    year: '2024（1ヶ月）',
+    type: '専門学校課題',
     image: require('@/assets/img/poster/JAGDA2.webp'),
     content: `
-     <img src="${require('@/assets/img/poster/JAGDA1.webp')}" alt="">
+      <p>テーマは「Peace」</p>
+
+      <h2>点字ブロック</h2>
       <p>街で見かける点字ブロックのかけている部分を簡単に繋げることができたらPEACEだと思った。</p>
-      <img src="${require('@/assets/img/poster/JAGDA2.webp')}" alt="">
+     <img src="${require('@/assets/img/poster/JAGDA1.webp')}" alt="">
+
+       <h2>つめ</h2>
       <p>爪があるからお互いを傷付けあうとしたら、それらがつながった世界はPEACEかもしれない。</p>
-      <img src="${require('@/assets/img/poster/JAGDA3.webp')}" alt="">
+      <img src="${require('@/assets/img/poster/JAGDA2.webp')}" alt="">
+
+       <h2>コード</h2>
       <p>コードのオスとメスが決められたもの意外と繋がれたら、その自由な発想はPEACEかもしれない</p>
+      <img src="${require('@/assets/img/poster/JAGDA3.webp')}" alt="">
     `
   },
   {
@@ -516,21 +557,21 @@ export const works = [
   },
   {
     id: 'hoshino',
-    title: '自分のロゴ',
+    title: 'HOSHINO',
     category: 'logo',
     year: '2023',
     image: require('@/assets/img/logo/ほしの.png')
   },
   {
     id: 'suginoko',
-    title: '気のマークで伝わるすぎのこ幼稚園ロゴ案',
+    title: '木のマークで伝わるすぎのこ幼稚園ロゴ案',
     category: 'logo',
     year: '2023/11（2週間）',
     type: '専門学校課題、幼稚園職員投票１位/30名',
     asign: 'ロゴデザイン',
     image: require('@/assets/img/logo/すぎのこ.png'),
     content: `
-      <p>実際にある幼稚園のロゴを制作した。採用はされなかったが、クラスの中では職員投票１位を獲得した。</p>
+      <p>実際にある幼稚園のロゴを制作した。教員のものが最終的に採用されたが、クラスの中では職員投票１位を獲得した。</p>
       <img src="${require('@/assets/img/logo/sugi1.png')}" alt="">
       <img src="${require('@/assets/img/logo/sugi2.png')}" alt="">
       <img src="${require('@/assets/img/logo/sugi3.png')}" alt="">
@@ -547,7 +588,7 @@ export const works = [
   
   {
     id: 'asc',
-    title: 'ascサークルロゴ',
+    title: 'ASCサークルロゴ',
     category: 'logo',
     year: '2020',
     image: require('@/assets/img/logo/asc.jpg')
@@ -561,7 +602,7 @@ export const works = [
   },
   {
     id: 'sol',
-    title: 'はちみつ販売店Sol Honey',
+    title: 'はちみつ販売店Sol Honeyロゴ、サイト',
     category: 'logo',
     year: '2023/6（4週間）',
     type: '専門学校課題、生徒間投票1位/15名',
@@ -583,7 +624,7 @@ export const works = [
   },
   {
     id: 'dawn',
-    title: '旅行を記録できるアプリDAWNのロゴ',
+    title: '旅行を記録できるアプリDAWNロゴ',
     category: 'logo',
     year: '2021',
     image: require('@/assets/img/logo/DAWN.png'),
@@ -612,6 +653,7 @@ export const works = [
     category: 'other',
     year: '2024（1ヶ月）',
     type: '専門学校課題',
+    asign: '撮影、動画編集',
     image: require('@/assets/img/other/枝.png'),
     content: `
       <p>友人の楽曲のPVを制作した。実際の植物の撮影から編集まで一貫して行った。全体を通して、雰囲気の統一を意識して行った。</p>
@@ -627,9 +669,14 @@ export const works = [
     image: require('@/assets/img/other/人間.jpg'),
     content: `
     <img src="${require('@/assets/img/other/人間.jpg')}" alt="">
+    <img src="${require('@/assets/img/other/人間2.png')}" alt="">
+
+    <h2>概要</h2>
+    <p>文庫本のカバーと帯をリデザインする課題で、人間標本を選び取り組んだ。</p>
+     <a target="_blank" href="https://www.amazon.co.jp/%E4%BA%BA%E9%96%93%E6%A8%99%E6%9C%AC-%E6%B9%8A-%E3%81%8B%E3%81%AA%E3%81%88/dp/4041142237">オリジナル人間標本デザインAmazonリンク</a>
+    <h2>コンセプト</h2>
     <p>表紙の花は四角に切られており、本来の形を無理やり、加害者の美的感覚によって変化させられた暴力性、異常性を表現している。背景は写真の雰囲気を崩さない結麗目な表現にすることで、より花の無惨さをより印象付けている。裏表紙には切られた花びらを配置し、花が四角に切られたことをより強調し、切り落とされた体のようにも見えるグロテスクさも表現している。帯はテキストは縦横比や行間を狭め異常さを表現した。
     </p>
-    <img src="${require('@/assets/img/other/人間2.png')}" alt="">
 
     `
   },
@@ -641,9 +688,9 @@ export const works = [
     type: '専門学校課題',
     image: require('@/assets/img/other/mooo2.png'),
     content: `
+      <p>デザイナーとして参加していたアプリmoooの裏話をまとめた12ページの冊子を制作した。BRUTUS、Casa、ブレーンのようなシンプルなものを目指し、ページごとのレイアウトが同じにならないように意識した。</p>
       <img src="${require('@/assets/img/other/mooo2.png')}" alt="">
       <img src="${require('@/assets/img/other/mooo.png')}" alt="">
-      <p>デザイナーとして参加していたアプリmoooの裏話をまとめた12ページの冊子を制作した。BRUTUS、Casa、ブレーンのようなシンプルなものを目指し、ページごとのレイアウトが同じにならないように意識した。</p>
     `
   },
   {
@@ -654,8 +701,8 @@ export const works = [
     type: '専門学校課題',
     image: require('@/assets/img/other/cron.png'),
     content: `
-      <img src="${require('@/assets/img/other/cron.png')}" alt="">
       <p>小さな石ころをモチーフとした角丸を多用したフォントである。ディスプレイ書体としてボードゲームのタイトルなどに使われる想定。文字の丸さを強調するため文字間は広くとった。</p>
+      <img src="${require('@/assets/img/other/cron.png')}" alt="">
     `
   },
 ];

@@ -259,7 +259,7 @@ export const works = [
     year: '2021',
     type: 'TOHOKU GRROWTH ACCERARETOR、自主制作',
     asign: 'アイデア、UI/UXデザイン。他メンバーエンジニア5名、ビジネス1名',
-    image: require('@/assets/img/logo/DAWN.jpg'),
+    image: require('@/assets/img/logo/DAWN.png'),
     content: `
         <img src="${require('@/assets/img/product/dawn1.png')}" alt="">
         <img src="${require('@/assets/img/product/dawn2.png')}" alt="">
@@ -312,7 +312,7 @@ export const works = [
     year: '2023（半年）',
     type: '自主制作',
     asign: 'UI/UXデザイン、プロモーション。他メンバーはエンジニア5名',
-    image: require('@/assets/img/product/mooo.webp'),
+    image: require('@/assets/img/product/mooo.png'),
     content: `
      <img src="${require('@/assets/img/product/mooo1.png')}" alt="">
      <img src="${require('@/assets/img/product/mooo2.png')}" alt="">
@@ -333,9 +333,10 @@ export const works = [
     asign: '企画、デザイン、実装',
     image: require('@/assets/img/product/mm.png'),
     content: `
-    <p>ウェブにあるストップウォッチのデザインに我慢ならなかったので、世界で一番ミニマルでデザインを楽しめるものを作りました。既存のストップウォッチがごちゃごちゃして見える、背景色を変えるだけでウキウキできる そんな人にオススメ！</p>
+      <p>ウェブにあるストップウォッチのデザインに我慢ならなかったので、世界で一番ミニマルでデザインを楽しめるものを作りました。既存のストップウォッチがごちゃごちゃして見える、背景色を変えるだけでウキウキできる そんな人にオススメ！</p>
       <img src="${require('@/assets/img/product/mm.png')}" alt="">
       <a target="_blank" href="https://yusuihoshino.github.io/mm/timer/index.html">mmアプリ</a>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/PFZaAJp8lcA?si=MbY3mlTtIJuZtPOF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     `
   },
@@ -375,10 +376,10 @@ export const works = [
         <div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
         padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
         border-radius: 8px; will-change: transform;">
-         <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+        <iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
            src="https://www.canva.com/design/DAGiPA3xlYg/BbHY2HZvMYa2bDsxYCotLw/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
          </iframe>
-         <iframe width="560" height="315" src="https://www.youtube.com/embed/4LJp2tdUPgI?si=acu2OkBQrcTyY7ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/4LJp2tdUPgI?si=acu2OkBQrcTyY7ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
        </div>
        <iframe width="560" height="315" src="https://www.youtube.com/embed/4LJp2tdUPgI?si=acu2OkBQrcTyY7ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -522,17 +523,26 @@ export const works = [
   },
   {
     id: 'suginoko',
-    title: 'すぎのこ幼稚園ロゴ案',
+    title: '気のマークで伝わるすぎのこ幼稚園ロゴ案',
     category: 'logo',
-    year: '2023',
-    image: require('@/assets/img/logo/すぎのこ.png')
+    year: '2023/11（2週間）',
+    type: '専門学校課題、幼稚園職員投票１位/30名',
+    asign: 'ロゴデザイン',
+    image: require('@/assets/img/logo/すぎのこ.png'),
+    content: `
+      <p>実際にある幼稚園のロゴを制作した。採用はされなかったが、クラスの中では職員投票１位を獲得した。</p>
+      <img src="${require('@/assets/img/logo/sugi1.png')}" alt="">
+      <img src="${require('@/assets/img/logo/sugi2.png')}" alt="">
+      <img src="${require('@/assets/img/logo/sugi3.png')}" alt="">
+      <img src="${require('@/assets/img/logo/sugi4.png')}" alt="">
+    `
   },
   {
     id: 'mooo-logo',
     title: 'アプリmoooロゴ',
     category: 'logo',
     year: '2023',
-    image: require('@/assets/img/logo/mooo.webp')
+    image: require('@/assets/img/logo/mooo.png')
   },
   
   {
@@ -551,19 +561,34 @@ export const works = [
   },
   {
     id: 'sol',
-    title: '蜂蜜専門店Sol Honeyロゴ',
+    title: 'はちみつ販売店Sol Honey',
     category: 'logo',
-    year: '2023',
-    image: require('@/assets/img/logo/Sol.png')
+    year: '2023/6（4週間）',
+    type: '専門学校課題、生徒間投票1位/15名',
+    asign: '店舗設定、ロゴ、サイト',
+    image: require('@/assets/img/logo/Sol.png'),
+    content: `
+      <p>はちみつ販売店の店舗設定を考え、ロゴ、サイトを制作した。</p>
+      <img src="${require('@/assets/img/logo/Sol.png')}" alt="">
+      <img src="${require('@/assets/img/logo/sol1.png')}" alt="">
+      <img src="${require('@/assets/img/logo/sol2.png')}" alt="">
+      <img src="${require('@/assets/img/logo/sol3.png')}" alt="">
+      <img src="${require('@/assets/img/logo/sol4.png')}" alt="">
+      <h2>こだわりを伝えるサイトWebサイト</h2>
+      <p>Sol Honeyの蜂蜜生産のこだわりを伝え、販売に繋げることを目的にウェブサイトをデザインした。問題点や生産方法について視覚的に説明することで、Sol Honeyの長所をアピールしている。雰囲気は自然や優しを表現しつつも、子供っぽさ、高級感には寄らないようにした。</p>
+      <img src="${require('@/assets/img/logo/sol5.png')}" alt="">
+      <img src="${require('@/assets/img/logo/sol6.png')}" alt="">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/5f57xasCHs8?si=qNi-1yR_Tc6H0ZJv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    `
   },
   {
     id: 'dawn',
     title: '旅行を記録できるアプリDAWNのロゴ',
     category: 'logo',
     year: '2021',
-    image: require('@/assets/img/logo/DAWN.jpg'),
+    image: require('@/assets/img/logo/DAWN.png'),
     content: `
-      <img src="${require('@/assets/img/logo/DAWN.jpg')}" alt="">
+      <img src="${require('@/assets/img/logo/DAWN.png')}" alt="">
       <a target="_blank" href="https://note.com/yusuihoshino/n/nca8c32b90238?magazine_key=m27cad5495964">参加レポートnote</a>
     `
   },
@@ -617,7 +642,7 @@ export const works = [
     image: require('@/assets/img/other/mooo2.png'),
     content: `
       <img src="${require('@/assets/img/other/mooo2.png')}" alt="">
-      <img src="${require('@/assets/img/other/mooo.webp')}" alt="">
+      <img src="${require('@/assets/img/other/mooo.png')}" alt="">
       <p>デザイナーとして参加していたアプリmoooの裏話をまとめた12ページの冊子を制作した。BRUTUS、Casa、ブレーンのようなシンプルなものを目指し、ページごとのレイアウトが同じにならないように意識した。</p>
     `
   },

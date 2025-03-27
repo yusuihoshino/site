@@ -1,35 +1,37 @@
 <template>
-  <div class="sidebar"  id="sidebar">
-        <div class="sidebar-left" id="sidebar-left">
-            <router-link to="/" class="sidebar-title">Yusui<br>Hoshino</router-link>
+  <nav class="sidebar" :class="{ 'open': isMenuOpen }" id="sidebar-left">
+      <router-link to="/" class="sidebar-title">Yusui<br>Hoshino</router-link>
 
-            <div class="sidebar-group">
-                <router-link to="/history">History</router-link>
-                <router-link to="/request">Request</router-link>
-                <router-link to="/portfolio">Portfolio</router-link>
-                <router-link to="/works">Works</router-link>
-
-            </div>
-            
-
-            <div class="sidebar-group">
-                <input 
-                  type="color" 
-                  id="colorPicker" 
-                  class="color-picker" 
-                  :value="currentColor"
-                  @input="handleColorChange"
-                >
-                <a href="https://note.com/yusuihoshino" target="_blank" class="link-btn">note</a>
-                <a href="https://x.com/yusuihoshino" target="_blank" class="link-btn">X</a>
-            </div>  
-        </div>
+      <div class="sidebar-group">
+        <router-link to="/history">History</router-link>
+        <router-link to="/request">Request</router-link>
+        <router-link to="/portfolio">Portfolio</router-link>
+        <router-link to="/works">Works</router-link>
       </div>
+      
+      <div class="sidebar-group">
+        <input 
+          type="color" 
+          id="colorPicker" 
+          class="color-picker" 
+          :value="currentColor"
+          @input="handleColorChange"
+        >
+        <a href="https://note.com/yusuihoshino" target="_blank" class="link-btn">note</a>
+        <a href="https://x.com/yusuihoshino" target="_blank" class="link-btn">X</a>
+      </div>  
+  </nav>
 </template>
 
 <script>
 export default {
-  name: 'SiteFooter',
+  name: 'SideNavbar',
+  props: {
+    isMenuOpen: {
+      type: Boolean,
+      default: false
+    }
+  },
   data() {
     return {
       isOpen: true,
@@ -82,76 +84,94 @@ export default {
 </script>
 
 <style scoped>
+
+/* モバイル表示時のスタイル */
+
+
 .sidebar {
+  width: 200px;
+  height: 100vh;
+  background-color: var(--bg-white);
   position: fixed;
   left: 0;
   top: 0;
+  padding: 48px;
   display: flex;
-  flex-direction: row;
-  transition: all 0.4s;
-  text-align: left;
-  z-index: 1000;
+  flex-direction: column;
+  justify-content: space-between;
+  background: var(--card-bg);
+  box-shadow: 0px 0px 3px var(--img-gray);
+  /* background:red; */
 
+  font-size: 0.8rem;
 
-  }
-
-  .sidebar-left {
-    padding: 48px;
-    height: 100vh;
-    width: 200px;
+  .sidebar-group {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background: var(--card-bg);
-    box-shadow: 0px 0px 3px var(--img-gray);
-    font-size: 0.8rem;
+    gap: 10px;
+  }
+  a {
+      color: var(--font-black);
+      transition: all 0.2s ease;
+      letter-spacing: 0.15rem;
 
-    .sidebar-group {
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    a {
-        color: var(--font-black);
-        transition: all 0.2s ease;
-        letter-spacing: 0.15rem;
-
-        &:hover {
-          transform: translateX(10px);
-          letter-spacing: 2px;
-        }
+      &:hover {
+        transform: translateX(10px);
+        letter-spacing: 2px;
       }
-
-    .sidebar-title {
-      font-weight: 900;
-      /* color: var(--font-black); */
-      /* transition: color 0.4s ease; */
     }
 
-    .color-picker {
-      width: 30px;
-      height: 30px;
+  .sidebar-title {
+    font-weight: 900;
+  }
+
+  .color-picker {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    border: none;
+    border-radius: 100px;
+    overflow: hidden;
+    cursor: pointer;
+
+    &::-webkit-color-swatch-wrapper {
       padding: 0;
+    }
+
+    &::-webkit-color-swatch {
       border: none;
       border-radius: 100px;
-      overflow: hidden;
-      cursor: pointer;
+      border: solid var(--font-black) 1px;
+    }
 
-      &::-webkit-color-swatch-wrapper {
-        padding: 0;
-      }
-
-      &::-webkit-color-swatch {
-        border: none;
-        border-radius: 100px;
-        border: solid var(--font-black) 1px;
-      }
-
-      &::-moz-color-swatch {
-        border: none;
-        border-radius: 100px;
-        border: solid var(--font-black) 1px;
-      }
+    &::-moz-color-swatch {
+      border: none;
+      border-radius: 100px;
+      border: solid var(--font-black) 1px;
     }
   }
+}
+/* スマホサイズ 767px以下*/
+@media (max-width: 767px) {
+  .sidebar {
+    transform: translateX(-100%);
+    width: 100%;
+    transition: transform 0.3s ease;
+    z-index: 999;
+    a{
+      font-size: 1.2rem;
+    }
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+}
+
+/* PC表示時のスタイル 768px以上*/
+@media (min-width: 768px) {
+  .sidebar {
+    transform: none;
+  }
+}
 </style>

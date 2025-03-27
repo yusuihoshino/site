@@ -39,8 +39,15 @@ export default {
     }
   },
   created() {
-    // ページ読み込み時に保存された色を適用
-    this.applyThemeColor(this.currentColor);
+    // 保存された色があればそれを、なければデフォルトの白を使用
+    const savedColor = localStorage.getItem('theme-color') || '#ffffff';
+    this.currentColor = savedColor;
+    
+    // ページ読み込み時に保存された色を適用（ファビコンも含めて）
+    this.applyThemeColor(savedColor);
+    
+    // 初回読み込み時にもファビコンを更新
+    this.updateFavicon(savedColor);
   },
   methods: {
     toggleSidebar() {
@@ -78,6 +85,34 @@ export default {
 
       // 背景色を設定
       document.body.style.backgroundColor = color;
+
+      // ファビコンの色を変更
+      this.updateFavicon(color);
+    },
+    updateFavicon(color) {
+      // SVGファビコンを作成
+      const svg = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+          <circle cx="16" cy="16" r="16" fill="${color}"/>
+        </svg>
+      `;
+
+      // SVGをBase64エンコード
+      const base64 = btoa(svg);
+      
+      // 既存のファビコンを探す
+      let favicon = document.querySelector('link[rel="icon"]');
+      
+      // ファビコンが存在しない場合は新規作成
+      if (!favicon) {
+        favicon = document.createElement('link');
+        favicon.rel = 'icon';
+        document.head.appendChild(favicon);
+      }
+      
+      // ファビコンを更新
+      favicon.type = 'image/svg+xml';
+      favicon.href = `data:image/svg+xml;base64,${base64}`;
     }
   }
 }

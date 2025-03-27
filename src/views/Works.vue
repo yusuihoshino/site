@@ -89,7 +89,7 @@ export default {
   margin-bottom: 30px;
   width: 100%;
   display: flex;
-  justify-content: left;
+  justify-content: start;
   text-align: center;
   padding: 100px 0 0px;
 

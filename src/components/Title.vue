@@ -26,13 +26,16 @@ export default {
   position: sticky;
   top: 0;
   z-index: 100;
-  background-color: var(--bg-gray);
+  /* background-color: var(--bg-gray); */
   padding: 20px 0;
   text-align: left;
   width: 100%;
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  transition: all 0.3s ease-in-out;
+  /* backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px); */
+  /* box-shadow: 0px 1.5px 0px var(--img-gray); */
+  background-color: var(--bg);
+  transition: transform 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
   color: var(--font-black);
   animation: slideIn 0.6s ease-out forwards;
   transform: translateX(-20px);

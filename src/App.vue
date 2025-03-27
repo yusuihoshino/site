@@ -1,6 +1,6 @@
 <template>
-  <div id="app" :class="{ 'sidebar-closed': !isSidebarOpen }">
-    <Sidebar @sidebar-toggle="onSidebarToggle" />
+  <div id="app">
+    <Sidebar />
     <main class="main-content">
       <router-view></router-view>
     </main>
@@ -14,16 +14,6 @@ export default {
   name: 'App',
   components: {
     Sidebar
-  },
-  data() {
-    return {
-      isSidebarOpen: true
-    }
-  },
-  methods: {
-    onSidebarToggle(isOpen) {
-      this.isSidebarOpen = isOpen;
-    }
   }
 };
 </script>

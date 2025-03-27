@@ -1,5 +1,5 @@
 <template>
-  <div class="sidebar" :class="{ 'closed': !isOpen }" id="sidebar">
+  <div class="sidebar"  id="sidebar">
         <div class="sidebar-left" id="sidebar-left">
             <router-link to="/" class="sidebar-title">Yusui<br>Hoshino</router-link>
 
@@ -23,11 +23,6 @@
                 <a href="https://note.com/yusuihoshino" target="_blank" class="link-btn">note</a>
                 <a href="https://x.com/yusuihoshino" target="_blank" class="link-btn">X</a>
             </div>  
-        </div>
-        <div class="sidebar-right">
-          <button id="toggleSidebarBtn" class="toggleSidebarBtn" @click="toggleSidebar">
-            |||
-          </button>
         </div>
       </div>
 </template>
@@ -97,20 +92,7 @@ export default {
   text-align: left;
   z-index: 1000;
 
-  &.closed {
-    transform: translateX(-200px);
-  }
 
-  .sidebar-right {
-    .toggleSidebarBtn {
-      background: transparent;
-      border: none;
-      color: var(--font-black);
-      transition: 0.3s ease;
-      &:hover{
-        letter-spacing: 0.2rem;
-      }
-    }
   }
 
   .sidebar-left {
@@ -172,5 +154,4 @@ export default {
       }
     }
   }
-}
 </style>

@@ -2,7 +2,8 @@
   <div>
     <div class="container" id="container">
         <div class="section section1">
-            <dotlottie-player src="https://lottie.host/cc4feda6-0608-44cc-87ad-ee4f12a69594/WTbWwHiqDM.lottie" background="transparent" speed="1" style="width: 600px; height: 600px" loop autoplay></dotlottie-player>
+            <dotlottie-player src="https://lottie.host/cc4feda6-0608-44cc-87ad-ee4f12a69594/WTbWwHiqDM.lottie"
+             background="transparent" speed="1" style="width: 400px; height: 400px" loop autoplay></dotlottie-player>
             <h2>Yusui Hoshino</h2>
             <p>情報学部在学中にUI/UXデザインに出会う。<br>その後、デザイン専門学校に進学し、グラフィックを学ぶ。<br>2025年からIT企業のデザイナーとして勤める。</p>
         </div>
@@ -83,10 +84,11 @@ export default {
         text-align: left;
         display:flex;
         flex-direction: row;
+        flex-wrap: wrap;
         gap:80px;
         align-items: center;
         dotlottie-player{
-            flex:1;
+            /* flex:1; */
         }
         .text{
             flex:1;

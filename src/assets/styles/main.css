@@ -6,6 +6,7 @@
   --font-white: #333333;
   --img-gray: #666666;
   --bg-white: #ffffff;
+  --bg: #ffffff;
 }
 
 
@@ -17,7 +18,7 @@ body{
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 300;
     color:var(--font-black);
-    background-color: #ffffff;
+    background-color: var(--bg);
    
     a{
         text-decoration: none;
@@ -55,16 +56,18 @@ body{
     width: 100vw;
     margin:100px auto 100px;
     transform: translateX(100px);
-    &.closed{
-        transform: translateX(0px);
-    }
 
     padding: 20px;
     max-width: 1000px;
     margin: 0 auto;
     padding-top: 80px; /* タイトルの高さ分だけ余白を追加 */
 }
+@media (max-width: 999px) {
+    .container {
+        transform: translateX(0px);
 
+    }
+}
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
     .art-grid {

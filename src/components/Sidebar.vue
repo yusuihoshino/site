@@ -126,7 +126,6 @@ export default {
 .sidebar {
   width: 200px;
   height: 100vh;
-  background-color: var(--bg-white);
   position: fixed;
   left: 0;
   top: 0;
@@ -134,9 +133,10 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background: var(--card-bg);
   box-shadow: 0px 0px 3px var(--img-gray);
   /* background:red; */
+  background: var(-bg);
+
 
   font-size: 0.8rem;
 
@@ -187,10 +187,10 @@ export default {
   }
 }
 /* スマホサイズ 767px以下*/
-@media (max-width: 767px) {
+@media (max-width:999px) {
   .sidebar {
     transform: translateX(-100%);
-    width: 100%;
+    /* width: 100%; */
     transition: transform 0.3s ease;
     z-index: 999;
     a{
@@ -204,9 +204,9 @@ export default {
 }
 
 /* PC表示時のスタイル 768px以上*/
-@media (min-width: 768px) {
-  .sidebar {
+@media (min-width: 1000px) {
+  /* .sidebar {
     transform: none;
-  }
+  } */
 }
 </style>

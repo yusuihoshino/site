@@ -96,8 +96,9 @@ export default {
   }
 
   /* メニューオープン時 */
+  /* メニューオープン時はメインコンテンツを非表示 */
   .menu-open .main-content {
-    display: none; /* メニューオープン時はメインコンテンツを非表示 */
+    /* display: none;  */
   }
 }
 </style>

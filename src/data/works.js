@@ -1,17 +1,18 @@
 export const works = [
   // Art works
   {
-    id: 'ae1',
+    id: 'p5',
     title: 'p5.js集',
     category: 'art',
     year: '2022',
+    type: '自主制作',
     image: require('@/assets/img/art/p5-2.png'),
     content: `
        <iframe width="560" height="315" src="https://www.youtube.com/embed/2GaekwoS2No?si=FAIGdwiHmzMVkDxD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     `
   },
   {
-    id: 'ae2',
+    id: 'ae',
     title: 'After Effects集',
     category: 'art',
     year: '2024',
@@ -244,7 +245,7 @@ export const works = [
     title: '目覚ましアプリwakeupwith',
     category: 'product',
     year: '2025/3（2ヶ月）',
-    type: '100Programアプリ賞',
+    type: '<a href="https://100program.jp/" target="_blank">100Program</a>アプリ賞',
     asign: 'UI/UXデザイン、プロモーション。他メンバーはエンジニア2名',
     image: require('@/assets/img/no.png'),
     content: `
@@ -261,8 +262,7 @@ export const works = [
 
          <h2>PV</h2>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/4LJp2tdUPgI?si=acu2OkBQrcTyY7ME" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-        <a href="https://100program.jp/works/100program_2025_01_wakeupwith/" target="_blank">100Programのサイト</a>
+       
         <a href="https://wakeupwith.framer.website/">wakeupwithのサイト</a>
 
     `
@@ -306,12 +306,11 @@ export const works = [
     title: 'mooo（カップルがおはようを伝えるアプリ',
     category: 'product',
     year: '2023（半年）',
-    type: 'AKATSUKI、アオタケプロジェクト',
+    type: '<a target="_blank" href="https://mitouteki.jp/">AKATUIKIプロジェクト</a>、<a target="_blank" href="https://aizu-startups-foundation.com/aotake/top">アオタケプロジェクト</a>',
     asign: 'UI/UXデザイン、プロモーション。他メンバーはエンジニア5名、デザイナー３名',
     image: require('@/assets/img/product/mooo.png'),
     content: `
-      <a target="_blank" href="https://aizu-startups-foundation.com/aotake/top">アオタケプロジェクト</a>
-      <a target="_blank" href="https://mitouteki.jp/">AKATUIKIプロジェクト</a>
+      
      <img src="${require('@/assets/img/product/mooo1.png')}" alt="">
      <img src="${require('@/assets/img/product/mooo2.png')}" alt="">
      <img src="${require('@/assets/img/product/mooo3.png')}" alt="">
@@ -375,7 +374,7 @@ export const works = [
     title: '両思いチェッカー',
     category: 'product',
     year: '2021（2週間）',
-    type: 'Open Hack U 2021 Online Vol.3',
+    type: ' <a target="_blank" href="https://hacku.yahoo.co.jp/hacku2021online3/">Open Hack U 2021 Online Vol.3</a>',
     asign: 'アイデア、UI/UXデザイン。他メンバーはエンジニア3名、ビジネス１名',
     image: require('@/assets/img/no.png'),
     content: `
@@ -386,7 +385,7 @@ export const works = [
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Nm17wqU1jng?si=5fYL485QMiOme47q&amp;start=4493" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/65421410ac11409790eb909801ee6c0b" title="HACK U2022" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
       <h2>Open Hack U 2021 Online Vol.3</h2>
-      <a target="_blank" href="https://hacku.yahoo.co.jp/hacku2021online3/">Open Hack U 2021 Online Vol.3</a>
+     
 
 
     `
@@ -412,12 +411,12 @@ export const works = [
     title: '琥珀日記',
     category: 'product',
     year: '2024',
-    type: 'アオタケプロジェクト',
+    type: '<a target="_blank" href="https://aizu-startups-foundation.com/aotake/top">アオタケプロジェクト</a>',
     asign: 'UI/UXデザイン。他メンバーはエンジニア複数人',
     image: require('@/assets/img/product/琥珀日記.jpg'),
     content: `
       <img src="${require('@/assets/img/product/琥珀日記.jpg')}" alt="">
-      <a target="_blank" href="https://aizu-startups-foundation.com/aotake/top">アオタケプロジェクト</a>
+      
       <a target="_blank" href="https://note.com/spurcle_tohoku/n/n4bc9a7f632b3">アオタケプロジェクト 採択者紹介⑧ 安井番厘さん</a>
     `
   },

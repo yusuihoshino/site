@@ -71,6 +71,13 @@ body{
         font-weight: 400;
         color: var(--font-black); /* フォントカラーを継承 */
     }
+    
+}
+.detail-items{
+    a{
+        text-decoration: underline;
+        text-underline-offset: 8px;
+    }
 }
 .container{
     width: 100vw;

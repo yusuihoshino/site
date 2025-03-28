@@ -13,7 +13,9 @@
                 <span class="detail-item-title">When</span>{{ work.year }}
               </div>
               <div v-if="work.type" class="detail-item">
-                <span class="detail-item-title">Type</span>{{ work.type }}
+                <span class="detail-item-title">Type</span>
+                <span v-html="work.type"></span>
+
               </div>
               <div v-if="work.asign" class="detail-item">
                 <span class="detail-item-title">Asign</span>{{ work.asign }}
@@ -98,6 +100,7 @@ export default {
     text-align: right;
     letter-spacing: 0.1em;
     }
+    
   }
 
   }

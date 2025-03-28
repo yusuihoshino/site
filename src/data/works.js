@@ -444,10 +444,6 @@ export const works = [
       <h2>プレゼン動画、資料</h2>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/Nm17wqU1jng?si=5fYL485QMiOme47q&amp;start=4493" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/65421410ac11409790eb909801ee6c0b" title="HACK U2022" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
-      <h2>Open Hack U 2021 Online Vol.3</h2>
-     
-
-
     `
   },
   {

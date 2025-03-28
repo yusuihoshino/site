@@ -168,7 +168,7 @@ export default {
    a:not(.glightbox){
       text-decoration: underline;
       width: 100%;
-      height:70px;
+      /* height:70px; */
       padding: 20px;
       text-align: center;
 
@@ -177,6 +177,9 @@ export default {
       &:hover {
         background-color: var(--img-gray);
       }
+    }
+    iframe{
+      width: 100%;
     }
 }
 </style>

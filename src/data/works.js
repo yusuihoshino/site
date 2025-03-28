@@ -3,7 +3,7 @@ export const works = [
   {
     id: 'p5',
     title: 'p5.js集',
-    category: 'art',
+    categories: ['art'],
     year: '2022',
     type: '自主制作',
     image: require('@/assets/img/art/p5-2.png'),
@@ -14,7 +14,7 @@ export const works = [
   {
     id: 'ae',
     title: 'After Effects集',
-    category: 'art',
+    categories: ['art'],
     year: '2024',
     image: require('@/assets/img/art/ae5.png'),
     content: `
@@ -30,7 +30,7 @@ export const works = [
   {
     id: 'jacket',
     title: 'ジャケット',
-    category: 'art',
+    categories: ['art'],
     year: '2021',
     image: require('@/assets/img/art/ジャケット.webp')
   },
@@ -39,56 +39,56 @@ export const works = [
   {
     id: 'butterfly',
     title: '蝶',
-    category: 'drawing',
+    categories: ['drawing'],
     year: '2022',
     image: require('@/assets/img/drawing/蝶.png')
   },
   {
     id: 'pink',
     title: 'ピンク',
-    category: 'drawing',
+    categories: ['drawing'],
     year: '2022',
     image: require('@/assets/img/drawing/ピンク.png')
   },
   {
     id: 'model',
     title: 'モデル',
-    category: 'drawing',
+    categories: ['drawing'],
     year: '2022',
     image: require('@/assets/img/drawing/モデル.png')
   },
   {
     id: 'japan',
     title: '日本',
-    category: 'drawing',
+    categories: ['drawing'],
     year: '2022',
     image: require('@/assets/img/drawing/日本.png')
   },
   {
     id: 'purple',
     title: '紫',
-    category: 'drawing',
+    categories: ['drawing'],
     year: '2025',
     image: require('@/assets/img/drawing/紫.jpg')
   },
   {
     id: 'twintail',
     title: 'ツインテール',
-    category: 'drawing',
+    categories: ['drawing'],
     year: '2024',
     image: require('@/assets/img/drawing/ツインテール.png')
   },
   {
     id: 'smile',
     title: '笑顔',
-    category: 'drawing',
+    categories: ['drawing'],
     year: '2024',
     image: require('@/assets/img/drawing/笑顔.png')
   },
   {
     id: 'spain',
     title: 'スペイン旅行イラスト',
-    category: 'drawing',
+    categories: ['drawing'],
     year: '2024',
     image: require('@/assets/img/drawing/スペイン.png'),
     content: `
@@ -98,21 +98,21 @@ export const works = [
   {
     id: 'shoes',
     title: 'シューズ',
-    category: 'drawing',
+    categories: ['drawing'],
     year: '2023',
     image: require('@/assets/img/drawing/シューズ.png')
   },
   {
     id: 'cup',
     title: 'コップ',
-    category: 'drawing',
+    categories: ['drawing'],
     year: '2023',
     image: require('@/assets/img/drawing/コップ.png')
   },
   {
     id: 'apple',
     title: 'りんご',
-    category: 'drawing',
+    categories: ['drawing'],
     year: '2023',
     image: require('@/assets/img/drawing/りんご.png')
   },
@@ -121,35 +121,35 @@ export const works = [
   {
     id: 'yatai1',
     title: '屋台',
-    category: 'photo',
+    categories: ['photo'],
     year: '2019',
     image: require('@/assets/img/photo/屋台.jpg')
   },
   {
     id: 'yatai2',
     title: '屋台2',
-    category: 'photo',
+    categories: ['photo'],
     year: '2019',
     image: require('@/assets/img/photo/屋台2.jpg')
   },
   {
     id: 'yatai3',
     title: '屋台3',
-    category: 'photo',
+    categories: ['photo'],
     year: '2019',
     image: require('@/assets/img/photo/屋台3.jpg')
   },
   {
     id: 'shibuya',
     title: '渋谷',
-    category: 'photo',
+    categories: ['photo'],
     year: '2023',
     image: require('@/assets/img/photo/渋谷.jpg')
   },
   {
     id: 'outside',
     title: '外',
-    category: 'photo',
+    categories: ['photo'],
     year: '2023',
     image: require('@/assets/img/photo/外.jpg')
   },
@@ -157,21 +157,21 @@ export const works = [
   {
     id: 'lionfish',
     title: 'ミノカサゴ',
-    category: 'photo',
+    categories: ['photo'],
     year: '2025',
     image: require('@/assets/img/photo/ミノカサゴ.jpg')
   },
   {
     id: 'kanban',
     title: '看板',
-    category: 'photo',
+    categories: ['photo'],
     year: '2022',
     image: require('@/assets/img/photo/看板.jpg')
   },
   {
     id: 'eye',
     title: '目',
-    category: 'photo',
+    categories: ['photo'],
     year: '2025',
     image: require('@/assets/img/photo/目.jpg')
   },
@@ -179,28 +179,28 @@ export const works = [
   {
     id: 'okinawa',
     title: '沖縄',
-    category: 'photo',
+    categories: ['photo'],
     year: '2025',
     image: require('@/assets/img/photo/沖縄.jpg')
   },
   {
     id: 'building',
     title: '建物',
-    category: 'photo',
+    categories: ['photo'],
     year: '2023',
     image: require('@/assets/img/photo/建物.jpg')
   },
   {
     id: 'construction',
     title: '工事',
-    category: 'photo',
+    categories: ['photo'],
     year: '2023',
     image: require('@/assets/img/photo/工事.jpg')
   },
   {
     id: 'museum',
     title: '博物館',
-    category: 'photo',
+    categories: ['photo'],
     year: '2023',
     image: require('@/assets/img/photo/博物館.jpg')
   },
@@ -209,7 +209,7 @@ export const works = [
   {
     id: 'timo',
     title: '身の回りのモノで作った時間を刻むアプリTimo',
-    category: 'product',
+    categories: ['product'],
     year: '2024/2（2ヶ月）',
     image: require('@/assets/img/product/timo.png'),
     type: '専門学校卒業制作（奨励賞2位/40名）',
@@ -243,7 +243,7 @@ export const works = [
   {
     id: 'wake',
     title: '目覚ましアプリwakeupwith',
-    category: 'product',
+    categories: ['product'],
     year: '2025/3（2ヶ月）',
     type: '<a href="https://100program.jp/" target="_blank">100Program</a>アプリ賞',
     asign: 'UI/UXデザイン、プロモーション。他メンバーはエンジニア2名',
@@ -270,7 +270,7 @@ export const works = [
   {
     id: 'mouches',
     title: '飛蚊症の不安を和らげる飛蚊症記録スライド',
-    category: 'product',
+    categories: ['product'],
     year: '2024（1週間）',
     image: require('@/assets/img/product/飛蚊症.webp'),
     type: '自主制作',
@@ -284,7 +284,7 @@ export const works = [
   {
     id: 'vue',
     title: 'Vue.jsで作成したポートフォリオサイト',
-    category: 'product',
+    categories: ['product'],
     year: '2025/3（1週間）',
     image: require('@/assets/img/product/site.png'),
     type: '自主制作',
@@ -304,7 +304,7 @@ export const works = [
   {
     id: 'mooo9',
     title: 'mooo（カップルがおはようを伝えるアプリ',
-    category: 'product',
+    categories: ['product','logo'],
     year: '2023（半年）',
     type: '<a target="_blank" href="https://mitouteki.jp/">AKATUIKIプロジェクト</a>、<a target="_blank" href="https://aizu-startups-foundation.com/aotake/top">アオタケプロジェクト</a>',
     asign: 'UI/UXデザイン、プロモーション。他メンバーはエンジニア5名、デザイナー３名',
@@ -319,9 +319,9 @@ export const works = [
     <img src="${require('@/assets/img/product/mooo7.png')}" alt="">
     <img src="${require('@/assets/img/product/mooo8.png')}" alt="">
     <img src="${require('@/assets/img/product/mooo10.png')}" alt="">
-    <a target="_blank" href="https://note.com/moooapp/n/n2f5be0745b40?sub_rt=share_pb">バレンタインにお届けする、カップル向け音声共有アプリ”mooo note"</a>
+    <a target="_blank" href="https://note.com/moooapp/n/n2f5be0745b40?sub_rt=share_pb">バレンタインにお届けする、カップル向け音声共有アプリ"mooo note"</a>
  
-    <a target="_blank" href="https://note.com/moooapp/n/n2f5be0745b40?sub_rt=share_pb">スパークル主催「アオタケプロジェクト」より”学生起業家”第一号が誕生！</a>
+    <a target="_blank" href="https://note.com/moooapp/n/n2f5be0745b40?sub_rt=share_pb">スパークル主催「アオタケプロジェクト」より"学生起業家"第一号が誕生！</a>
 
     <h2>AKATSUKIカンファレンス発表資料</h2>
     <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/71017346140c4cc3a6e95f05ab275e26" title="AKATSUKIカンファレンス発表資料" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
@@ -334,7 +334,7 @@ export const works = [
   {
     id: 'dawn',
     title: 'DAWN',
-    category: 'product',
+    categories: ['product','logo'],
     year: '2021/12（1ヶ月）',
     type: 'TOHOKU GRROWTH Accelerator Growth Cource（ビジネスプログラム）',
     asign: 'リサーチ、アイデア、UI/UX、PVデザイン。他メンバーエンジニア5名、ビジネス1名',
@@ -357,7 +357,7 @@ export const works = [
   {
     id: 'make',
     title: 'ボードゲームMake Wall Game',
-    category: 'product',
+    categories: ['product'],
     year: '2021（2週間）',
     type: '自主制作',
     asign: '企画、デザイン、実装',
@@ -372,7 +372,7 @@ export const works = [
   {
     id: 'ryoomoi',
     title: '両思いチェッカー',
-    category: 'product',
+    categories: ['product'],
     year: '2021（2週間）',
     type: ' <a target="_blank" href="https://hacku.yahoo.co.jp/hacku2021online3/">Open Hack U 2021 Online Vol.3</a>',
     asign: 'アイデア、UI/UXデザイン。他メンバーはエンジニア3名、ビジネス１名',
@@ -393,7 +393,7 @@ export const works = [
   {
     id: 'mm',
     title: '世界一シンプルなタイマー、ストップウォッチmm',
-    category: 'product',
+    categories: ['product'],
     year: '2024（2週間）',
     type: '自主制作',
     asign: '企画、デザイン、実装',
@@ -409,7 +409,7 @@ export const works = [
   {
     id: 'kohaku-diary',
     title: '琥珀日記',
-    category: 'product',
+    categories: ['product'],
     year: '2024',
     type: '<a target="_blank" href="https://aizu-startups-foundation.com/aotake/top">アオタケプロジェクト</a>',
     asign: 'UI/UXデザイン。他メンバーはエンジニア複数人',
@@ -427,7 +427,7 @@ export const works = [
   {
     id: 'oac2',
     title: 'OAC学生広告クリエイティブアワード',
-    category: 'poster',
+    categories: ['poster'],
     year: '2024/9（１ヶ月）',
     type: '専門学校課題、OACコンペ',
     image: require('@/assets/img/poster/OAC2.png'),
@@ -456,14 +456,14 @@ export const works = [
   {
     id: 'self-portrait',
     title: '自画像',
-    category: 'poster',
+    categories: ['poster'],
     year: '2023',
     image: require('@/assets/img/poster/自画像.png')
   },
   {
     id: 'jagda2',
     title: 'JAGDA国際学生ポスターアワード',
-    category: 'poster',
+    categories: ['poster'],
     year: '2024（1ヶ月）',
     type: '専門学校課題',
     image: require('@/assets/img/poster/JAGDA2.webp'),
@@ -486,7 +486,7 @@ export const works = [
   {
     id: 'flying-light',
     title: '飛翔する光',
-    category: 'poster',
+    categories: ['poster'],
     year: '2023',
     image: require('@/assets/img/poster/飛翔する光.png')
   },
@@ -494,7 +494,7 @@ export const works = [
   {
     id: 'festival',
     title: 'フェスティバル',
-    category: 'poster',
+    categories: ['poster'],
     year: '2023',
     image: require('@/assets/img/poster/フェスティバル.jpg')
   },
@@ -505,7 +505,7 @@ export const works = [
   {
     id: '2045',
     title: '2045',
-    category: 'modeling',
+    categories: ['modeling'],
     year: '2022',
     image: require('@/assets/img/modeling/2045.webp'),
     content: `
@@ -516,28 +516,28 @@ export const works = [
   {
     id: 'desk1',
     title: '机',
-    category: 'modeling',
+    categories: ['modeling'],
     year: '2019',
     image: require('@/assets/img/modeling/机.jpg')
   },
   {
     id: 'desk2',
     title: '机2',
-    category: 'modeling',
+    categories: ['modeling'],
     year: '2019',
     image: require('@/assets/img/modeling/机2.jpg')
   },
   {
     id: 'water',
     title: '水',
-    category: 'modeling',
+    categories: ['modeling'],
     year: '2019',
     image: require('@/assets/img/modeling/水.jpg')
   },
   {
     id: 'gun',
     title: '銃',
-    category: 'modeling',
+    categories: ['modeling'],
     year: '2019',
     image: require('@/assets/img/modeling/銃.jpg')
   },
@@ -547,7 +547,7 @@ export const works = [
   {
     id: 'handicraft1',
     title: '手芸サークルロゴ',
-    category: 'logo',
+    categories: ['logo'],
     year: '2024',
     image: require('@/assets/img/logo/手芸.png'),
     content: `
@@ -557,14 +557,14 @@ export const works = [
   {
     id: 'hoshino',
     title: 'HOSHINO',
-    category: 'logo',
+    categories: ['logo'],
     year: '2023',
     image: require('@/assets/img/logo/ほしの.png')
   },
   {
     id: 'suginoko',
     title: '木のマークで伝わるすぎのこ幼稚園ロゴ案',
-    category: 'logo',
+    categories: ['logo'],
     year: '2023/11（2週間）',
     type: '専門学校課題、幼稚園職員投票１位/30名',
     asign: 'ロゴデザイン',
@@ -580,7 +580,7 @@ export const works = [
   {
     id: 'mooo-logo',
     title: 'アプリmoooロゴ',
-    category: 'logo',
+    categories: ['logo'],
     year: '2023',
     image: require('@/assets/img/logo/mooo.png')
   },
@@ -588,21 +588,21 @@ export const works = [
   {
     id: 'asc',
     title: 'ASCサークルロゴ',
-    category: 'logo',
+    categories: ['logo'],
     year: '2020',
     image: require('@/assets/img/logo/asc.jpg')
   },
   {
     id: 'koko',
     title: '架空の結婚式場kokoロゴ',
-    category: 'logo',
+    categories: ['logo'],
     year: '2024',
     image: require('@/assets/img/logo/koko.png')
   },
   {
     id: 'sol',
     title: 'はちみつ販売店Sol Honeyロゴ、サイト',
-    category: 'logo',
+    categories: ['logo'],
     year: '2023/6（4週間）',
     type: '専門学校課題、生徒間投票1位/15名',
     asign: '店舗設定、ロゴ、サイト',
@@ -624,7 +624,7 @@ export const works = [
   {
     id: 'dawn',
     title: '旅行を記録できるアプリDAWNロゴ',
-    category: 'logo',
+    categories: ['logo'],
     year: '2021',
     image: require('@/assets/img/logo/DAWN.png'),
     content: `
@@ -635,7 +635,7 @@ export const works = [
   {
     id: 'practice',
     title: 'ロゴ練習',
-    category: 'logo',
+    categories: ['logo'],
     year: '2024',
     image: require('@/assets/img/logo/複数.png'),
     content: `
@@ -649,7 +649,7 @@ export const works = [
   {
     id: 'branch1',
     title: '楽曲『あの枝の葉』非公式PV制作',
-    category: 'other',
+    categories: ['other'],
     year: '2024（1ヶ月）',
     type: '専門学校課題',
     asign: '撮影、動画編集',
@@ -662,7 +662,7 @@ export const works = [
   {
     id: 'human1',
     title: '文庫本カバーリデザイン『人間標本』湊かなえ',
-    category: 'other',
+    categories: ['other'],
     year: '2024（1ヶ月）',
     type: '専門学校課題',
     image: require('@/assets/img/other/人間.jpg'),
@@ -682,7 +682,7 @@ export const works = [
   {
     id: 'mooo-other2',
     title: 'mooo冊子',
-    category: 'other',
+    categories: ['other'],
     year: '2023（1ヶ月）',
     type: '専門学校課題',
     image: require('@/assets/img/other/mooo2.png'),
@@ -695,7 +695,7 @@ export const works = [
   {
     id: 'cron',
     title: 'コロコロ転がる自作フォントCoron Font',
-    category: 'other',
+    categories: ['other'],
     year: '2024（1ヶ月）',
     type: '専門学校課題',
     image: require('@/assets/img/other/cron.png'),

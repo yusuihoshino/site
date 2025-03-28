@@ -26,7 +26,7 @@
         :title="work.title"
         :image="work.image"
         :year="work.year"
-        :category="work.category"
+        :categories="work.categories"
         :content="work.content"
         class="grid-item"
       />
@@ -72,7 +72,7 @@ export default {
       }
     },
     filteredWorks() {
-      return this.works.filter(work => work.category === this.selectedCategory);
+      return this.works.filter(work => work.categories.includes(this.selectedCategory));
     }
   }
 };

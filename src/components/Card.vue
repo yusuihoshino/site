@@ -11,14 +11,14 @@
       <img :src="image" :alt="title" class="card-image">
       <div class="card-content">
         <h3>{{ title }}<span class="card-click">click</span></h3>
-        <p>{{ category }} - {{ year }}</p>
+        <p>{{ categories.join(', ') }} - {{ year }}</p>
       </div>
     </router-link>
     <div v-else class="card-static">
       <img :src="image" :alt="title" class="card-image">
       <div class="card-content">
         <h3>{{ title }}</h3>
-        <p>{{ category }} - {{ year }}</p>
+        <p>{{ categories.join(', ') }} - {{ year }}</p>
       </div>
     </div>
   </div>
@@ -44,8 +44,8 @@ export default {
       type: String,
       required: true
     },
-    category: {
-      type: String,
+    categories: {
+      type: Array,
       required: true
     },
     content: {

@@ -130,7 +130,7 @@ export default {
     await this.$nextTick();
     await this.initLightbox();
   },
-  beforeDestroy() {
+  beforeUnmount() {
     if (this.lightbox) {
       this.lightbox.destroy();
       this.lightbox = null;

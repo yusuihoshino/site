@@ -7,6 +7,7 @@
         <router-link to="/request" @click="handleLinkClick">Request</router-link>
         <router-link to="/portfolio" @click="handleLinkClick">Portfolio</router-link>
         <router-link to="/works" @click="handleLinkClick">Works</router-link>
+        <router-link to="/note" @click="handleLinkClick">note</router-link>
       </div>
       
       <div class="sidebar-group">
@@ -17,9 +18,8 @@
           :value="currentColor"
           @input="handleColorChange"
         >
-        <router-link to="/note" @click="handleLinkClick">note</router-link>
-
         <a href="https://x.com/yusuihoshino" target="_blank" class="link-btn">X</a>
+        <router-link to="/qr" @click="handleLinkClick">QR</router-link>
       </div>  
   </nav>
 </template>

@@ -4,6 +4,7 @@ import Works from '@/views/Works.vue';
 import History from '@/views/History.vue';
 import Request from '@/views/Request.vue';    
 import Note from '@/views/Note.vue';    
+import QR from '@/views/QR.vue';
 import Portfolio from '@/views/Portfolio.vue';
 import DetailPage from '@/components/DetailPage.vue';
 import { works } from '@/data/works';
@@ -50,9 +51,14 @@ const routes = [
     component: Portfolio
   },
   {
-    path: '/note',
-    name: 'Note',
-    component: Note
+      path: '/note',
+      name: 'Note',
+      component: Note
+    },
+  {
+    path: '/qr',
+    name: 'QR',
+    component: QR
   },
   ...generateDetailRoutes()
 ];

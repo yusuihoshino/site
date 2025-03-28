@@ -1,25 +1,21 @@
 <template>
   <div class="container" id="container">
         <TitlePage
-              title="note"
-              description="note"
+              title="QR"
+              description="QR"
         />
         <div class="content">
-            <p>noteにてUI/UXやデザインに関する記事を公開している。</p>
-            <a href="https://note.com/yusuihoshino/m/m7ef600473746" target="_blank">note</a>
-            <img src="@/assets/img/note.png" alt="note">
+            <p>このサイトのQRコードです。</p>
+            <img src="@/assets/img/QR.png" alt="QR">
         </div>  
    </div>  
 </template>
-
-
-
 
 <script>
 import TitlePage from '@/components/Title.vue'
 
 export default {
-  name: 'NotePage',
+  name: 'QRPage',
   components: {
     TitlePage
   }

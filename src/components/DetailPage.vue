@@ -15,7 +15,6 @@
               <div v-if="work.type" class="detail-item">
                 <span class="detail-item-title">Type</span>
                 <span v-html="work.type"></span>
-
               </div>
               <div v-if="work.asign" class="detail-item">
                 <span class="detail-item-title">Asign</span>{{ work.asign }}
@@ -133,19 +132,23 @@ export default {
     padding: 20px 0px 20px 30px;
     margin: 80px 0 40px;
 
-  .detail-item {
-    .detail-item-title {
-    font-size: 0.9rem;
-    font-weight: 400;
-    margin-right: 20px;
-    display:inline-block;
-    width:40px;
-    text-align: right;
-    letter-spacing: 0.1em;
-    }
-    
-  }
+    .detail-item {
+      display: flex;
+      justify-content: flex-start;
+      gap:20px;
+      padding-bottom: 2px;
 
+
+
+      .detail-item-title {
+        font-size: 0.9rem;
+        font-weight: 400;
+        letter-spacing: 0.1em;
+        display:block;
+        width:50px;
+        text-align: right;
+      }
+    }
   }
 
 }

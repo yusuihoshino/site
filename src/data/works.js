@@ -371,13 +371,16 @@ export const works = [
   },
   {
     id: 'dawn',
-    title: 'DAWN',
+    title: '旅行を記録できるアプリDAWN',
     categories: ['product','logo'],
     year: '2021/12（1ヶ月）',
     type: 'TOHOKU GRROWTH Accelerator Growth Cource（ビジネスプログラム）',
     asign: 'リサーチ、アイデア、UI/UX、PVデザイン。他メンバーエンジニア5名、ビジネス1名',
     image: require('@/assets/img/logo/DAWN.png'),
     content: `
+        <a href="${require('@/assets/img/logo/DAWN.png')}" class="glightbox">
+          <img src="${require('@/assets/img/logo/DAWN.png')}" alt="">
+         </a>
         <a href="${require('@/assets/img/product/dawn0.png')}" class="glightbox">
           <img src="${require('@/assets/img/product/dawn0.png')}" alt="">
         </a>
@@ -706,19 +709,6 @@ export const works = [
         <img src="${require('@/assets/img/logo/sol6.png')}" alt="">
       </a>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/5f57xasCHs8?si=qNi-1yR_Tc6H0ZJv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    `
-  },
-  {
-    id: 'dawn',
-    title: '旅行を記録できるアプリDAWNロゴ',
-    categories: ['logo'],
-    year: '2021',
-    image: require('@/assets/img/logo/DAWN.png'),
-    content: `
-      <a href="${require('@/assets/img/logo/DAWN.png')}" class="glightbox">
-        <img src="${require('@/assets/img/logo/DAWN.png')}" alt="">
-      </a>
-      <a target="_blank" href="https://note.com/yusuihoshino/n/nca8c32b90238?magazine_key=m27cad5495964">参加レポートnote</a>
     `
   },
   {

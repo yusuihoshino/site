@@ -8,6 +8,9 @@ export const works = [
     type: '自主制作',
     image: require('@/assets/img/art/p5-2.png'),
     content: `
+      <a href="${require('@/assets/img/art/ae2.png')}" class="glightbox">
+       <img src="${require('@/assets/img/art/ae2.png')}" alt="">
+      </a>
        <iframe width="560" height="315" src="https://www.youtube.com/embed/2GaekwoS2No?si=FAIGdwiHmzMVkDxD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     `
   },
@@ -18,9 +21,8 @@ export const works = [
     year: '2024',
     image: require('@/assets/img/art/ae5.png'),
     content: `
-      <img src="${require('@/assets/img/art/ae2.png')}" alt="">
-      <img src="${require('@/assets/img/art/ae4.png')}" alt="">
       <img src="${require('@/assets/img/art/ae5.png')}" alt="">
+      <img src="${require('@/assets/img/art/ae4.png')}" alt="">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/wy6mpLfVUVg?si=4qb2M98YklJR1LBy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/OvuEu7fEZwA?si=FRVxHzRNXLp9_kL3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/5V7U7rLNzUk?si=t0inQcrHq0fwGiNn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

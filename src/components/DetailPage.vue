@@ -58,6 +58,23 @@ export default {
     work() {
       return works.find(w => w.id === this.id);
     }
+  },
+  mounted() {
+    // GLightboxのCSSを追加
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css';
+    document.head.appendChild(link);
+
+    // GLightboxのJSを追加
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js';
+    script.onload = () => {
+      window.GLightbox({
+        selector: '.glightbox'
+      });
+    };
+    document.head.appendChild(script);
   }
 };
 </script>
@@ -122,7 +139,7 @@ export default {
     margin-bottom: 20px;
     border: 1px solid var(--img-gray);
    }
-   a{
+   a:not(.glightbox){
       text-decoration: underline;
       width: 100%;
       height:70px;

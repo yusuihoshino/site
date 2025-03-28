@@ -71,7 +71,25 @@ export default {
     script.src = 'https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js';
     script.onload = () => {
       window.GLightbox({
-        selector: '.glightbox'
+        selector: '.glightbox',
+
+        touchNavigation: true,  // タッチナビゲーション
+        loop: true,            // ループ再生
+        navigation: false,      // 矢印ナビゲーション
+        width: '90vw',         // 画像の最大幅
+        height: '90vh',        // 画像の最大高さ
+        zoomable: true,        // ズーム可能
+        draggable: true,       // ドラッグ可能
+        preload: true,         // プリロード
+        autoplayVideos: true,  // 動画の自動再生
+        openEffect: 'zoom',    // ズームエフェクト
+        closeEffect: 'fade',   // フェードエフェクト
+        onOpen: () => {
+          console.log('Lightbox opened');
+        },
+        onClose: () => {
+          console.log('Lightbox closed');
+        }
       });
     };
     document.head.appendChild(script);
@@ -80,6 +98,14 @@ export default {
 </script>
 
 <style scoped>
+
+.gnext.gbtn {
+  display: none;
+} 
+
+.lb-nav a.lb-next {
+  display: none;
+}
  hr{
   size: 0.5px;
  }

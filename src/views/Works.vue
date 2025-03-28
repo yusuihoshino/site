@@ -74,6 +74,34 @@ export default {
     filteredWorks() {
       return this.works.filter(work => work.categories.includes(this.selectedCategory));
     }
+  },
+  mounted() {
+    // GLightboxのCSSを追加
+    const link = document.createElement('link');
+    link.rel = 'stylesheet';
+    link.href = 'https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css';
+    document.head.appendChild(link);
+
+    // GLightboxのJSを追加
+    const script = document.createElement('script');
+    script.src = 'https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js';
+    script.onload = () => {
+      window.GLightbox({
+        selector: '.glightbox',
+        touchNavigation: true,
+        loop: true,
+        navigation: true,
+        width: '90vw',
+        height: '90vh',
+        zoomable: false,
+        draggable: false,
+        preload: true,
+        autoplayVideos: true,
+        openEffect: 'zoom',
+        closeEffect: 'fade'
+      });
+    };
+    document.head.appendChild(script);
   }
 };
 </script>

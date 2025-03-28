@@ -16,7 +16,11 @@
     </router-link>
     <div v-else class="card-static">
       
-      <img :src="image" :alt="title" class="card-image">
+      <a :href="image" class="glightbox" :data-gallery="id">
+        <img :src="image" :alt="title" class="card-image">
+      </a>
+
+
       <div class="card-content">
         <h3>{{ title }}</h3>
         <p>{{ categories.join(', ') }} - {{ year }}</p>

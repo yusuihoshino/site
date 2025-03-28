@@ -86,15 +86,20 @@ export default {
     const script = document.createElement('script');
     script.src = 'https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js';
     script.onload = () => {
-      window.GLightbox({
-        selector: '.glightbox',
-        touchNavigation: true,
-        loop: true,
-        width: '90vw',
-        height: '90vh',
-        zoomable: false,
-        draggable: false,
-        autoplayVideos: true
+      // DOMが完全に読み込まれた後にGLightboxを初期化
+      this.$nextTick(() => {
+        // eslint-disable-next-line no-undef
+        window.GLightbox({
+          selector: '.glightbox',
+          touchNavigation: true,
+          loop: true,
+          width: '90vw',
+          height: '90vh',
+          zoomable: false,
+          draggable: false,
+          autoplayVideos: true,
+          closeButton: true  // 閉じるボタンを明示的に有効化
+        });
       });
     };
     document.head.appendChild(script);

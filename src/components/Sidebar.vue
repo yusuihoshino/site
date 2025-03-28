@@ -1,12 +1,12 @@
 <template>
   <nav class="sidebar" :class="{ 'open': isMenuOpen }" id="sidebar-left">
-      <router-link to="/" class="sidebar-title">Yusui<br>Hoshino</router-link>
+      <router-link to="/" class="sidebar-title" @click="handleLinkClick">Yusui<br>Hoshino</router-link>
 
       <div class="sidebar-group">
-        <router-link to="/history">History</router-link>
-        <router-link to="/request">Request</router-link>
-        <router-link to="/portfolio">Portfolio</router-link>
-        <router-link to="/works">Works</router-link>
+        <router-link to="/history" @click="handleLinkClick">History</router-link>
+        <router-link to="/request" @click="handleLinkClick">Request</router-link>
+        <router-link to="/portfolio" @click="handleLinkClick">Portfolio</router-link>
+        <router-link to="/works" @click="handleLinkClick">Works</router-link>
       </div>
       
       <div class="sidebar-group">
@@ -112,6 +112,11 @@ export default {
       // ファビコンを更新
       favicon.type = 'image/svg+xml';
       favicon.href = `data:image/svg+xml;base64,${base64}`;
+    },
+    handleLinkClick() {
+      if (window.innerWidth <= 999) {
+        this.$emit('close-menu');
+      }
     }
   }
 }

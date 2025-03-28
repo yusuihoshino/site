@@ -7,6 +7,8 @@
         <div class="content">
             <p>このサイトのQRコードです。</p>
             <img src="@/assets/img/QR.png" alt="QR">
+            <p>YusuiHoshino</p>
+            <p>https://yusuihoshino.github.io/site/</p>
         </div>  
    </div>  
 </template>

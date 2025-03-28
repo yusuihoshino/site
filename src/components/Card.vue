@@ -16,9 +16,10 @@
     </router-link>
     <div v-else class="card-static">
       
-      <a :href="image" class="glightbox" :data-gallery="id">
+      <!-- <a :href="image" class="glightbox" :data-gallery="id">
         <img :src="image" :alt="title" class="card-image">
-      </a>
+      </a> -->
+       <img :src="image" :alt="title" class="card-image">
 
 
       <div class="card-content">

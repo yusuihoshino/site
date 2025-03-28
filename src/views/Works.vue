@@ -59,7 +59,8 @@ export default {
         { value: 'art', label: 'Art' },
         { value: 'other', label: 'Other' }
       ],
-      works
+      works,
+      lightbox: null
     };
   },
   computed: {
@@ -75,34 +76,65 @@ export default {
       return this.works.filter(work => work.categories.includes(this.selectedCategory));
     }
   },
-  mounted() {
-    // GLightboxのCSSを追加
-    const link = document.createElement('link');
-    link.rel = 'stylesheet';
-    link.href = 'https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css';
-    document.head.appendChild(link);
+  methods: {
+    async initLightbox() {
+      // 既存のインスタンスを破棄
+      if (this.lightbox) {
+        this.lightbox.destroy();
+      }
 
-    // GLightboxのJSを追加
-    const script = document.createElement('script');
-    script.src = 'https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js';
-    script.onload = () => {
-      // DOMが完全に読み込まれた後にGLightboxを初期化
-      this.$nextTick(() => {
-        // eslint-disable-next-line no-undef
-        window.GLightbox({
-          selector: '.glightbox',
-          touchNavigation: true,
-          loop: true,
-          width: '90vw',
-          height: '90vh',
-          zoomable: false,
-          draggable: false,
-          autoplayVideos: true,
-          closeButton: true  // 閉じるボタンを明示的に有効化
+      // GLightboxのCSSを追加
+      if (!document.querySelector('link[href*="glightbox"]')) {
+        const link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.href = 'https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css';
+        document.head.appendChild(link);
+      }
+
+      // GLightboxのJSを読み込み
+      if (!window.GLightbox) {
+        await new Promise((resolve) => {
+          const script = document.createElement('script');
+          script.src = 'https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js';
+          script.onload = resolve;
+          document.head.appendChild(script);
         });
+      }
+
+      // 初期化
+      await new Promise((resolve) => {
+        setTimeout(() => {
+          this.lightbox = window.GLightbox({
+            selector: '.glightbox',
+            touchNavigation: true,
+            loop: true,
+            width: '90vw',
+            height: '90vh',
+            zoomable: false,
+            draggable: false,
+            autoplayVideos: true,
+            closeButton: true,
+            navigation: true,
+            preload: true
+          });
+          resolve();
+        }, 100);
       });
-    };
-    document.head.appendChild(script);
+    }
+  },
+  async mounted() {
+    await this.$nextTick();
+    await this.initLightbox();
+  },
+  async activated() {
+    await this.$nextTick();
+    await this.initLightbox();
+  },
+  beforeDestroy() {
+    if (this.lightbox) {
+      this.lightbox.destroy();
+      this.lightbox = null;
+    }
   }
 };
 </script>

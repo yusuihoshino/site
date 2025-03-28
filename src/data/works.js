@@ -659,14 +659,6 @@ export const works = [
     `
   },
   {
-    id: 'mooo-logo',
-    title: 'アプリmoooロゴ',
-    categories: ['logo'],
-    year: '2023',
-    image: require('@/assets/img/logo/mooo.png')
-  },
-  
-  {
     id: 'asc',
     title: 'ASCサークルロゴ',
     categories: ['logo'],

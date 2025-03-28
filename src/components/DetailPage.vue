@@ -98,13 +98,13 @@ export default {
 
 <style scoped>
 
-.gnext.gbtn {
+/* .gnext.gbtn {
   display: none;
 } 
 
 .lb-nav a.lb-next {
   display: none;
-}
+} */
  hr{
   size: 0.5px;
  }

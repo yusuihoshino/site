@@ -17,7 +17,8 @@
           :value="currentColor"
           @input="handleColorChange"
         >
-        <a href="https://note.com/yusuihoshino" target="_blank" class="link-btn">note</a>
+        <router-link to="/note" @click="handleLinkClick">note</router-link>
+
         <a href="https://x.com/yusuihoshino" target="_blank" class="link-btn">X</a>
       </div>  
   </nav>

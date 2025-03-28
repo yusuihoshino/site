@@ -3,6 +3,7 @@ import Home from '@/views/Home.vue';
 import Works from '@/views/Works.vue';
 import History from '@/views/History.vue';
 import Request from '@/views/Request.vue';    
+import Note from '@/views/Note.vue';    
 import Portfolio from '@/views/Portfolio.vue';
 import DetailPage from '@/components/DetailPage.vue';
 import { works } from '@/data/works';
@@ -47,6 +48,11 @@ const routes = [
     path: '/portfolio',
     name: 'Portfolio',
     component: Portfolio
+  },
+  {
+    path: '/note',
+    name: 'Note',
+    component: Note
   },
   ...generateDetailRoutes()
 ];

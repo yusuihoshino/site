@@ -8,9 +8,6 @@ export const works = [
     type: '自主制作',
     image: require('@/assets/img/art/p5-2.png'),
     content: `
-      <a href="${require('@/assets/img/art/ae2.png')}" class="glightbox">
-       <img src="${require('@/assets/img/art/ae2.png')}" alt="">
-      </a>
        <iframe width="560" height="315" src="https://www.youtube.com/embed/2GaekwoS2No?si=FAIGdwiHmzMVkDxD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     `
   },
@@ -21,8 +18,15 @@ export const works = [
     year: '2024',
     image: require('@/assets/img/art/ae5.png'),
     content: `
-      <img src="${require('@/assets/img/art/ae5.png')}" alt="">
-      <img src="${require('@/assets/img/art/ae4.png')}" alt="">
+      <a href="${require('@/assets/img/art/ae1.png')}" class="glightbox">
+        <img src="${require('@/assets/img/art/ae1.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/art/ae2.png')}" class="glightbox">
+        <img src="${require('@/assets/img/art/ae2.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/art/ae4.png')}" class="glightbox">
+        <img src="${require('@/assets/img/art/ae4.png')}" alt="">
+      </a>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/wy6mpLfVUVg?si=4qb2M98YklJR1LBy" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/OvuEu7fEZwA?si=FRVxHzRNXLp9_kL3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/5V7U7rLNzUk?si=t0inQcrHq0fwGiNn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -218,7 +222,9 @@ export const works = [
     asign: 'UI/UXデザイン、実装',
     content: `
       <p>身の回りのモノを組み合わせて10種類の数字のフォントを制作し、それらを活用した時計、タイマー、ストップウォッチのウェブアプリを開発、公開した。</p>
-      <img src="${require('@/assets/img/product/timo.png')}" alt="">
+      <a href="${require('@/assets/img/product/timo.png')}" class="glightbox">
+        <img src="${require('@/assets/img/product/timo.png')}" alt="">
+      </a>
       <h2>コンセプト</h2>
       <h3>課題</h3>
       <p>既存のウェブのストップウォッチ、タイマーアプリのデザインは複雑すぎるものや無機質で面白みのないものが多い。</p>
@@ -230,15 +236,21 @@ export const works = [
       <h2>ロゴ</h2>
       <p>Time+ObjectでTimo（タイモ）と名付けた。ロゴの「i」はモノが時間を刻む砂時計の砂のように落ちていく様子を表現している。</p>
 
-      <img src="${require('@/assets/img/product/timo4.png')}" alt="">
+      <a href="${require('@/assets/img/product/timo4.png')}" class="glightbox">
+        <img src="${require('@/assets/img/product/timo4.png')}" alt="">
+      </a>
 
       <h2>モノから作った10種類の数字フォント</h2>
       <p>子供の頃にモノで何かを形作った体験を思い出すように、身の回りにあるモノを選んだ。</p>
-      <img src="${require('@/assets/img/product/timo2.png')}" alt="">
+      <a href="${require('@/assets/img/product/timo2.png')}" class="glightbox">
+        <img src="${require('@/assets/img/product/timo2.png')}" alt="">
+      </a>
 
       <h2>時計、タイマー、ストップウォッチ</h2>
       <p>背景色、フォントサイズを自由に設定し、好みの設定を探求する楽しみがある。</p>
-      <img src="${require('@/assets/img/product/timo3.png')}" alt="">
+      <a href="${require('@/assets/img/product/timo3.png')}" class="glightbox">
+        <img src="${require('@/assets/img/product/timo3.png')}" alt="">
+      </a>
 
     `
   },
@@ -278,7 +290,9 @@ export const works = [
     type: '自主制作',
     content: `
       <p>飛蚊症（視界にゴミが見える症状）の不安解消、患者と医者のコミュニケーションを目的とした、飛蚊症を記録できるGoogleスライドを制作し、公開した。既存の手段の濃さや位置を指定できないという課題を解決した。</p>
-      <img src="${require('@/assets/img/product/飛蚊症.webp')}" alt="">
+      <a href="${require('@/assets/img/product/飛蚊症.webp')}" class="glightbox">
+        <img src="${require('@/assets/img/product/飛蚊症.webp')}" alt="">
+      </a>
       <a target="_blank" href="https://note.com/yusuihoshino/n/n7dbc225dc067">解説note</a>
       <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSXOKy4D3Cub1jZfWeR387CBy7DYZfCVRY394gsByK-b4lUSAUMP3ccwp-g7csoNK9tFf_6O8bPcZ1_/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     `
@@ -293,13 +307,19 @@ export const works = [
     asign: 'デザイン、実装',
     content: `
       <p>Vue.jsを利用してポートフォリオサイトを作成した。</p>
-      <img src="${require('@/assets/img/product/site.png')}" alt="">
+      <a href="${require('@/assets/img/product/site.png')}" class="glightbox">
+        <img src="${require('@/assets/img/product/site.png')}" alt="">
+      </a>
 
       <p>背景色を設定して、楽しめる。</p>
-      <img src="${require('@/assets/img/product/site2.png')}" alt="">
+      <a href="${require('@/assets/img/product/site2.png')}" class="glightbox">
+        <img src="${require('@/assets/img/product/site2.png')}" alt="">
+      </a>
 
       <p>データはJS１ファイルにまとめており、自動で作品のカード生成、詳細ページ生成を行っている。</p>
-      <img src="${require('@/assets/img/product/site3.png')}" alt="">
+      <a href="${require('@/assets/img/product/site3.png')}" class="glightbox">
+        <img src="${require('@/assets/img/product/site3.png')}" alt="">
+      </a>
 
     `
   },
@@ -313,14 +333,30 @@ export const works = [
     image: require('@/assets/img/product/mooo.png'),
     content: `
       
-     <img src="${require('@/assets/img/product/mooo1.png')}" alt="">
-     <img src="${require('@/assets/img/product/mooo2.png')}" alt="">
-     <img src="${require('@/assets/img/product/mooo3.png')}" alt="">
-     <img src="${require('@/assets/img/product/mooo4.png')}" alt="">
-    <img src="${require('@/assets/img/product/mooo6.png')}" alt="">
-    <img src="${require('@/assets/img/product/mooo7.png')}" alt="">
-    <img src="${require('@/assets/img/product/mooo8.png')}" alt="">
-    <img src="${require('@/assets/img/product/mooo10.png')}" alt="">
+     <a href="${require('@/assets/img/product/mooo1.png')}" class="glightbox">
+       <img src="${require('@/assets/img/product/mooo1.png')}" alt="">
+     </a>
+     <a href="${require('@/assets/img/product/mooo2.png')}" class="glightbox">
+       <img src="${require('@/assets/img/product/mooo2.png')}" alt="">
+     </a>
+     <a href="${require('@/assets/img/product/mooo3.png')}" class="glightbox">
+       <img src="${require('@/assets/img/product/mooo3.png')}" alt="">
+     </a>
+     <a href="${require('@/assets/img/product/mooo4.png')}" class="glightbox">
+       <img src="${require('@/assets/img/product/mooo4.png')}" alt="">
+     </a>
+    <a href="${require('@/assets/img/product/mooo6.png')}" class="glightbox">
+      <img src="${require('@/assets/img/product/mooo6.png')}" alt="">
+    </a>
+    <a href="${require('@/assets/img/product/mooo7.png')}" class="glightbox">
+      <img src="${require('@/assets/img/product/mooo7.png')}" alt="">
+    </a>
+    <a href="${require('@/assets/img/product/mooo8.png')}" class="glightbox">
+      <img src="${require('@/assets/img/product/mooo8.png')}" alt="">
+    </a>
+    <a href="${require('@/assets/img/product/mooo10.png')}" class="glightbox">
+      <img src="${require('@/assets/img/product/mooo10.png')}" alt="">
+    </a>
     <a target="_blank" href="https://note.com/moooapp/n/n2f5be0745b40?sub_rt=share_pb">バレンタインにお届けする、カップル向け音声共有アプリ"mooo note"</a>
  
     <a target="_blank" href="https://note.com/moooapp/n/n2f5be0745b40?sub_rt=share_pb">スパークル主催「アオタケプロジェクト」より"学生起業家"第一号が誕生！</a>
@@ -342,15 +378,33 @@ export const works = [
     asign: 'リサーチ、アイデア、UI/UX、PVデザイン。他メンバーエンジニア5名、ビジネス1名',
     image: require('@/assets/img/logo/DAWN.png'),
     content: `
-        <img src="${require('@/assets/img/product/dawn0.png')}" alt="">
-        <img src="${require('@/assets/img/product/dawn1.png')}" alt="">
-        <img src="${require('@/assets/img/product/dawn2.png')}" alt="">
-        <img src="${require('@/assets/img/product/dawn3.png')}" alt="">
-        <img src="${require('@/assets/img/product/dawn4.png')}" alt="">
-        <img src="${require('@/assets/img/product/dawn5.png')}" alt="">
-        <img src="${require('@/assets/img/product/dawn6.png')}" alt="">
-        <img src="${require('@/assets/img/product/dawn7.png')}" alt="">
-        <img src="${require('@/assets/img/product/dawn8.png')}" alt="">
+        <a href="${require('@/assets/img/product/dawn0.png')}" class="glightbox">
+          <img src="${require('@/assets/img/product/dawn0.png')}" alt="">
+        </a>
+        <a href="${require('@/assets/img/product/dawn1.png')}" class="glightbox">
+          <img src="${require('@/assets/img/product/dawn1.png')}" alt="">
+        </a>
+        <a href="${require('@/assets/img/product/dawn2.png')}" class="glightbox">
+          <img src="${require('@/assets/img/product/dawn2.png')}" alt="">
+        </a>
+        <a href="${require('@/assets/img/product/dawn3.png')}" class="glightbox">
+          <img src="${require('@/assets/img/product/dawn3.png')}" alt="">
+        </a>
+        <a href="${require('@/assets/img/product/dawn4.png')}" class="glightbox">
+          <img src="${require('@/assets/img/product/dawn4.png')}" alt="">
+        </a>
+        <a href="${require('@/assets/img/product/dawn5.png')}" class="glightbox">
+          <img src="${require('@/assets/img/product/dawn5.png')}" alt="">
+        </a>
+        <a href="${require('@/assets/img/product/dawn6.png')}" class="glightbox">
+          <img src="${require('@/assets/img/product/dawn6.png')}" alt="">
+        </a>
+        <a href="${require('@/assets/img/product/dawn7.png')}" class="glightbox">
+          <img src="${require('@/assets/img/product/dawn7.png')}" alt="">
+        </a>
+        <a href="${require('@/assets/img/product/dawn8.png')}" class="glightbox">
+          <img src="${require('@/assets/img/product/dawn8.png')}" alt="">
+        </a>
         <h2>1分間PV</h2>
         <iframe title="vimeo-player" src="https://player.vimeo.com/video/651897990?h=2a3d71924f" width="640" height="360" frameborder="0"    allowfullscreen></iframe>
         <a target="_blank" href="https://youtube.com/shorts/kuvQ0r6W_E4?si=kDtBnhicPCpSet2E">UIフロー動画</a>
@@ -366,7 +420,9 @@ export const works = [
     image: require('@/assets/img/product/make.png'),
     content: `
       <p>JSの練習用に二人用のボードゲームを制作した。二人が順番に自分のコマの移動と壁を立てる動作を繰り返し、コマの四方が壁に囲まれた方が負けのルール。</p>
-      <img src="${require('@/assets/img/product/make.png')}" alt="">
+      <a href="${require('@/assets/img/product/make.png')}" class="glightbox">
+        <img src="${require('@/assets/img/product/make.png')}" alt="">
+      </a>
       <a target="_blank" href="https://yusuihoshino.github.io/MakeWallGame/">ボードゲームMake Wall Game</a>
 
     `
@@ -380,7 +436,9 @@ export const works = [
     asign: 'アイデア、UI/UXデザイン。他メンバーはエンジニア3名、ビジネス１名',
     image: require('@/assets/img/no.png'),
     content: `
-      <img src="${require('@/assets/img/no.png')}" alt="">
+      <a href="${require('@/assets/img/no.png')}" class="glightbox">
+        <img src="${require('@/assets/img/no.png')}" alt="">
+      </a>
       <h2>レポート</h2>
       <a target="_blank" href="https://note.com/yusuihoshino/n/n62841f487d36?magazine_key=m27cad5495964">参加レポートnote</a>
       <h2>プレゼン動画、資料</h2>
@@ -403,7 +461,9 @@ export const works = [
     content: `
       <a target="_blank" href="https://yusuihoshino.github.io/mm/timer/index.html">mmアプリ</a>
       <p>ウェブにあるストップウォッチのデザインは広告があったり、他の要素で複雑だったりするものが多い。このアプリは、世界で一番ミニマルでデザインを楽しめるものを作ろうちう考えで制作した。シンプルながらも背景色を変える機能で、背景と常に動く数字の美しさを楽しめる。</p>
-      <img src="${require('@/assets/img/product/mm.png')}" alt="">
+      <a href="${require('@/assets/img/product/mm.png')}" class="glightbox">
+        <img src="${require('@/assets/img/product/mm.png')}" alt="">
+      </a>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/PFZaAJp8lcA?si=MbY3mlTtIJuZtPOF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
     `
@@ -417,8 +477,9 @@ export const works = [
     asign: 'UI/UXデザイン。他メンバーはエンジニア複数人',
     image: require('@/assets/img/product/琥珀日記.jpg'),
     content: `
-      <img src="${require('@/assets/img/product/琥珀日記.jpg')}" alt="">
-      
+      <a href="${require('@/assets/img/product/琥珀日記.jpg')}" class="glightbox">
+        <img src="${require('@/assets/img/product/琥珀日記.jpg')}" alt="">
+      </a>
       <a target="_blank" href="https://note.com/spurcle_tohoku/n/n4bc9a7f632b3">アオタケプロジェクト 採択者紹介⑧ 安井番厘さん</a>
     `
   },

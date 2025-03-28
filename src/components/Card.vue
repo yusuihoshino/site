@@ -15,6 +15,7 @@
       </div>
     </router-link>
     <div v-else class="card-static">
+      
       <img :src="image" :alt="title" class="card-image">
       <div class="card-content">
         <h3>{{ title }}</h3>

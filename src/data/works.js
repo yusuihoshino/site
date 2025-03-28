@@ -505,15 +505,21 @@ export const works = [
       
       <h2>第一印象はフォントから</h2>
       <p>モリサワフォント ①。就活生が会社に見せる第一印象は、履歴書の顔写真よりも文字のフォントである。この気づきからお化粧をするようにフォントを整える学生を描いた。</p>
-      <img src="${require('@/assets/img/poster/OAC1.png')}" alt="">
+      <a href="${require('@/assets/img/poster/OAC1.png')}" class="glightbox">
+        <img src="${require('@/assets/img/poster/OAC1.png')}" alt="">
+      </a>
 
       <h2>フライトを支える仕事</h2>
       <p>全日本空輸行き会社 ①。地上で業務をする作業をキーボードで、それが航空を支える姿をキーボードの「A」と「N」を飛行機が行き来しすることで ANAの航空を支えていることを表現している。</p>
-      <img src="${require('@/assets/img/poster/OAC3.png')}" alt="">
+      <a href="${require('@/assets/img/poster/OAC3.png')}" class="glightbox">
+        <img src="${require('@/assets/img/poster/OAC3.png')}" alt="">
+      </a>
 
       <h2>上を向く仕事。</h2>
       <p>全日本空輸行き会社 ②。キャッチコピーベースで制作した作業員の人たちの視点と心持ちをポジティブに表現した。</p>
-      <img src="${require('@/assets/img/poster/OAC2.png')}" alt="">
+      <a href="${require('@/assets/img/poster/OAC2.png')}" class="glightbox">
+        <img src="${require('@/assets/img/poster/OAC2.png')}" alt="">
+      </a>
     `
   },
   {
@@ -535,15 +541,21 @@ export const works = [
 
       <h2>点字ブロック</h2>
       <p>街で見かける点字ブロックのかけている部分を簡単に繋げることができたらPEACEだと思った。</p>
-     <img src="${require('@/assets/img/poster/JAGDA1.webp')}" alt="">
+     <a href="${require('@/assets/img/poster/JAGDA1.webp')}" class="glightbox">
+       <img src="${require('@/assets/img/poster/JAGDA1.webp')}" alt="">
+     </a>
 
        <h2>つめ</h2>
       <p>爪があるからお互いを傷付けあうとしたら、それらがつながった世界はPEACEかもしれない。</p>
-      <img src="${require('@/assets/img/poster/JAGDA2.webp')}" alt="">
+      <a href="${require('@/assets/img/poster/JAGDA2.webp')}" class="glightbox">
+        <img src="${require('@/assets/img/poster/JAGDA2.webp')}" alt="">
+      </a>
 
        <h2>コード</h2>
       <p>コードのオスとメスが決められたもの意外と繋がれたら、その自由な発想はPEACEかもしれない</p>
-      <img src="${require('@/assets/img/poster/JAGDA3.webp')}" alt="">
+      <a href="${require('@/assets/img/poster/JAGDA3.webp')}" class="glightbox">
+        <img src="${require('@/assets/img/poster/JAGDA3.webp')}" alt="">
+      </a>
     `
   },
   {
@@ -614,7 +626,9 @@ export const works = [
     year: '2024',
     image: require('@/assets/img/logo/手芸.png'),
     content: `
-      <img src="${require('@/assets/img/logo/手芸.png')}" alt="">
+      <a href="${require('@/assets/img/logo/手芸.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/手芸.png')}" alt="">
+      </a>
     `
   },
   {
@@ -634,10 +648,18 @@ export const works = [
     image: require('@/assets/img/logo/すぎのこ.png'),
     content: `
       <p>実際にある幼稚園のロゴを制作した。教員のものが最終的に採用されたが、クラスの中では職員投票１位を獲得した。</p>
-      <img src="${require('@/assets/img/logo/sugi1.png')}" alt="">
-      <img src="${require('@/assets/img/logo/sugi2.png')}" alt="">
-      <img src="${require('@/assets/img/logo/sugi3.png')}" alt="">
-      <img src="${require('@/assets/img/logo/sugi4.png')}" alt="">
+      <a href="${require('@/assets/img/logo/sugi1.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/sugi1.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/logo/sugi2.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/sugi2.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/logo/sugi3.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/sugi3.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/logo/sugi4.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/sugi4.png')}" alt="">
+      </a>
     `
   },
   {
@@ -672,15 +694,29 @@ export const works = [
     image: require('@/assets/img/logo/Sol.png'),
     content: `
       <p>はちみつ販売店の店舗設定を考え、ロゴ、サイトを制作した。</p>
-      <img src="${require('@/assets/img/logo/Sol.png')}" alt="">
-      <img src="${require('@/assets/img/logo/sol1.png')}" alt="">
-      <img src="${require('@/assets/img/logo/sol2.png')}" alt="">
-      <img src="${require('@/assets/img/logo/sol3.png')}" alt="">
-      <img src="${require('@/assets/img/logo/sol4.png')}" alt="">
+      <a href="${require('@/assets/img/logo/Sol.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/Sol.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/logo/sol1.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/sol1.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/logo/sol2.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/sol2.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/logo/sol3.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/sol3.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/logo/sol4.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/sol4.png')}" alt="">
+      </a>
       <h2>こだわりを伝えるサイトWebサイト</h2>
       <p>Sol Honeyの蜂蜜生産のこだわりを伝え、販売に繋げることを目的にウェブサイトをデザインした。問題点や生産方法について視覚的に説明することで、Sol Honeyの長所をアピールしている。雰囲気は自然や優しを表現しつつも、子供っぽさ、高級感には寄らないようにした。</p>
-      <img src="${require('@/assets/img/logo/sol5.png')}" alt="">
-      <img src="${require('@/assets/img/logo/sol6.png')}" alt="">
+      <a href="${require('@/assets/img/logo/sol5.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/sol5.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/logo/sol6.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/sol6.png')}" alt="">
+      </a>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/5f57xasCHs8?si=qNi-1yR_Tc6H0ZJv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     `
   },
@@ -691,7 +727,9 @@ export const works = [
     year: '2021',
     image: require('@/assets/img/logo/DAWN.png'),
     content: `
-      <img src="${require('@/assets/img/logo/DAWN.png')}" alt="">
+      <a href="${require('@/assets/img/logo/DAWN.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/DAWN.png')}" alt="">
+      </a>
       <a target="_blank" href="https://note.com/yusuihoshino/n/nca8c32b90238?magazine_key=m27cad5495964">参加レポートnote</a>
     `
   },
@@ -702,9 +740,15 @@ export const works = [
     year: '2024',
     image: require('@/assets/img/logo/複数.png'),
     content: `
-      <img src="${require('@/assets/img/logo/複数.png')}" alt="">
-       <img src="${require('@/assets/img/logo/Zli.jpg')}" alt="">
+      <a href="${require('@/assets/img/logo/複数.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/複数.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/logo/Zli.jpg')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/Zli.jpg')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/logo/手芸2.png')}" class="glightbox">
         <img src="${require('@/assets/img/logo/手芸2.png')}" alt="">
+      </a>
     `
   },
 
@@ -730,8 +774,12 @@ export const works = [
     type: '専門学校課題',
     image: require('@/assets/img/other/人間.jpg'),
     content: `
-    <img src="${require('@/assets/img/other/人間.jpg')}" alt="">
-    <img src="${require('@/assets/img/other/人間2.png')}" alt="">
+    <a href="${require('@/assets/img/other/人間.jpg')}" class="glightbox">
+      <img src="${require('@/assets/img/other/人間.jpg')}" alt="">
+    </a>
+    <a href="${require('@/assets/img/other/人間2.png')}" class="glightbox">
+      <img src="${require('@/assets/img/other/人間2.png')}" alt="">
+    </a>
 
     <h2>概要</h2>
     <p>文庫本のカバーと帯をリデザインする課題で、人間標本を選び取り組んだ。</p>
@@ -751,8 +799,12 @@ export const works = [
     image: require('@/assets/img/other/mooo2.png'),
     content: `
       <p>デザイナーとして参加していたアプリmoooの裏話をまとめた12ページの冊子を制作した。BRUTUS、Casa、ブレーンのようなシンプルなものを目指し、ページごとのレイアウトが同じにならないように意識した。</p>
-      <img src="${require('@/assets/img/other/mooo2.png')}" alt="">
-      <img src="${require('@/assets/img/other/mooo.png')}" alt="">
+      <a href="${require('@/assets/img/other/mooo2.png')}" class="glightbox">
+        <img src="${require('@/assets/img/other/mooo2.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/other/mooo.png')}" class="glightbox">
+        <img src="${require('@/assets/img/other/mooo.png')}" alt="">
+      </a>
     `
   },
   {
@@ -764,7 +816,9 @@ export const works = [
     image: require('@/assets/img/other/cron.png'),
     content: `
       <p>小さな石ころをモチーフとした角丸を多用したフォントである。ディスプレイ書体としてボードゲームのタイトルなどに使われる想定。文字の丸さを強調するため文字間は広くとった。</p>
-      <img src="${require('@/assets/img/other/cron.png')}" alt="">
+      <a href="${require('@/assets/img/other/cron.png')}" class="glightbox">
+        <img src="${require('@/assets/img/other/cron.png')}" alt="">
+      </a>
     `
   },
 ];

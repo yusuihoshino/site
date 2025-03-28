@@ -90,15 +90,11 @@ export default {
         selector: '.glightbox',
         touchNavigation: true,
         loop: true,
-        navigation: true,
         width: '90vw',
         height: '90vh',
         zoomable: false,
         draggable: false,
-        preload: true,
-        autoplayVideos: true,
-        openEffect: 'zoom',
-        closeEffect: 'fade'
+        autoplayVideos: true
       });
     };
     document.head.appendChild(script);

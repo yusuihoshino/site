@@ -222,6 +222,12 @@ export const works = [
     asign: 'UI/UXデザイン、実装',
     content: `
       <p>身の回りのモノを組み合わせて10種類の数字のフォントを制作し、それらを活用した時計、タイマー、ストップウォッチのウェブアプリを開発、公開した。</p>
+      <a href="https://yusuihoshino.github.io/timo/clock/index.html" target="_blank">Timo</a>
+
+
+       <a href="${require('@/assets/img/product/timo5.jpg')}" class="glightbox">
+        <img src="${require('@/assets/img/product/timo5.jpg')}" alt="">
+      </a>
       <a href="${require('@/assets/img/product/timo.png')}" class="glightbox">
         <img src="${require('@/assets/img/product/timo.png')}" alt="">
       </a>
@@ -242,9 +248,43 @@ export const works = [
 
       <h2>モノから作った10種類の数字フォント</h2>
       <p>子供の頃にモノで何かを形作った体験を思い出すように、身の回りにあるモノを選んだ。</p>
-      <a href="${require('@/assets/img/product/timo2.png')}" class="glightbox">
-        <img src="${require('@/assets/img/product/timo2.png')}" alt="">
+     
+       <a href="${require('@/assets/img/product/timo6.jpg')}" class="glightbox">
+        <img src="${require('@/assets/img/product/timo6.jpg')}" alt="">
       </a>
+
+       <a href="${require('@/assets/img/product/timo7.jpg')}" class="glightbox">
+        <img src="${require('@/assets/img/product/timo7.jpg')}" alt="">
+      </a>
+
+       <a href="${require('@/assets/img/product/timo8.jpg')}" class="glightbox">
+        <img src="${require('@/assets/img/product/timo8.jpg')}" alt="">
+      </a>
+
+       <a href="${require('@/assets/img/product/timo9.jpg')}" class="glightbox">
+        <img src="${require('@/assets/img/product/timo9.jpg')}" alt="">
+      </a>
+
+       <a href="${require('@/assets/img/product/timo10.jpg')}" class="glightbox">
+        <img src="${require('@/assets/img/product/timo10.jpg')}" alt="">
+      </a>
+
+       <a href="${require('@/assets/img/product/timo11.jpg')}" class="glightbox">
+        <img src="${require('@/assets/img/product/timo12.jpg')}" alt="">
+      </a>
+
+       <a href="${require('@/assets/img/product/timo13.jpg')}" class="glightbox">
+        <img src="${require('@/assets/img/product/timo14.jpg')}" alt="">
+      </a>
+
+       <a href="${require('@/assets/img/product/timo15.jpg')}" class="glightbox">
+        <img src="${require('@/assets/img/product/timo15.jpg')}" alt="">
+      </a>
+
+       <a href="${require('@/assets/img/product/timo16.jpg')}" class="glightbox">
+        <img src="${require('@/assets/img/product/timo16.jpg')}" alt="">
+      </a>
+
 
       <h2>時計、タイマー、ストップウォッチ</h2>
       <p>背景色、フォントサイズを自由に設定し、好みの設定を探求する楽しみがある。</p>

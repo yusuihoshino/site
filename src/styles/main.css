@@ -23,6 +23,10 @@ body {
   font-family: 'Noto Sans JP', sans-serif;
   background-color: var(--bg-gray);
   color: var(--font-black);
+
+  word-break: auto-phrase;
+  text-autospace: no-autospace;
+  text-spacing-trim: space-first;
 }
 
 #app {

@@ -623,7 +623,7 @@ export const works = [
     year: '2022',
     image: require('@/assets/img/modeling/2045.webp'),
     content: `
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/xPI5JWlV96A?si=jJX8RYlL5erpfWjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/ZLz1W6PuXdA?si=lCg6541hE4MChpMD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       <a href="https://note.com/yusuihoshino/n/n1668aa2d7258?magazine_key=m27cad5495964">nooteでの解説</a>
     `
   },

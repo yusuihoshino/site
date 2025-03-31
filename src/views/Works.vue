@@ -53,11 +53,12 @@ export default {
         { value: 'product', label: 'Product' },
         { value: 'poster', label: 'Poster' },
         { value: 'logo', label: 'Logo' },
+        { value: 'other', label: 'Other' },
         { value: 'photo', label: 'Photo' },
         { value: 'modeling', label: 'Modeling' },
         { value: 'drawing', label: 'Drawing' },
         { value: 'art', label: 'Art' },
-        { value: 'other', label: 'Other' }
+        { value: 'thumbnail', label: 'Thumbnail' },
       ],
       works,
       lightbox: null

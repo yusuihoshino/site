@@ -28,14 +28,14 @@
                 <ul>
                     <li>手芸同好会サークル 部長</li>
                     <li>JPHACKS</li>
-                    <li>TOHOKU GROWTH Accelerator (Growth Course)</li>
+                    <li><a target="_blank" href="https://note.com/spurcle_tohoku/m/m6789b87b4470">TOHOKU GRROWTH Accelerator</a> (Growth Course)</li>
                 </ul>
                 <div class="year">2022</div>            
                 <ul>
                     <li>Open Hack U 2021 Online Vol.3</li>
-                    <li>Yumemi Spring Design Internship 2022</li>
-                    <li>100 Program 1期</li>
-                    <li>100 Program 2期 モバイルアプリ賞</li>
+                    <li><a href="https://www.yumemi.co.jp/" target="_blank">Yumemi</a> Spring Design Internship 2022</li>
+                    <li><a href="https://100program.jp/" target="_blank">100 Program</a> 1期</li>
+                    <li><a href="https://100program.jp/" target="_blank">100 Program</a> 2期 モバイルアプリ賞</li>
                     <li>株式会社Codephiliaに共同創業者として参加</li>
                 </ul>
             </div>
@@ -56,21 +56,25 @@
                 <h3>デザインを学ぶために専門学校へ進学</h3>
                 <div class="year">2023</div>         
                 <ul>
-                    <li>期末試験 奨励賞</li>
-                    <li>AKATSUKI、アオタケプロジェクト参加チームメンバ</li>
+                    <li>前期 期末試験 奨励賞</li>
+                    <li>後期 期末試験 奨励賞</li>
+                    <li><a href="https://aizu-startups-foundation.com/aotake/top" target="_blank">アオタケプロジェクト</a>参加チームメンバ</li>
                 </ul>
                 <div class="year">2024</div>            
                 <ul>
                     <li>準特待生</li>
+                    <li>卒業制作 奨励賞</li>
+                    <li>グラフィックデザイン科  優秀賞</li>
+                    <li><a href="https://100program.jp/" target="_blank">100 Program</a> 優秀アプリ賞</li>
                     <li>デザインを担当したアプリ<a href="https://apps.apple.com/jp/app/mooo/id6472037030">mooo</a>がApp Storeにて公開</li>
                     <li>デザインを担当したアプリ<a href="">琥珀日記</a>が公開</li>
-                    <li>100 Program 優秀アプリ賞</li>
+                    
                 </ul>
             </div>
         </div>
         <div class="history-section">
             <div class="history-left">
-                <h2>IT企業</h2>
+                <h2>IT企業<br>デザイナー</h2>
                 <div class="duration-year">
                     <div>2025</div>
                     <div class="line"></div>

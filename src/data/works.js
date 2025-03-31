@@ -214,7 +214,7 @@ export const works = [
   // Product works
   {
     id: 'timo',
-    title: '身の回りのモノで作った時間を刻むアプリTimo',
+    title: '身の回りのモノで作った時間を刻むアプリTimo（卒制 奨励賞）',
     categories: ['product'],
     year: '2024/2（2ヶ月）',
     image: require('@/assets/img/product/timo.png'),
@@ -249,10 +249,6 @@ export const works = [
       <h2>モノから作った10種類の数字フォント</h2>
       <p>子供の頃にモノで何かを形作った体験を思い出すように、身の回りにあるモノを選んだ。</p>
      
-       <a href="${require('@/assets/img/product/timo6.jpg')}" class="glightbox">
-        <img src="${require('@/assets/img/product/timo6.jpg')}" alt="">
-      </a>
-
        <a href="${require('@/assets/img/product/timo7.jpg')}" class="glightbox">
         <img src="${require('@/assets/img/product/timo7.jpg')}" alt="">
       </a>
@@ -292,6 +288,11 @@ export const works = [
         <img src="${require('@/assets/img/product/timo3.png')}" alt="">
       </a>
 
+      <h2>mm</h2>
+      <p>その後、より実用的なバージョンとしてmmを制作した。フォントはデフォルトのみで、背景色によって可視性を損なわない設計になっている。mmは「M」ini「m」alからとった。</p>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/PFZaAJp8lcA?si=MbY3mlTtIJuZtPOF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <a href="https://yusuihoshino.github.io/mm/clock/">mmアプリ</a>
+
     `
   },
   {
@@ -301,11 +302,14 @@ export const works = [
     year: '2025/3（2ヶ月）',
     type: '<a href="https://100program.jp/" target="_blank">100Program</a>アプリ賞',
     asign: 'UI/UXデザイン、プロモーション。他メンバーはエンジニア2名',
-    image: require('@/assets/img/no.png'),
+    image: require('@/assets/img/product/wake1.png'),
     content: `
         
 
         <p>目覚ましアプリのUIを100Pgoram期間中に作成した。</p>
+        <a href="${require('@/assets/img/product/wake1.png')}" class="glightbox">
+        <img src="${require('@/assets/img/product/wake1.png')}" alt="">
+      </a>
 
         <h2>100prgoram発表資料</h2>
 
@@ -368,14 +372,11 @@ export const works = [
     title: 'mooo（カップルがおはようを伝えるアプリ',
     categories: ['product','logo'],
     year: '2023（半年）',
-    type: '<a target="_blank" href="https://mitouteki.jp/">AKATUIKIプロジェクト</a>、<a target="_blank" href="https://aizu-startups-foundation.com/aotake/top">アオタケプロジェクト</a>',
+    type: '<a target="_blank" href="https://aizu-startups-foundation.com/aotake/top">アオタケプロジェクト</a>',
     asign: 'UI/UXデザイン、プロモーション。他メンバーはエンジニア5名、デザイナー３名',
     image: require('@/assets/img/product/mooo.png'),
     content: `
-      
-     <a href="${require('@/assets/img/product/mooo1.png')}" class="glightbox">
-       <img src="${require('@/assets/img/product/mooo1.png')}" alt="">
-     </a>
+      <a href="https://apps.apple.com/jp/app/mooo/id6472037030" target="_blank">app storeでmoooを見る</a>
      <a href="${require('@/assets/img/product/mooo2.png')}" class="glightbox">
        <img src="${require('@/assets/img/product/mooo2.png')}" alt="">
      </a>
@@ -412,15 +413,12 @@ export const works = [
   {
     id: 'dawn',
     title: '旅行を記録できるアプリDAWN',
-    categories: ['product','logo'],
+    categories: ['product'],
     year: '2021/12（1ヶ月）',
-    type: 'TOHOKU GRROWTH Accelerator Growth Cource（ビジネスプログラム）',
-    asign: 'リサーチ、アイデア、UI/UX、PVデザイン。他メンバーエンジニア5名、ビジネス1名',
-    image: require('@/assets/img/logo/DAWN.png'),
+    type: '<a target="_blank" href="https://note.com/spurcle_tohoku/m/m6789b87b4470">TOHOKU GRROWTH Accelerator</a> Growth Cource（ビジネスプログラム）',
+    asign: 'リサーチ、アイデア、UI/UX、PVデザイン。他メンバーはエンジニア5名、ビジネス1名',
+    image: require('@/assets/img/product/dawn0.png'),
     content: `
-        <a href="${require('@/assets/img/logo/DAWN.png')}" class="glightbox">
-          <img src="${require('@/assets/img/logo/DAWN.png')}" alt="">
-         </a>
         <a href="${require('@/assets/img/product/dawn0.png')}" class="glightbox">
           <img src="${require('@/assets/img/product/dawn0.png')}" alt="">
         </a>
@@ -476,12 +474,41 @@ export const works = [
     categories: ['product'],
     year: '2021（2週間）',
     type: ' <a target="_blank" href="https://hacku.yahoo.co.jp/hacku2021online3/">Open Hack U 2021 Online Vol.3</a>',
-    asign: 'アイデア、UI/UXデザイン。他メンバーはエンジニア3名、ビジネス１名',
-    image: require('@/assets/img/no.png'),
+    asign: 'アイデア、UI/UXデザイン。他メンバーはエンジニア5名、ビジネス１名',
+    image: require('@/assets/img/product/ryo1.png'),
     content: `
-      <a href="${require('@/assets/img/no.png')}" class="glightbox">
-        <img src="${require('@/assets/img/no.png')}" alt="">
+
+      <a href="${require('@/assets/img/product/ryo1.png')}" class="glightbox">
+        <img src="${require('@/assets/img/product/ryo1.png')}" alt="">
       </a>
+      <a href="${require('@/assets/img/product/ryo2.png')}" class="glightbox">
+        <img src="${require('@/assets/img/product/ryo2.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/product/ryo3.png')}" class="glightbox">
+        <img src="${require('@/assets/img/product/ryo3.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/product/ryo4.png')}" class="glightbox">
+        <img src="${require('@/assets/img/product/ryo4.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/product/ryo5.png')}" class="glightbox">
+        <img src="${require('@/assets/img/product/ryo5.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/product/ryo6.png')}" class="glightbox">
+        <img src="${require('@/assets/img/product/ryo6.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/product/ryo7.png')}" class="glightbox">
+        <img src="${require('@/assets/img/product/ryo7.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/product/ryo8.png')}" class="glightbox">
+        <img src="${require('@/assets/img/product/ryo8.png')}" alt="">
+      </a>
+      
+      
+      
+
+
+
+      
       <h2>レポート</h2>
       <a target="_blank" href="https://note.com/yusuihoshino/n/n62841f487d36?magazine_key=m27cad5495964">参加レポートnote</a>
       <h2>プレゼン動画、資料</h2>
@@ -489,24 +516,7 @@ export const works = [
       <iframe class="speakerdeck-iframe" frameborder="0" src="https://speakerdeck.com/player/65421410ac11409790eb909801ee6c0b" title="HACK U2022" allowfullscreen="true" style="border: 0px; background: padding-box padding-box rgba(0, 0, 0, 0.1); margin: 0px; padding: 0px; border-radius: 6px; box-shadow: rgba(0, 0, 0, 0.2) 0px 5px 40px; width: 100%; height: auto; aspect-ratio: 560 / 315;" data-ratio="1.7777777777777777"></iframe>
     `
   },
-  {
-    id: 'mm',
-    title: '世界一シンプルなタイマー、ストップウォッチmm',
-    categories: ['product'],
-    year: '2024（2週間）',
-    type: '自主制作',
-    asign: '企画、デザイン、実装',
-    image: require('@/assets/img/product/mm.png'),
-    content: `
-      <a target="_blank" href="https://yusuihoshino.github.io/mm/timer/index.html">mmアプリ</a>
-      <p>ウェブにあるストップウォッチのデザインは広告があったり、他の要素で複雑だったりするものが多い。このアプリは、世界で一番ミニマルでデザインを楽しめるものを作ろうちう考えで制作した。シンプルながらも背景色を変える機能で、背景と常に動く数字の美しさを楽しめる。</p>
-      <a href="${require('@/assets/img/product/mm.png')}" class="glightbox">
-        <img src="${require('@/assets/img/product/mm.png')}" alt="">
-      </a>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/PFZaAJp8lcA?si=MbY3mlTtIJuZtPOF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-    `
-  },
   {
     id: 'kohaku-diary',
     title: '琥珀日記',
@@ -563,7 +573,7 @@ export const works = [
   },
   {
     id: 'self-portrait',
-    title: '自画像',
+    title: '自己表現ポスター',
     categories: ['poster'],
     year: '2023',
     image: require('@/assets/img/poster/自画像.png')
@@ -598,8 +608,78 @@ export const works = [
     `
   },
   {
+    id: 'yu',
+    title: 'お風呂で食べられるチョコ「湯チョコ」',
+    categories: ['poster'],
+    year: '2024（1ヶ月）',
+    type: '期末試験課題',
+    image: require('@/assets/img/poster/yu1.png'),
+    content: `
+      <h2>概要</h2>
+
+      <p>チョコの企画、ポスター制作の課題に対して、お風呂に入りながら食べられるチョコのアイデアを考え、B1ポスターを制作した。</p>
+      <h2>制作物</h2>
+      <a href="${require('@/assets/img/poster/yu1.png')}" class="glightbox">
+        <img src="${require('@/assets/img/poster/yu1.png')}" alt="">
+      </a>
+       <a href="${require('@/assets/img/poster/yu2.png')}" class="glightbox">
+        <img src="${require('@/assets/img/poster/yu2.png')}" alt="">
+      </a>
+    `
+  },
+  {
+    id: 'ouendan',
+    title: '死んだってキミの応援団（期末 奨励賞）',
+    categories: ['poster'],
+    year: '2023（1ヶ月）',
+    type: '期末試験課題（奨励賞/40名）',
+    image: require('@/assets/img/poster/ouendan1.png'),
+    content: `
+      <h2>課題</h2>
+      <p>100年後の製品を企画し、PRポスターを制作せよ</p>
+      <h2>B1ポスター</h2>
+      <a href="${require('@/assets/img/poster/ouendan1.png')}" class="glightbox">
+        <img src="${require('@/assets/img/poster/ouendan1.png')}" alt="">
+      </a>
+      <h2>コンセプト</h2>
+       <a href="${require('@/assets/img/poster/ouendan2.png')}" class="glightbox">
+        <img src="${require('@/assets/img/poster/ouendan2.png')}" alt="">
+      </a>
+    `
+  },
+  {
+    id: 'miti',
+    title: '「暗中模索」がテーマのポスター（期末 奨励賞）',
+    categories: ['poster'],
+    year: '2024/1（2週間）',
+    type: '専門学校期末試験（奨励賞/40名）',
+    image: require('@/assets/img/poster/miti1.png'),
+    content: `
+      <h2>課題</h2>
+      <p>四字熟語を１つ選び、それを表現するポスターを制作せよ。</p>
+      <h2>制作物</h2>
+      <p>「暗中模索」を選択した。人生において経験や指標が役に立たなくなり不安を感じながらもがく様子を、道しるべとしての点字ブロックを散乱させることで表現した。</p>
+
+      <a href="${require('@/assets/img/poster/miti1.png')}" class="glightbox">
+        <img src="${require('@/assets/img/poster/miti1.png')}" alt="">
+      </a>
+      <h2>制作過程</h2>
+
+      <a href="${require('@/assets/img/poster/miti2.png')}" class="glightbox">
+        <img src="${require('@/assets/img/poster/miti2.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/poster/miti3.png')}" class="glightbox">
+        <img src="${require('@/assets/img/poster/miti3.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/poster/miti4.png')}" class="glightbox">
+        <img src="${require('@/assets/img/poster/miti4.png')}" alt="">
+      </a>
+      
+    `
+  },
+  {
     id: 'flying-light',
-    title: '飛翔する光',
+    title: '架空の写真個展ポスター',
     categories: ['poster'],
     year: '2023',
     image: require('@/assets/img/poster/飛翔する光.png')
@@ -607,7 +687,7 @@ export const works = [
   
   {
     id: 'festival',
-    title: 'フェスティバル',
+    title: '架空のジャズフェスティバル',
     categories: ['poster'],
     year: '2023',
     image: require('@/assets/img/poster/フェスティバル.jpg')
@@ -660,14 +740,41 @@ export const works = [
   
   {
     id: 'handicraft1',
-    title: '手芸サークルロゴ',
-    categories: ['logo'],
-    year: '2024',
-    image: require('@/assets/img/logo/手芸.png'),
+    title: '新設手芸サークルのクリエイティブ',
+    categories: ['logo','poster','thumbnail'],
+    year: '2024/4（2週間）',
+    type: '自主制作',
+    image: require('@/assets/img/logo/tegei6.png'),
     content: `
-      <a href="${require('@/assets/img/logo/手芸.png')}" class="glightbox">
-        <img src="${require('@/assets/img/logo/手芸.png')}" alt="">
+      <h1>概要</h1>
+      <p>2024年に会津大学に手芸（てげい）サークルが新設された。手芸はPCを利用したものづくりをするサークルである。部員の一人として、このサークルのロゴ、新入生歓迎会のフライヤーを制作した。</p>
+      <h1>デザイン</h1>
+      <a href="${require('@/assets/img/logo/tegei2.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/tegei2.png')}" alt="">
       </a>
+      <a href="${require('@/assets/img/logo/tegei3.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/tegei3.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/logo/tegei4.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/tegei4.png')}" alt="">
+      </a>
+      <a href="${require('@/assets/img/logo/tegei5.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/tegei5.png')}" alt="">
+      </a>
+
+      <h2>ラジオ放送サムネ</h2>
+      <p>会津大生の新入生に大学での生活やキャリアについてアドバイスを伝えるために、先輩やOBのインタビューを放送した</p>
+      <a href="https://www.youtube.com/watch?v=UrAEuyZY3t4&list=PL5RwPkSlsakh39kIYMyqWJNJuJaXnG3sJ">【会津大生向け】第1回手芸放送部 再生リスト</a>
+
+      <a href="${require('@/assets/img/logo/tegei6.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/tegei6.png')}" alt="">
+      </a>
+      <h2>学園祭サムネ</h2>
+      <p>学園祭では各々が制作したモデリング作品、イラスト、プロダクトなどがを紙やディスプレイを用いて展示した。</p>
+      <a href="${require('@/assets/img/logo/tegei7.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/tegei7.png')}" alt="">
+      </a>
+      
     `
   },
   {
@@ -713,7 +820,25 @@ export const works = [
     title: '架空の結婚式場kokoロゴ',
     categories: ['logo'],
     year: '2024',
-    image: require('@/assets/img/logo/koko.png')
+    type: '専門学校課題',
+    image: require('@/assets/img/logo/koko.png'),
+    content: `
+      <h2>概要</h2>
+      <p>結婚式場 Koko/ここは新潟に新設される式場。手軽なフォトウエディングなどのプランが充実しており、若者でも利用しやすい結婚式を目指している。今回は若者向けに硬すぎないシンプル目なロゴを依頼された設定で、ロゴを制作した。</p>
+
+      <h2>ラフ３案</h2>
+      <a href="${require('@/assets/img/logo/koko2.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/koko2.png')}" alt="">
+      </a>
+
+      <h2>最終案</h2>
+      <a href="${require('@/assets/img/logo/koko.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/koko.png')}" alt="">
+      </a>
+          <a href="${require('@/assets/img/logo/koko3.png')}" class="glightbox">
+        <img src="${require('@/assets/img/logo/koko3.png')}" alt="">
+      </a>
+    `
   },
   {
     id: 'sol',
@@ -792,19 +917,25 @@ export const works = [
     type: '専門学校課題',
     image: require('@/assets/img/other/人間.jpg'),
     content: `
-    <a href="${require('@/assets/img/other/人間.jpg')}" class="glightbox">
-      <img src="${require('@/assets/img/other/人間.jpg')}" alt="">
-    </a>
-    <a href="${require('@/assets/img/other/人間2.png')}" class="glightbox">
-      <img src="${require('@/assets/img/other/人間2.png')}" alt="">
-    </a>
-
     <h2>概要</h2>
     <p>文庫本のカバーと帯をリデザインする課題で、人間標本を選び取り組んだ。</p>
      <a target="_blank" href="https://www.amazon.co.jp/%E4%BA%BA%E9%96%93%E6%A8%99%E6%9C%AC-%E6%B9%8A-%E3%81%8B%E3%81%AA%E3%81%88/dp/4041142237">オリジナル人間標本デザインAmazonリンク</a>
     <h2>コンセプト</h2>
     <p>表紙の花は四角に切られており、本来の形を無理やり、加害者の美的感覚によって変化させられた暴力性、異常性を表現している。背景は写真の雰囲気を崩さない結麗目な表現にすることで、より花の無惨さをより印象付けている。裏表紙には切られた花びらを配置し、花が四角に切られたことをより強調し、切り落とされた体のようにも見えるグロテスクさも表現している。帯はテキストは縦横比や行間を狭め異常さを表現した。
     </p>
+
+
+    <a href="${require('@/assets/img/other/人間.jpg')}" class="glightbox">
+      <img src="${require('@/assets/img/other/人間.jpg')}" alt="">
+    </a>
+    <a href="${require('@/assets/img/other/人間3.jpg')}" class="glightbox">
+      <img src="${require('@/assets/img/other/人間3.jpg')}" alt="">
+    </a>
+    <a href="${require('@/assets/img/other/人間4.jpg')}" class="glightbox">
+      <img src="${require('@/assets/img/other/人間4.jpg')}" alt="">
+    </a>
+
+  
 
     `
   },
@@ -830,15 +961,37 @@ export const works = [
     title: 'コロコロ転がる自作フォントCoron Font',
     categories: ['other'],
     year: '2024（1ヶ月）',
-    type: '専門学校課題',
+    lype: '専門学校課題',
     image: require('@/assets/img/other/cron.png'),
     content: `
-      <p>小さな石ころをモチーフとした角丸を多用したフォントである。ディスプレイ書体としてボードゲームのタイトルなどに使われる想定。文字の丸さを強調するため文字間は広くとった。</p>
+      <h2>石ころのようにコロンと転がりそうな感覚</h2>
+      <p>小さな石のような丸くて転がりそうな、ちょこんとした可愛さを表現したかった。１つ１つの文字の丸さを強調するため文字間は広くとった。ディスプレイ書体としてボードゲームのタイトルなどに使われる想定。</p>
+
       <a href="${require('@/assets/img/other/cron.png')}" class="glightbox">
         <img src="${require('@/assets/img/other/cron.png')}" alt="">
       </a>
+      <a href="${require('@/assets/img/other/cron2.png')}" class="glightbox">
+        <img src="${require('@/assets/img/other/cron2.png')}" alt="">
+      </a>
     `
   },
+    // Logo works
+   {
+    id: 'aizu-note',
+    title: '会津大学の締めくくりnoteサムネ',
+    categories: ['thumbnail'],
+    year: '2024',
+    image: require('@/assets/img/thumbnail/会津大学.jpg')
+  },
+  {
+    id: 'genkai',
+    title: '限界開発ハッカソンサムネ',
+    categories: ['thumbnail'],
+    year: '2024',
+    image: require('@/assets/img/thumbnail/限界.jpg')
+  },
+
+
 ];
 
 // 詳細ページを持つ作品のルートを自動生成する関数

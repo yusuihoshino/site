@@ -60,6 +60,7 @@ export default {
   font-size: 0.8rem;
   letter-spacing: 0.4rem;
   opacity: 0.5;
+  margin-top: 4px;
 }
 </style>
 

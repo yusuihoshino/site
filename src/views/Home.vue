@@ -37,7 +37,7 @@
             <hr>
             <div class="contact-line">
                 <p>X</p>
-                <a href="twitter/yusuihoshino">yusuihoshino</a>
+                <a href="https://x.com/yusuihoshino">yusuihoshino</a>
             </div>
             <hr>
         </div>

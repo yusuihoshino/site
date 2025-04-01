@@ -301,7 +301,8 @@ export const works = [
     categories: ['product'],
     year: '2025/3（2ヶ月）',
     type: '<a href="https://100program.jp/" target="_blank">100Program</a>アプリ賞',
-    asign: 'UI/UXデザイン、プロモーション。他メンバーはエンジニア2名',
+    asign: 'UI/UXデザイン、プロモーション',
+    member: 'エンジニア2名',
     image: require('@/assets/img/product/wake1.png'),
     content: `
         
@@ -373,7 +374,8 @@ export const works = [
     categories: ['product','logo'],
     year: '2023（半年）',
     type: '<a target="_blank" href="https://aizu-startups-foundation.com/aotake/top">アオタケプロジェクト</a>',
-    asign: 'UI/UXデザイン、プロモーション。他メンバーはエンジニア5名、デザイナー３名',
+    asign: 'UI/UXデザイン、プロモーション',
+    member: 'エンジニア5名、デザイナー3名',
     image: require('@/assets/img/product/mooo.png'),
     content: `
       <a href="https://apps.apple.com/jp/app/mooo/id6472037030" target="_blank">app storeでmoooを見る</a>
@@ -416,7 +418,8 @@ export const works = [
     categories: ['product'],
     year: '2021/12（1ヶ月）',
     type: '<a target="_blank" href="https://note.com/spurcle_tohoku/m/m6789b87b4470">TOHOKU GRROWTH Accelerator</a> Growth Cource（ビジネスプログラム）',
-    asign: 'リサーチ、アイデア、UI/UX、PVデザイン。他メンバーはエンジニア5名、ビジネス1名',
+    asign: 'リサーチ、アイデア、UI/UX、PVデザイン',
+    member: 'エンジニア5名、ビジネス1名',
     image: require('@/assets/img/product/dawn0.png'),
     content: `
         <a href="${require('@/assets/img/product/dawn0.png')}" class="glightbox">
@@ -474,7 +477,8 @@ export const works = [
     categories: ['product'],
     year: '2021（2週間）',
     type: ' <a target="_blank" href="https://hacku.yahoo.co.jp/hacku2021online3/">Open Hack U 2021 Online Vol.3</a>',
-    asign: 'アイデア、UI/UXデザイン。他メンバーはエンジニア5名、ビジネス１名',
+    asign: 'アイデア、UI/UXデザイン',
+    member: 'エンジニア5名、ビジネス１名',
     image: require('@/assets/img/product/ryo1.png'),
     content: `
 
@@ -523,7 +527,8 @@ export const works = [
     categories: ['product'],
     year: '2024',
     type: '<a target="_blank" href="https://aizu-startups-foundation.com/aotake/top">アオタケプロジェクト</a>',
-    asign: 'UI/UXデザイン。他メンバーはエンジニア複数人',
+    asign: 'UI/UXデザイン',
+    member: 'エンジニア複数人',
     image: require('@/assets/img/product/琥珀日記.jpg'),
     content: `
       <a href="${require('@/assets/img/product/琥珀日記.jpg')}" class="glightbox">

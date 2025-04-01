@@ -19,6 +19,9 @@
               <div v-if="work.asign" class="detail-item">
                 <span class="detail-item-title">Asign</span>{{ work.asign }}
               </div>
+              <div v-if="work.member" class="detail-item">
+                <span class="detail-item-title">Member</span>{{ work.member }}
+              </div>
             </div>
         </div>
 
@@ -49,6 +52,10 @@ export default {
       default: ''
     },
     asign: {
+      type: String,
+      default: ''
+    },
+    member: {
       type: String,
       default: ''
     }

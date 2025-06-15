@@ -5,7 +5,7 @@
   --font-black: black;
   --font-white: #333333;
   --img-gray: #666666;
-  --bg: #ffffff; /* 背景色をここで一元管理 */
+  --bg: #4D49CC; /* 背景色をここで一元管理 */
 }
 
 body{

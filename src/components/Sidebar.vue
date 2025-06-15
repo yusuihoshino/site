@@ -36,12 +36,12 @@ export default {
   data() {
     return {
       isOpen: true,
-      currentColor: localStorage.getItem('theme-color') || '#ffffff'
+      currentColor: localStorage.getItem('theme-color') || '#4D49CC'
     }
   },
   created() {
-    // 保存された色があればそれを、なければデフォルトの白を使用
-    const savedColor = localStorage.getItem('theme-color') || '#ffffff';
+    // 保存された色があればそれを、なければデフォルトの色を使用
+    const savedColor = localStorage.getItem('theme-color') || '#4D49CC';
     this.currentColor = savedColor;
     
     // ページ読み込み時に保存された色を適用（ファビコンも含めて）
